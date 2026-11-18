@@ -38,12 +38,15 @@ Horas-base de tarefas cobrem uma primeira passagem de competências; metas de 40
 
 ## GitHub Pages
 
-O código está no repositório privado `fobos123deimos/orbita-fisica`. Para publicar, selecione **Settings → Pages → Source: GitHub Actions** e execute **Actions → Publicar Órbita no GitHub Pages → Run workflow**. O fluxo publica somente `dist/`. Novos commits não são publicados automaticamente; execute o workflow novamente após cada atualização.
+O código está no repositório público `fobos123deimos/orbita-fisica`.
 
-O GitHub Pages comum publica um website público, mesmo quando o repositório de origem é privado. O conteúdo inicial inclui links pessoais do Drive; revise essa exposição antes de habilitar a publicação. As permissões dos arquivos no Drive continuam sendo respeitadas. Os registros pessoais de estudo permanecem somente no navegador e não fazem parte do código enviado.
+Site publicado: [Abrir Órbita](https://fobos123deimos.github.io/orbita-fisica/).
 
-Para migrar do endereço anterior, exporte o backup no Órbita atual e importe-o no novo endereço. Repositórios privados precisam de plano GitHub elegível para Pages. A publicação privada atual continua disponível em https://orbita-fisica-matheus.teteu-orfeu.chatgpt.site.
+Para publicar novas versões, execute **Actions → Publicar Órbita no GitHub Pages → Run workflow**. O fluxo publica somente `dist/`. Novos commits não são publicados automaticamente; execute o workflow novamente após cada atualização.
 
+O site e o código-fonte são públicos. O conteúdo inicial inclui os links pessoais do Drive cuja publicação foi autorizada. As permissões dos arquivos no Drive continuam sendo respeitadas. Os registros pessoais de estudo permanecem somente no navegador e não fazem parte do código enviado.
+
+Para migrar do endereço anterior, exporte o backup no Órbita atual e importe-o no novo endereço. A versão privada anterior continua disponível em https://orbita-fisica-matheus.teteu-orfeu.chatgpt.site.
 
 ## Estrutura
 
@@ -54,3 +57,5 @@ Para migrar do endereço anterior, exporte o backup no Órbita atual e importe-o
 - `dist/roadmaps.json`: roteiros de referência.
 - `dist/style.css`: tema responsivo.
 - `tests/model.test.mjs`: cenários, médias ponderadas, datas e importação.
+
+
