@@ -1,0 +1,1070 @@
+{
+  "version": 1,
+  "settings": {
+    "name": "Matheus",
+    "status": "standby",
+    "startDate": "2027-01-04",
+    "scenario": "2027.2",
+    "scenarios": {
+      "2027.2": {
+        "target": "2027-06-27",
+        "hours": 16,
+        "goalHours": 400
+      },
+      "2028.1": {
+        "target": "2027-12-26",
+        "hours": 12,
+        "goalHours": 612
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "F01",
+      "title": "Vetores, cálculo diferencial e unidades físicas",
+      "topic": "Ferramentas matemáticas",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: 2 problemas resolvidos e mapa de lacunas\nMateriais: B054; B061; R01\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F02",
+      "title": "Newton, energia, momento e sistemas de partículas",
+      "topic": "Mecânica clássica",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: 4 problemas com soluções justificadas\nMateriais: B054; R04\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F03",
+      "title": "Lagrange, Hamilton e modos normais",
+      "topic": "Mecânica clássica",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: 1 derivação completa e 2 exercícios\nMateriais: B056; B057; R05\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F04",
+      "title": "Oscilações, ondas e equação da onda",
+      "topic": "Mecânica clássica",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Solução de EDO e propagação\nMateriais: B012; R03\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F05",
+      "title": "Interferência, difração e óptica",
+      "topic": "Mecânica clássica",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: 3 problemas de ondas e Fourier\nMateriais: B012; R03\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F06",
+      "title": "Eletrostática, Gauss, Poisson/Laplace",
+      "topic": "Eletromagnetismo",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Problema com condições de contorno\nMateriais: B054; R06; R08\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F07",
+      "title": "Magnetismo, indução e equações de Maxwell",
+      "topic": "Eletromagnetismo",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Derivação de onda EM + 2 questões\nMateriais: B054; R06; R07\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F08",
+      "title": "Termodinâmica, primeira e segunda leis",
+      "topic": "Termodinâmica e estatística",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Diagrama de processos e 3 problemas\nMateriais: B054; R13\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F09",
+      "title": "Física estatística, ensembles e distribuições",
+      "topic": "Termodinâmica e estatística",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Função de partição comentada\nMateriais: B054; R14\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F10",
+      "title": "Relatividade, fotoelétrico, Compton e Bohr",
+      "topic": "Física moderna",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Problemas comparando regimes de validade\nMateriais: R09; R10\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F11",
+      "title": "Schrödinger, poços, barreiras e oscilador",
+      "topic": "Mecânica quântica",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Soluções normalizadas e condições de contorno\nMateriais: B043; R10; R11\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F12",
+      "title": "Spin, hidrogênio, simetria e perturbação",
+      "topic": "Mecânica quântica",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: 2 problemas com operadores e autovalores\nMateriais: B043; R11; R12\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "F13",
+      "title": "Provas anteriores EUF (40 itens/4h) e GRE Physics (70 itens/2h) — treino por tema, simulação e análise de erros",
+      "topic": "Revisão e simulados",
+      "hours": 5.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Simulados completos com correção por área/tempo e caderno de erros\nMateriais: EUF — Banco Histórico; GRE Physics — 70 Questões; EUF GRE — Ciclo 12s\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M01",
+      "title": "Álgebra linear, autovalores e condicionamento",
+      "topic": "Métodos computacionais",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Notebook com caso mal condicionado\nMateriais: B001; B008; R02\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M02",
+      "title": "Aritmética de ponto flutuante, erros e estabilidade",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Laboratório de cancelamento e underflow\nMateriais: B001; B008; B009\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M03",
+      "title": "Métodos de raízes: bisseção, Newton, secante",
+      "topic": "Métodos computacionais",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Comparação de convergência em Python\nMateriais: B001; B008\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M04",
+      "title": "Sistemas lineares: LU, QR, Cholesky",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Comparar erros, custo e estabilidade\nMateriais: B001; B008; R02\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M05",
+      "title": "Interpolação, splines, ajuste e mínimos quadrados",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Notebook com dados sintéticos e resíduos\nMateriais: B001; B008\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M06",
+      "title": "Quadraturas e integração: Newton-Cotes e Gauss",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Benchmark de erro versus custo\nMateriais: B001; B008; B009\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M07",
+      "title": "EDOs: Euler, Runge–Kutta, adaptativos",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Estudo de convergência e passo\nMateriais: B009; B056; R03\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M08",
+      "title": "EDPs, diferenças finitas e condições de contorno",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Discretização simples com teste de malha\nMateriais: B009; B057\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M09",
+      "title": "Otimização: convexidade, gradientes, restrições",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Exemplo com KKT e solução numérica\nMateriais: B004; B008\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M10",
+      "title": "Sistemas dinâmicos, estabilidade, Lyapunov",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Simular sistema e interpretar estabilidade\nMateriais: B012; B056\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M11",
+      "title": "Métodos espectrais, Fourier e funções especiais",
+      "topic": "Métodos computacionais",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Laboratório de modos e representação\nMateriais: B012; B056; B062\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M12",
+      "title": "Monte Carlo, bootstrap e propagação de incerteza",
+      "topic": "Métodos computacionais",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Experimento reproduzível com sementes fixas\nMateriais: B009; B015\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M13",
+      "title": "Python científico, testes e reprodutibilidade",
+      "topic": "Métodos computacionais",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Código com pytest, comparação e relatório\nMateriais: B009; B015\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "M14",
+      "title": "Funções Hermite/Fock em alta ordem",
+      "topic": "Métodos computacionais",
+      "hours": 5.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Validação contra mpmath e erro relativo\nMateriais: Fast Wave; QuTiP; B056\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D01",
+      "title": "Pergunta física, hipótese, objetivo e contribuição",
+      "topic": "Projeto e seleção UFC",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Resumo de pesquisa com hipótese testável\nMateriais: PROJ; SLIDES\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D02",
+      "title": "Revisão sobre óptica quântica e estados de Fock",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Fichamento de 3 artigos com lacunas\nMateriais: PROJ; B043\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D03",
+      "title": "Formalismo de matrizes densidade e operadores",
+      "topic": "Projeto e seleção UFC",
+      "hours": 3.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Derivação verificada em QuTiP\nMateriais: B043; PROJ; R18\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D04",
+      "title": "Wigner, negatividade e estados não gaussianos",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Experimento em estados teste e gráfico\nMateriais: PROJ; QuTiP; R18\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D05",
+      "title": "Truncamento, estabilidade e orçamentos de erro",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Tabela de convergência + intervalos\nMateriais: B001; B008; PROJ\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D06",
+      "title": "Dinâmica aberta: Lindblad e canais de perda",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Simulação de caso mínimo com validações\nMateriais: PROJ; QuTiP\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D07",
+      "title": "Aprendizagem ativa e processos gaussianos",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Comparação de seleção de amostras\nMateriais: B015; PROJ\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D08",
+      "title": "Projeto e metodologia reprodutível",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Versão revisada com escopo e riscos\nMateriais: PROJ\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D09",
+      "title": "Experimentos, métricas e custo computacional",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Quadro de resultados com sementes e baseline\nMateriais: PROJ; Fast Wave\nRevisões: D+1 / D+7 / D+30."
+    },
+    {
+      "id": "D10",
+      "title": "Defesa e arguição técnica",
+      "topic": "Projeto e seleção UFC",
+      "hours": 4.0,
+      "done": false,
+      "scenario": "both",
+      "notes": "Entrega: Apresentação 20 min e banco de perguntas\nMateriais: SLIDES; Simulados\nRevisões: D+1 / D+7 / D+30."
+    }
+  ],
+  "materials": [
+    {
+      "id": "B054",
+      "title": "Física Geral Universitária",
+      "type": "Livro físico",
+      "topic": "Mecânica clássica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "mecânica; conservação; modelagem\nVolume/subtítulo parcialmente oculto; verificar cobertura antes de usar como fonte de todos os eixos do EUF.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B061",
+      "title": "Exercícios do Livro Matemática para Físicos com Aplicações — volume 1: Vetores, Tensores e Spinores",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "exercícios de métodos matemáticos conforme sumário\nNão atribuir autor apenas por estar junto dos livros de Barcelos Neto.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B012",
+      "title": "Sinais e Sistemas",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "transformada de Fourier; convolução; sistemas lineares; transformada de Laplace\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B043",
+      "title": "Introdução à Computação e Informação Quântica: Incluindo Álgebra Linear com Kets e Bras",
+      "type": "Livro físico",
+      "topic": "Mecânica quântica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "estados; operadores; medição; matriz densidade; informação quântica\nA foto não confirma o tratamento detalhado de oscilador, Wigner ou sistemas abertos; completar com materiais específicos.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B001",
+      "title": "Métodos Numéricos",
+      "type": "Livro físico",
+      "topic": "Métodos computacionais",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "erros numéricos; sistemas lineares; interpolação; quadratura; equações diferenciais\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B008",
+      "title": "Cálculo Numérico",
+      "type": "Livro físico",
+      "topic": "Métodos computacionais",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "arredondamento; sistemas lineares; integração numérica; solução de equações diferenciais\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B009",
+      "title": "Curso de Física Computacional 1 — Para Físicos e Engenheiros Físicos",
+      "type": "Livro físico",
+      "topic": "Métodos computacionais",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "modelagem computacional; integração de equações; análise de resultados\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B056",
+      "title": "Elementos de Física Matemática — volume 1: Equações Diferenciais Ordinárias, Transformadas e Funções Especiais",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "equações diferenciais ordinárias; transformadas; funções especiais\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B057",
+      "title": "Elementos de Física Matemática — volume 2: Equações Diferenciais Parciais e Cálculo das Variações",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "equações diferenciais parciais; cálculo das variações\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B062",
+      "title": "Convite à Física Matemática",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "modelagem matemática; equações diferenciais; funções especiais; transformadas conforme sumário\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B004",
+      "title": "Introdução aos Métodos da Matemática Aplicada",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "equações diferenciais; métodos de aproximação; transformadas\nEscolher como alternativa aos outros textos de métodos; conferir sumário antes de atribuir uma seção.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B029",
+      "title": "Métodos Matemáticos — volume 1",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "álgebra linear; equações diferenciais; séries e transformadas\nNão presumir equivalência com outro livro de título parecido; conferir sumário.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B030",
+      "title": "Métodos Matemáticos — volume 2",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "métodos matemáticos para problemas físicos\nConferir sumário antes de atribuir tópico específico.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B059",
+      "title": "Matemática para Físicos com Aplicações — volume 1: Vetores, Tensores e Spinores",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "métodos matemáticos conforme sumário\nNão inventar volume nem subtítulo pela cor da capa.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B060",
+      "title": "Matemática para Físicos com Aplicações — volume 2: Tratamentos Clássico e Quântico",
+      "type": "Livro físico",
+      "topic": "Mecânica quântica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "métodos matemáticos conforme sumário\nNão inventar volume nem subtítulo pela cor da capa.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B063",
+      "title": "Métodos Matemáticos para Físicos",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "métodos matemáticos conforme sumário\nNome em lombada estreita; confirmar folha de rosto para bibliografia formal.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B064",
+      "title": "Notas de Física-Matemática: Equações Diferenciais, Funções de Green e Distribuições",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "equações diferenciais; funções de Green; distribuições\nInteresse confirmado. Já disponível; evitar recompra.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B058",
+      "title": "Elementos de Física Matemática — volume 3: Equações Integrais e Integrais de Trajetória Não Relativísticas",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "equações integrais; integrais de trajetória não relativísticas\nConteúdo avançado; não é necessário estudar integralmente antes da seleção.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B047",
+      "title": "Problemas de Física",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "problemas conforme sumário e nível\nTítulo genérico; não atribuir autor por associação.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B007",
+      "title": "Cálculo Numérico com uma abordagem à Computação Quântica",
+      "type": "Livro físico",
+      "topic": "Mecânica quântica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "cálculo numérico; álgebra linear computacional; pontes com computação quântica\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B042",
+      "title": "Fundamentos de Matemática Elementar — dois volumes com numeração não confirmada",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "a definir após identificar os volumes\nEntre os volumes 9 e 3 há duas lombadas com reflexo. Não afirmar números, temas ou autores.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B049",
+      "title": "Física — Una Visión Analítica del Movimiento — volume I",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "cinemática; dinâmica; conservação\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B050",
+      "title": "Física — Una Visión Analítica del Movimiento — volume II",
+      "type": "Livro físico",
+      "topic": "Mecânica clássica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "mecânica conforme sumário\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B051",
+      "title": "Física — Una Visión Analítica del Movimiento — volume III",
+      "type": "Livro físico",
+      "topic": "Mecânica clássica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "mecânica conforme sumário\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B052",
+      "title": "Fundamentos de Mecânica — volume 1",
+      "type": "Livro físico",
+      "topic": "Mecânica clássica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "forças; energia; momento; resolução de problemas\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B003",
+      "title": "Fundamentos de Matemática Elementar — volume 1",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "conjuntos; funções; leitura de gráficos\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B031",
+      "title": "Coleção Elementos da Matemática — volume 2",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "matemática pré-universitária conforme lacuna\nNão atribuir capítulos nem disciplina específica sem sumário.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B032",
+      "title": "Coleção Elementos da Matemática — volume 3",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "matemática pré-universitária conforme lacuna\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B033",
+      "title": "Coleção Elementos da Matemática — volume 4",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "matemática pré-universitária conforme lacuna\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B034",
+      "title": "Problemas Selecionados de Matemática — volume 1",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "resolução de problemas algébricos\nTexto orientado a IME/ITA/Olimpíadas; usar para reparar lacunas, não como substituto de física universitária.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B035",
+      "title": "Matemática em Nível IME/ITA — volume 2: Álgebra Vetorial e Geometria Analítica",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "vetores; produto escalar; produto vetorial; geometria analítica\nParte do título está com reflexo; confirmar subtítulo antes de citação formal.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B036",
+      "title": "Matemática em Nível IME/ITA — volume 1A: Números Complexos e Polinômios",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "números complexos; polinômios\nParte do subtítulo está com reflexo.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B037",
+      "title": "Fundamentos de Matemática Elementar — volume 2",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "funções exponenciais e logarítmicas\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B038",
+      "title": "Fundamentos de Matemática Elementar — volume 3",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "trigonometria\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B039",
+      "title": "Fundamentos de Matemática Elementar — volume 7",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "geometria analítica\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B040",
+      "title": "Fundamentos de Matemática Elementar — volume 9",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "geometria plana\nNúmero 9 e nome visíveis; reflexo parcial.\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B041",
+      "title": "Fundamentos de Matemática Elementar — volume 10",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "geometria espacial\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "B048",
+      "title": "Problemas Selecionados de Física Elementar",
+      "type": "Livro físico",
+      "topic": "Mecânica clássica",
+      "author": "",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "mecânica e outros temas elementares conforme sumário\n\nAcervo confirmado na planilha de estudos."
+    },
+    {
+      "id": "own-03",
+      "title": "Listas e soluções — 120 problemas autorais + 16 exemplos resolvidos",
+      "type": "Lista",
+      "topic": "Revisão e simulados",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/1i6SxzuoRULMc3gER_OTEXcmNGkteVqJp/view?usp=drivesdk",
+      "answerUrl": "https://drive.google.com/file/d/1i6SxzuoRULMc3gER_OTEXcmNGkteVqJp/view?usp=drivesdk",
+      "status": "Não iniciado",
+      "notes": "Gabaritos/soluções comentadas verificados no texto: F01–E06 a partir de p.15; LP01–LP08 a partir de p.43. Material autoral, não prova oficial."
+    },
+    {
+      "id": "own-06",
+      "title": "Simulados objetivos e de defesa",
+      "type": "Simulado",
+      "topic": "Revisão e simulados",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/17pkVEGavqbjeZHugwj_wvk3JTj5pes-G/view?usp=drivesdk",
+      "answerUrl": "https://drive.google.com/file/d/17pkVEGavqbjeZHugwj_wvk3JTj5pes-G/view?usp=drivesdk",
+      "status": "Não iniciado",
+      "notes": "S1, S2: 20 itens/240min; E1 autoral 40 itens/240min. Gabaritos comentados p.32; ensaios O1–O3 p.49; rubrica p.56. Não são provas oficiais."
+    },
+    {
+      "id": "own-01",
+      "title": "Plano e cronograma",
+      "type": "Plano",
+      "topic": "Geral",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/1jTM94_yB2paZvX3Uhr0Ve1M7YPJftW96/view?usp=drivesdk",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "own-02",
+      "title": "Caderno teórico",
+      "type": "PDF",
+      "topic": "Geral",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/172scMeucNdnmeVPG9pVNv482y19kNDUk/view?usp=drivesdk",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "own-04",
+      "title": "Guia de laboratórios",
+      "type": "PDF",
+      "topic": "Geral",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/1YWNOkWfrjiJxZTJ0Iz0A3V655xqe3GDD/view?usp=drivesdk",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "own-05",
+      "title": "Livros, aulas e fontes",
+      "type": "PDF",
+      "topic": "Geral",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/1WZCE5XaSqAzRgX7-CfGXonVeoKt2rtVx/view?usp=drivesdk",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "own-ZIP",
+      "title": "Curso EUF e Defesa 2027–2028",
+      "type": "Pacote ZIP",
+      "topic": "Geral",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/file/d/11Yt3BQrgb2DPiwfV7b5aQL6PsWxV1Nr2/view?usp=drivesdk",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "own-LABS",
+      "title": "Laboratórios — notebooks e código",
+      "type": "Pasta",
+      "topic": "Métodos computacionais",
+      "author": "Material do seu planejamento",
+      "url": "https://drive.google.com/drive/folders/1LPm9qGLqaCPuX4_FV9OjGr-PP6RXXweb",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Material já presente no seu acervo digital."
+    },
+    {
+      "id": "PROJ",
+      "title": "Projeto de pesquisa atualizado",
+      "type": "Projeto",
+      "topic": "Projeto e seleção UFC",
+      "author": "português",
+      "url": "https://docs.google.com/document/d/13O6-w3VtE0qpyGPBowgunvtMltqtiLPrJ7MvFfQCeIY/edit",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Negatividade de Wigner; erro numérico; aprendizagem ativa bayesiana\nDocumento-base da defesa"
+    },
+    {
+      "id": "SLIDES",
+      "title": "Apresentação da proposta",
+      "type": "Projeto",
+      "topic": "Projeto e seleção UFC",
+      "author": "português",
+      "url": "https://docs.google.com/presentation/d/10rKMJkODKNKU25yaK-auVtwFGsIESQ61nQoUVej4hAU/edit",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Treinar apresentação em até20min\nAdaptar às instruções futuras da comissão"
+    },
+    {
+      "id": "R01",
+      "title": "MIT 18.02SC — Multivariable Calculus",
+      "type": "Videoaula",
+      "topic": "Ferramentas matemáticas",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Gradiente; integrais duplas; integrais de linha; fluxo; teoremas de Green, Gauss e Stokes.\nFerramentas de eletromagnetismo e integração de Wigner."
+    },
+    {
+      "id": "R02",
+      "title": "MIT 18.06SC — Linear Algebra",
+      "type": "Videoaula",
+      "topic": "Ferramentas matemáticas",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Projeções, autovalores, diagonalização, matrizes complexas, matrizes positivas e decomposição espectral.\nEstados quânticos, operadores e covariâncias de processos gaussianos."
+    },
+    {
+      "id": "R03",
+      "title": "MIT 18.03SC — Differential Equations",
+      "type": "Videoaula",
+      "topic": "Ferramentas matemáticas",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Osciladores amortecidos, sistemas lineares, exponencial matricial, séries de Fourier e métodos numéricos.\nOscilações do EUF, equações de evolução e estabilidade numérica."
+    },
+    {
+      "id": "R04",
+      "title": "MIT 8.01SC — Classical Mechanics",
+      "type": "Videoaula",
+      "topic": "Mecânica clássica",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Leis de Newton; energia e potencial; colisões; corpo rígido; momento angular.\nReparar lacunas de mecânica antes de formalismo analítico."
+    },
+    {
+      "id": "R06",
+      "title": "USP e-Aulas — Física III para Engenharia",
+      "type": "Videoaula",
+      "topic": "Eletromagnetismo",
+      "author": "português",
+      "url": "https://eaulas.usp.br/portal/course.action?course=5795",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Coulomb, Gauss, potencial, Lorentz, Ampère, Faraday, indutância e circuitos.\nAlternativa em português para os fundamentos de eletromagnetismo."
+    },
+    {
+      "id": "R10",
+      "title": "MIT 8.04 — Quantum Physics I",
+      "type": "Videoaula",
+      "topic": "Mecânica quântica",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Conceitos básicos; potenciais unidimensionais; espalhamento; momento angular.\nBase para EUF, oscilador harmônico e interpretação física da proposta."
+    },
+    {
+      "id": "R13",
+      "title": "MIT 8.044 — Statistical Physics I",
+      "type": "Videoaula",
+      "topic": "Termodinâmica e estatística",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Probabilidade, termodinâmica, distribuições e aplicações estatísticas.\nTexto-base gratuito para a área térmica do EUF."
+    },
+    {
+      "id": "R14",
+      "title": "MIT 8.333 — Statistical Mechanics I",
+      "type": "Videoaula",
+      "topic": "Termodinâmica e estatística",
+      "author": "inglês",
+      "url": "https://ocw.mit.edu/courses/8-333-statistical-mechanics-i-statistical-mechanics-of-particles-fall-2013/",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Termodinâmica, probabilidade, ensembles clássicos e estatística quântica.\nComplementar 8.044; não é necessário concluir o curso inteiro antes da seleção."
+    },
+    {
+      "id": "newbook0",
+      "title": "Um Curso de Álgebra Linear",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "Elon Lages Lima",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Aquisição confirmada em 17/11/2026. Defina os capítulos conforme seu sumário."
+    },
+    {
+      "id": "newbook1",
+      "title": "Noções de Probabilidade e Estatística — 8ª edição",
+      "type": "Livro físico",
+      "topic": "Ferramentas matemáticas",
+      "author": "Marcos N. Magalhães e Antonio C. P. de Lima",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Aquisição confirmada em 17/11/2026. Defina os capítulos conforme seu sumário."
+    },
+    {
+      "id": "newbook2",
+      "title": "Simulação Computacional de Circuitos Elétricos",
+      "type": "Livro físico",
+      "topic": "Eletromagnetismo",
+      "author": "Luiz Q. Orsini e Flavio A. M. Cipparrone",
+      "url": "",
+      "answerUrl": "",
+      "status": "Não iniciado",
+      "notes": "Aquisição confirmada em 17/11/2026. Defina os capítulos conforme seu sumário."
+    },
+    {
+      "id": "euf2017",
+      "title": "EUF 2017-1 · Questões discursivas",
+      "type": "Lista",
+      "topic": "Revisão e simulados",
+      "author": "Arquivo oficial • Unicamp",
+      "url": "https://portal.ifi.unicamp.br/images/files/pos/admissao/Questoes_parte-1-e-2_EUF1s2017.pdf",
+      "answerUrl": "https://portal.ifi.unicamp.br/images/files/pos/admissao/Gabarito.pdf",
+      "status": "Não iniciado",
+      "notes": "Treino histórico discursivo. O formato de referência EUF 2-2026 é de 40 questões objetivas em 4 horas. Conferir regras da sua edição."
+    }
+  ],
+  "sessions": [],
+  "deadlines": [
+    {
+      "id": "d1",
+      "title": "EUF · âncora provisória",
+      "date": "2027-04-15",
+      "scenario": "2027.2",
+      "status": "estimate",
+      "url": "https://www1.fisica.org.br/~euf/index.php/pt/"
+    },
+    {
+      "id": "d2",
+      "title": "Versão do projeto de pesquisa",
+      "date": "2027-04-30",
+      "scenario": "2027.2",
+      "status": "estimate",
+      "url": ""
+    },
+    {
+      "id": "d3",
+      "title": "Defesa · meta de preparação",
+      "date": "2027-06-15",
+      "scenario": "2027.2",
+      "status": "estimate",
+      "url": "https://www.fisica.ufc.br/portal/pos/"
+    },
+    {
+      "id": "d4",
+      "title": "EUF · âncora provisória",
+      "date": "2027-09-30",
+      "scenario": "2028.1",
+      "status": "estimate",
+      "url": "https://www1.fisica.org.br/~euf/index.php/pt/"
+    },
+    {
+      "id": "d5",
+      "title": "Versão do projeto de pesquisa",
+      "date": "2027-10-31",
+      "scenario": "2028.1",
+      "status": "estimate",
+      "url": ""
+    },
+    {
+      "id": "d6",
+      "title": "Defesa · meta de preparação",
+      "date": "2027-12-15",
+      "scenario": "2028.1",
+      "status": "estimate",
+      "url": "https://www.fisica.ufc.br/portal/pos/"
+    }
+  ],
+  "notes": "Minha preparação começa com consistência.\n\nMétodo: estudar a teoria → resolver sem consulta → corrigir → guardar evidências → revisar em D+1, D+7 e D+30.\n\nUsar uma referência principal por tópico; complementar quando houver uma lacuna."
+}
