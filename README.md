@@ -26,9 +26,20 @@ Abra http://localhost:8080. Testes: `node --test tests/model.test.mjs`.
 - Calendário com distinção entre metas e prazos confirmados.
 - Backup JSON com validação e prévia antes da substituição.
 
+## Guia rápido
+
+1. **Começar quando você decidir:** na **Visão geral**, clique em **Quero começar**, defina a data-base e confirme. O plano permanece em stand-by até essa ativação; nenhuma atividade é concluída automaticamente.
+2. **Registrar uma sessão real:** use **Registrar estudo**, informe data, assunto, tempo estudado, questões tentadas e corretas, e clique em **Salvar registro**. Para estudo teórico, deixe as questões em zero. Em simulados com vários assuntos, crie um registro por assunto e divida o tempo total entre eles. Confira os resultados em **Desempenho**.
+3. **Acompanhar as entregas:** em **Trilha de estudos**, marque o checklist quando concluir a atividade. Marcar ou desmarcar uma tarefa altera sua conclusão, mas **não registra horas**. Use **Nova atividade** para acrescentar uma entrega, estimar sua duração e associar um material.
+4. **Ampliar o acervo:** em **Biblioteca → Adicionar material**, escolha tipo e assunto, informe o link do material e, quando houver, o **Link do gabarito (opcional)**. Registre capítulos e páginas nas observações. Listas e simulados também aparecem em **Exercícios e simulados**.
+5. **Reajustar o caminho:** abra **Comparar cenários** para avaliar 2027.2 e 2028.1. Em **Ajustes e backup**, altere datas, carga semanal e metas; finalize em **Salvar e reajustar plano**. O **Plano ajustável** redistribui atividades pendentes e considera os resultados registrados. Em **Seleções e prazos**, mantenha a distinção entre estimativas e datas oficiais.
+6. **Levar o progresso com você:** em **Ajustes e backup**, use **Exportar backup** no navegador de origem. No outro dispositivo, navegador ou endereço do site, use **Importar backup**, revise a prévia e confirme. A importação substitui os dados daquele navegador; exporte-os primeiro se precisar preservá-los. Isso também vale para migrar da versão anterior hospedada no ChatGPT para o GitHub Pages.
+
 ## Persistência
 
 O armazenamento é local ao navegador, sob a chave `orbita-fisica-v1`. Não há conta de aplicativo, banco remoto, sincronização entre dispositivos ou integração contínua com o Google Drive. Exporte backups regularmente. A mudança de endereço de hospedagem exige exportar e importar o backup. O seed não é alterado pelas sessões locais.
+
+Alterações feitas na interface — materiais, checklists, sessões, notas e configurações — são salvas apenas nesse navegador. Elas não criam commits nem alteram os arquivos do GitHub. Publicar uma nova versão do código também não sincroniza os registros entre dispositivos.
 
 ## Fontes e interpretação
 
@@ -42,7 +53,9 @@ O código está no repositório público `fobos123deimos/orbita-fisica`.
 
 Site publicado: [Abrir Órbita](https://fobos123deimos.github.io/orbita-fisica/).
 
-Para publicar novas versões, execute **Actions → Publicar Órbita no GitHub Pages → Run workflow**. O fluxo publica somente `dist/`. Novos commits não são publicados automaticamente; execute o workflow novamente após cada atualização.
+Novos pushes para `main` publicam automaticamente quando alteram arquivos em `dist/**`, `tests/**` ou `.github/workflows/pages.yml`. O fluxo executa os testes (`node --test tests/model.test.mjs`) antes de publicar e só continua se a verificação passar. O conteúdo publicado é somente a pasta `dist/`.
+
+A publicação manual continua disponível em **Actions → Publicar Órbita no GitHub Pages → Run workflow**. Alterações somente neste README não disparam uma publicação automática.
 
 O site e o código-fonte são públicos. O conteúdo inicial inclui os links pessoais do Drive cuja publicação foi autorizada. As permissões dos arquivos no Drive continuam sendo respeitadas. Os registros pessoais de estudo permanecem somente no navegador e não fazem parte do código enviado.
 
