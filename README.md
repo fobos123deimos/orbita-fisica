@@ -19,8 +19,9 @@ Abra http://localhost:8080. Testes: `node --test tests/model.test.mjs`.
 ## Recursos
 
 - Trilhas por assunto, checklists editáveis e atividades associadas a materiais.
+- Trilha integrada **Elétrica e Mecânica Analítica**, com fundamentos, conversão de energia, modelagem e controle de sistemas eletromecânicos.
 - Roteiros originais de 25 e 51 semanas, preservados como referência.
-- 60 materiais iniciais do acervo, listas com gabarito, simulados e videoaulas.
+- 60 materiais iniciais do acervo, listas com gabarito, simulados e videoaulas, mais 5 referências abertas da trilha eletromecânica.
 - Registro de horas, acertos, erros e notas; gráficos calculados de registros reais.
 - Comparação dos cenários, carga e datas editáveis, planejamento adaptativo.
 - Calendário com distinção entre metas e prazos confirmados.
@@ -40,6 +41,16 @@ Abra http://localhost:8080. Testes: `node --test tests/model.test.mjs`.
 O armazenamento é local ao navegador, sob a chave `orbita-fisica-v1`. Não há conta de aplicativo, banco remoto, sincronização entre dispositivos ou integração contínua com o Google Drive. Exporte backups regularmente. A mudança de endereço de hospedagem exige exportar e importar o backup. O seed não é alterado pelas sessões locais.
 
 Alterações feitas na interface — materiais, checklists, sessões, notas e configurações — são salvas apenas nesse navegador. Elas não criam commits nem alteram os arquivos do GitHub. Publicar uma nova versão do código também não sincroniza os registros entre dispositivos.
+
+## Elétrica e Mecânica Analítica
+
+Abra **Elétrica e Mecânica** no menu, a aba de mesmo nome em **Trilha de estudos**, ou [acesse a trilha diretamente](https://fobos123deimos.github.io/orbita-fisica/#eletromecanica).
+
+O percurso reúne 7 blocos: base matemática e circuitos; mecânica analítica e eletromagnetismo; energia e conversão eletromecânica; modelos acoplados; estados, estabilidade e controle; Hamilton e passividade; acionamentos e modelos para pesquisa. Os 6 projetos conectam RLC e massa–mola, motor CC, solenoide, pêndulo acionado, limites do acionamento e controle por energia.
+
+São 12 atividades novas e 9 atividades existentes reaproveitadas. O cenário 2027.2 inclui 8 das novas atividades (29 horas de primeira passagem); 2028.1 acrescenta 4 atividades de aprofundamento (21 horas adicionais). As atividades compartilhadas mantêm os mesmos checklists na trilha geral, no plano e no percurso integrado. Os 7 livros físicos associados continuam sendo os mesmos registros da biblioteca. A trilha é complementar à preparação e não define requisitos dos editais.
+
+A atualização usa `applyContentPack` para acrescentar atividades e referências aos dados já salvos, sem substituir progresso, sessões, notas, configurações ou materiais personalizados. A marca `contentPacks` torna a aplicação idempotente: conteúdos editados são preservados e itens excluídos depois da atualização não reaparecem ao recarregar. A mesma atualização é aplicada à prévia de backups antigos antes da confirmação de importação. O estado de stand-by e as datas escolhidas são preservados.
 
 ## Fontes e interpretação
 
@@ -68,7 +79,10 @@ Para migrar do endereço anterior, exporte o backup no Órbita atual e importe-o
 - `dist/model.js`: cálculos, ordenação e validação de backups.
 - `dist/seed.json`: dados iniciais.
 - `dist/roadmaps.json`: roteiros de referência.
+- `dist/electromechanics.json`: blocos, atividades, projetos e referências da trilha integrada.
+- `dist/electromechanics-view.js`: interface da trilha com os registros compartilhados.
+- `dist/electromechanics.css`: estilos responsivos da trilha integrada.
 - `dist/style.css`: tema responsivo.
-- `tests/model.test.mjs`: cenários, médias ponderadas, datas e importação.
+- `tests/model.test.mjs`: cenários, médias ponderadas, datas, importação e atualização aditiva dos dados.
 
 

@@ -246,5 +246,68 @@ export function validateState(raw) {
     url: url(value.url, `${path}.url`),
   }));
   result.notes = string(raw.notes, 'notes', 100000, true);
+  if (raw.contentPacks !== undefined) {
+    if (!Array.isArray(raw.contentPacks) || raw.contentPacks.length > 100) {
+      fail('contentPacks', 'lista inválida ou muito extensa');
+    }
+    const seen = new Set();
+    result.contentPacks = raw.contentPacks.map((value, index) => {
+      const packId = string(value, `contentPacks[${index}]`, 200);
+      if (seen.has(packId)) fail(`contentPacks[${index}]`, 'identificador duplicado');
+      seen.add(packId);
+      return packId;
+    });
+  }
   return result;
+}
+
+/**
+ * Add a versioned curriculum once, without replacing the learner's existing data.
+ * The marker survives backups, so later edits and deletions remain intentional.
+ * Insertion anchors affect new tasks only; existing task order is preserved.
+ */
+export function applyContentPack(rawState, pack) {
+  const state = validateState(rawState);
+  object(pack, 'contentPack');
+  const packId = string(pack.id, 'contentPack.id', 200);
+  if (state.contentPacks?.includes(packId)) {
+    return {state, addedTasks: 0, addedMaterials: 0, applied: false};
+  }
+
+  // Validate the entire addition before merging. A failure never mutates rawState.
+  const addition = validateState({...state, tasks: pack.tasks, materials: pack.materials});
+  const anchors = pack.tasks.map((task, index) =>
+    string(task.afterTaskId, `contentPack.tasks[${index}].afterTaskId`, 200, true));
+  const taskIds = new Set(state.tasks.map(task => task.id));
+  const materialIds = new Set(state.materials.map(material => material.id));
+  const insertedAfter = new Map();
+  let addedTasks = 0;
+  let addedMaterials = 0;
+
+  addition.tasks.forEach((task, index) => {
+    if (taskIds.has(task.id)) return;
+    const requestedAnchor = anchors[index];
+    let anchor = requestedAnchor;
+    // Keep siblings after earlier additions and their already-inserted children.
+    while (insertedAfter.has(anchor)) anchor = insertedAfter.get(anchor);
+    const at = anchor ? state.tasks.findIndex(item => item.id === anchor) : -1;
+    if (at === -1) {
+      state.tasks.push(task);
+    } else {
+      state.tasks.splice(at + 1, 0, task);
+      insertedAfter.set(requestedAnchor, task.id);
+    }
+    taskIds.add(task.id);
+    addedTasks++;
+  });
+
+  for (const material of addition.materials) {
+    if (materialIds.has(material.id)) continue;
+    state.materials.push(material);
+    materialIds.add(material.id);
+    addedMaterials++;
+  }
+
+  state.contentPacks = [...(state.contentPacks || []), packId];
+  return {state: validateState(state), addedTasks, addedMaterials, applied: true};
 }

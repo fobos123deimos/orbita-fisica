@@ -1,0 +1,469 @@
+{
+  "id": "electromechanics-2026-11-19",
+  "title": "Elétrica e Mecânica Analítica",
+  "subtitle": "Campos, circuitos e movimento em uma mesma trilha de modelagem e controle.",
+  "intro": "Percurso aplicado que conecta a base de Mecânica, Eletromagnetismo e Métodos Matemáticos do seu planejamento a sistemas eletromecânicos. As atividades já existentes são reaproveitadas; os laboratórios acrescentam aplicações e critérios de verificação. Simulações acompanham o estudo desde o início. As horas representam uma primeira passagem e podem ser ajustadas.",
+  "scenarioGuidance": {
+    "2027.2": "Priorize os fundamentos compartilhados e os modelos de RLC, motor CC e solenoide. Faça uma primeira passagem por Lagrange, Hamilton e espaço de estados, mantendo revisões e preparação para as seleções no planejamento. As aplicações são uma trilha complementar de formação, não uma relação de exigências dos editais.",
+    "2028.1": "Retome os fundamentos com revisões e avance para pêndulo acionado, passividade, acionamentos e identificação de parâmetros. Use o horizonte mais longo para comparar modelos e consolidar um dossiê computacional. A distribuição entre cenários é uma sugestão editável, sem alterar os critérios oficiais das seleções."
+  },
+  "stages": [
+    {
+      "id": "em-base",
+      "title": "Base matemática, movimento e circuitos",
+      "description": "Revisar o necessário para compreender as equações e comparar modelos mecânicos e elétricos.",
+      "objectives": [
+        "Trabalhar com unidades, EDOs, autovalores e integração numérica.",
+        "Relacionar força e torque a movimento, energia e potência.",
+        "Reconhecer a estrutura comum das oscilações mecânicas e elétricas."
+      ],
+      "prerequisites": [],
+      "taskIds": [
+        "F01",
+        "F02",
+        "F04",
+        "M01",
+        "M07",
+        "EM01"
+      ],
+      "materialIds": [
+        "newbook0",
+        "B056",
+        "B012",
+        "newbook2",
+        "R03"
+      ],
+      "type": "Fundamentos"
+    },
+    {
+      "id": "em-formalismos",
+      "title": "Mecânica analítica e eletromagnetismo",
+      "description": "Estudar coordenadas e princípios variacionais junto das leis que explicam campos e indução.",
+      "objectives": [
+        "Construir lagrangianos em coordenadas mecânicas e elétricas.",
+        "Conectar Gauss, indução e Maxwell às hipóteses dos modelos concentrados.",
+        "Distinguir modelos físicos, aproximações e representações matemáticas."
+      ],
+      "prerequisites": [
+        "em-base"
+      ],
+      "taskIds": [
+        "F03",
+        "F06",
+        "F07",
+        "EM02"
+      ],
+      "materialIds": [
+        "EM-R01",
+        "EM-R05",
+        "B057",
+        "B054",
+        "R06"
+      ],
+      "type": "Fundamentos"
+    },
+    {
+      "id": "em-conversao",
+      "title": "Energia e conversão eletromecânica",
+      "description": "Entender como o campo produz força ou torque e como o movimento modifica as relações elétricas.",
+      "objectives": [
+        "Diferenciar energia, coenergia e variáveis independentes.",
+        "Obter forças e torques com hipóteses físicas explícitas.",
+        "Interpretar o acoplamento entre corrente e movimento no motor CC."
+      ],
+      "prerequisites": [
+        "em-formalismos"
+      ],
+      "taskIds": [
+        "EM03",
+        "EM04"
+      ],
+      "materialIds": [
+        "EM-R02",
+        "EM-R05"
+      ],
+      "type": "Integração"
+    },
+    {
+      "id": "em-modelos",
+      "title": "Modelos acoplados e simulação",
+      "description": "Reunir circuito, movimento, fontes e perdas em um mesmo modelo verificável.",
+      "objectives": [
+        "Simular o motor CC e analisar perturbações de carga.",
+        "Modelar o solenoide com indutância dependente da posição.",
+        "Conferir unidades, casos particulares e balanços de energia."
+      ],
+      "prerequisites": [
+        "em-conversao"
+      ],
+      "taskIds": [
+        "EM05",
+        "EM06"
+      ],
+      "materialIds": [
+        "EM-R02",
+        "EM-R03",
+        "newbook2",
+        "B009"
+      ],
+      "type": "Integração"
+    },
+    {
+      "id": "em-controle",
+      "title": "Estados, estabilidade e controle",
+      "description": "Usar os modelos físicos para escolher estados, analisar equilíbrios e projetar a atuação.",
+      "objectives": [
+        "Relacionar as equações do circuito e da mecânica à representação de estados.",
+        "Avaliar estabilidade, referências, perturbações e limites do atuador.",
+        "No cenário estendido, integrar o motor a um pêndulo não linear."
+      ],
+      "prerequisites": [
+        "em-modelos"
+      ],
+      "taskIds": [
+        "M10",
+        "EM07",
+        "EM08"
+      ],
+      "materialIds": [
+        "EM-R03",
+        "B012",
+        "B056",
+        "EM-R01"
+      ],
+      "type": "Integração"
+    },
+    {
+      "id": "em-hamilton",
+      "title": "Hamilton, passividade e energia",
+      "description": "Revisitar o sistema por suas variáveis de energia e aprofundar a relação entre estrutura física e controle.",
+      "objectives": [
+        "Identificar momentos conjugados mecânicos e elétricos.",
+        "Comparar as representações lagrangiana e hamiltoniana do mesmo atuador.",
+        "Aprofundar balanços de potência, passividade e controle por energia."
+      ],
+      "prerequisites": [
+        "em-modelos"
+      ],
+      "taskIds": [
+        "EM09",
+        "EM10"
+      ],
+      "materialIds": [
+        "EM-R01",
+        "EM-R02",
+        "EM-R04"
+      ],
+      "type": "Aprofundamento"
+    },
+    {
+      "id": "em-aplicacoes",
+      "title": "Acionamentos e modelos para pesquisa",
+      "description": "Ampliar os modelos com limites de atuação e evidências que sustentem suas previsões.",
+      "objectives": [
+        "Comparar fontes ideais e modelos médios de acionamento.",
+        "Identificar parâmetros sob condições de observação e excitação adequadas.",
+        "Documentar validade, incertezas e resultados reprodutíveis."
+      ],
+      "prerequisites": [
+        "em-controle",
+        "em-hamilton"
+      ],
+      "taskIds": [
+        "EM11",
+        "EM12"
+      ],
+      "materialIds": [
+        "EM-R03",
+        "newbook2",
+        "B009"
+      ],
+      "type": "Aprofundamento"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "EM01",
+      "title": "Comparar massa–mola–amortecedor e circuito RLC",
+      "topic": "Eletromagnetismo",
+      "hours": 4,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: notebook com as duas equações, unidades, analogia entre variáveis e respostas livre e forçada.\nPré-requisitos: F01, F02, F04, M01 e M07. Apoio do acervo: Sinais e Sistemas; Simulação Computacional de Circuitos Elétricos.\nVerificação: para o RLC série, L·q″ + R·q′ + q/C = v(t); para a massa, m·x″ + b·x′ + k·x = F(t). Comparar frequências naturais 1/√(LC) e √(k/m), além dos regimes de amortecimento.\nConferir um caso sem perdas e repetir a simulação com tolerância menor. As 4 h estimam uma primeira passagem; ampliar conforme as lacunas.",
+      "materialId": "EM-R03",
+      "afterTaskId": "M07"
+    },
+    {
+      "id": "EM02",
+      "title": "Formular um circuito LC e um pêndulo por Lagrange",
+      "topic": "Mecânica clássica",
+      "hours": 3,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: duas derivações comentadas, identificando coordenadas, energias, hipóteses e equações de movimento.\nPré-requisitos: F03, F04 e EM01. Apoio: Elementos de Física Matemática, volume 2.\nVerificação: no LC ideal, usar carga q e corrente i = q′ para obter L·q″ + q/C = 0. No pêndulo simples, com ângulo a partir da vertical para baixo, obter m·l²·θ″ + m·g·l·sen(θ) = 0.\nComparar a aproximação de pequenos ângulos com o modelo não linear. Registrar quando a aproximação deixa de ser adequada.",
+      "materialId": "EM-R01",
+      "afterTaskId": "EM01"
+    },
+    {
+      "id": "EM03",
+      "title": "Relacionar energia, coenergia e força magnética",
+      "topic": "Eletromagnetismo",
+      "hours": 3,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: mapa das variáveis corrente, fluxo concatenado e posição; uma derivação de força magnética.\nPré-requisitos: F06, F07 e EM02.\nVerificação: para magnetismo linear com indutância L(x) positiva, W′m(i,x) = L(x)·i²/2 e F = ∂W′m/∂x mantendo i constante. Pela energia Wm(λ,x) = λ²/[2L(x)], verificar F = −∂Wm/∂x mantendo λ constante.\nAs duas representações devem produzir a mesma força. Explicar por que energia e coenergia coincidem numericamente nesse caso, mas não em geral.",
+      "materialId": "EM-R05",
+      "afterTaskId": "EM02"
+    },
+    {
+      "id": "EM04",
+      "title": "Derivar o modelo elétrico e mecânico do motor CC",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 3,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: esquema do motor e equações acopladas com entrada, estados, saída e torque de carga.\nPré-requisitos: EM03. Hipóteses: fluxo aproximadamente constante, parâmetros constantes, eixo rígido e atrito viscoso.\nVerificação: v = R·i + L·i′ + ke·ω e J·ω′ = kt·i − b·ω − τL. Identificar a força contraeletromotriz e o torque eletromagnético. Para posição, acrescentar θ′ = ω.\nConferir unidades e convenções de sinais. Usar constantes eletromecânicas compatíveis com a conservação de potência e com as unidades adotadas.",
+      "materialId": "EM-R02",
+      "afterTaskId": "EM03"
+    },
+    {
+      "id": "EM05",
+      "title": "Simular o motor CC e conferir o balanço de energia",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 4,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: notebook com resposta a um degrau de tensão, perturbação de carga e variação de um parâmetro por vez.\nPré-requisitos: EM04 e M07.\nVerificação: com carga nula e tensão constante, comparar a velocidade final com ω∞ = kt·v/(R·b + kt·ke). No modelo de conversão ideal e constantes consistentes, conferir dH/dt = v·i − R·i² − b·ω² − τL·ω, com H = L·i²/2 + J·ω²/2.\nComparar o trabalho fornecido com energia armazenada, energia entregue à carga e perdas acumuladas. Registrar erro numérico e repetir com tolerância menor.",
+      "materialId": "EM-R02",
+      "afterTaskId": "EM04"
+    },
+    {
+      "id": "EM06",
+      "title": "Modelar um solenoide com núcleo móvel por Lagrange",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 5,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: derivação e simulação de uma bobina com núcleo móvel, mola e amortecedor.\nPré-requisitos: EM02, EM03 e EM05. Definir uma L(x) positiva no intervalo de operação e supor magnetismo linear; declarar a aproximação adotada.\nVerificação: obter m·x″ + b·x′ + k·x = [dL(x)/dx]·i²/2 e v = R·i + L(x)·i′ + [dL(x)/dx]·i·x′. A posição x é medida em relação ao equilíbrio da mola sem excitação.\nConferir sinais, unidades e o balanço dH/dt = v·i − R·i² − b·x′². Explicar como o movimento altera o circuito. Não extrapolar a hipótese magnética linear a saturação ou histerese.",
+      "materialId": "EM-R02",
+      "afterTaskId": "EM05"
+    },
+    {
+      "id": "EM07",
+      "title": "Controlar corrente e velocidade em espaço de estados",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 4,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: modelo de estados do motor CC e comparação entre malha aberta e uma malha de corrente ou velocidade.\nPré-requisitos: EM05 e M10.\nVerificação: escolher x = [i, ω], obter as matrizes do modelo e conferir sua resposta com as equações originais. Analisar os polos do sistema em malha fechada antes de simular.\nDefinir referência, perturbação e métricas de erro, tempo de acomodação e esforço de controle. Explicitar limites de tensão e corrente. Um controlador com ação integral só deve ser associado a erro estacionário nulo sob as condições de estabilidade e ausência de saturação pertinentes.",
+      "materialId": "EM-R03",
+      "afterTaskId": "M10"
+    },
+    {
+      "id": "EM08",
+      "title": "Acoplar o motor a um pêndulo não linear",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 6,
+      "scenario": "2028.1",
+      "done": false,
+      "notes": "Entrega: modelo do pêndulo acionado por motor e comparação entre as dinâmicas linearizada e não linear.\nPré-requisitos: EM02, EM05 e EM07. Adotar inicialmente acoplamento rígido direto, sem transmissão.\nVerificação: usar I_total·θ″ + b·θ′ + m·g·l·sen(θ) = kt·i e L·i′ + R·i + ke·θ′ = v, com θ medido a partir da vertical para baixo e I_total incluindo a inércia mecânica pertinente sem duplicação.\nEncontrar equilíbrios e comparar a aproximação local para perturbações pequenas e maiores. Registrar o domínio de validade e os efeitos dos limites do atuador. Aprofundamento sugerido para o cenário estendido; a associação pode ser editada.",
+      "materialId": "EM-R02",
+      "afterTaskId": "EM07"
+    },
+    {
+      "id": "EM09",
+      "title": "Construir o Hamiltoniano do atuador eletromagnético",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 3,
+      "scenario": "both",
+      "done": false,
+      "notes": "Entrega: transformação de Legendre do modelo de solenoide e mapa entre variáveis lagrangianas e hamiltonianas.\nPré-requisitos: F03 e EM06.\nVerificação: para o modelo linear em corrente, identificar p = m·x′ e λ = L(x)·i. Obter H = p²/(2m) + λ²/[2L(x)] + k·x²/2 e recuperar as equações anteriores incluindo fonte e perdas.\nExplicar o significado físico de cada termo e conferir o mesmo balanço de potência nas duas representações. Diferenciar esse Hamiltoniano físico do Hamiltoniano de um problema de controle ótimo.",
+      "materialId": "EM-R02",
+      "afterTaskId": "EM08"
+    },
+    {
+      "id": "EM10",
+      "title": "Verificar passividade e controle baseado em energia",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 5,
+      "scenario": "2028.1",
+      "done": false,
+      "notes": "Entrega: balanço de potência, identificação de porta elétrica e um experimento de controle por dissipação de energia.\nPré-requisitos: EM07, EM09 e M10.\nVerificação: no atuador idealizado, considerar o comando v = −ki·i, com ki positivo. Conferir que dH/dt = −(R + ki)·i² − b·x′². Comparar energia e trajetória com o caso sem essa atuação.\nA derivada não positiva, isoladamente, não prova convergência a qualquer referência: discutir equilíbrio, região de validade e condições adicionais para estabilidade assintótica. Ler a formulação port-Hamiltoniana como aprofundamento. Sem necessidade de usar o formalismo inteiro para os projetos iniciais.",
+      "materialId": "EM-R04",
+      "afterTaskId": "EM09"
+    },
+    {
+      "id": "EM11",
+      "title": "Comparar um acionamento ideal com limites de tensão",
+      "topic": "Dinâmica eletromecânica",
+      "hours": 5,
+      "scenario": "2028.1",
+      "done": false,
+      "notes": "Entrega: simulação de um acionamento do motor CC com fonte limitada e comparação com o modelo de tensão ideal.\nPré-requisitos: EM07.\nVerificação: começar pelo modelo médio de uma ponte ideal, v = d·Vdc com −1 ≤ d ≤ 1. Comparar corrente, velocidade e esforço de controle diante de referências e cargas escolhidas.\nDocumentar as hipóteses do modelo médio, a relação com a escala temporal de chaveamento e o que ele não representa. Investigar o efeito da saturação na ação integral, se utilizada. Este é um laboratório computacional; equipamentos e medições reais podem ser incorporados depois.",
+      "materialId": "EM-R03",
+      "afterTaskId": "EM10"
+    },
+    {
+      "id": "EM12",
+      "title": "Identificar parâmetros e validar o modelo integrado",
+      "topic": "Métodos computacionais",
+      "hours": 5,
+      "scenario": "2028.1",
+      "done": false,
+      "notes": "Entrega: notebook de identificação com dados simulados, conjunto separado para validação e relatório de limitações.\nPré-requisitos: EM05, EM07, M05 e M13.\nVerificação: começar estimando R e L em um ensaio simulado de rotor travado, com parâmetros de referência conhecidos e excitação informativa. Separar os dados de ajuste dos dados de validação; comparar os parâmetros recuperados, os resíduos e a resposta prevista.\nAo incluir parâmetros mecânicos, discutir identificabilidade e condicionamento. Registrar ruído, sementes, unidades e critérios de aceitação. Sintetizar os projetos em um dossiê com hipóteses, equações, simulações, balanços de energia e análise de controle.",
+      "materialId": "EM-R03",
+      "afterTaskId": "M13"
+    }
+  ],
+  "materials": [
+    {
+      "id": "EM-R01",
+      "title": "MIT — Mecânica analítica: Lagrange, oscilações e Hamilton",
+      "type": "Curso",
+      "topic": "Mecânica clássica",
+      "author": "MIT OpenCourseWare · Matthew Evans",
+      "url": "https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/pages/lecture-notes/",
+      "answerUrl": "",
+      "notes": "Notas abertas de Classical Mechanics II, com exemplos computacionais em Mathematica. Selecionar os tópicos indicados em cada atividade; os arquivos de simulação são referências para reconstruir os modelos em Python. Conteúdo em inglês.",
+      "status": "Referência"
+    },
+    {
+      "id": "EM-R02",
+      "title": "MIT — Electromechanical Dynamics",
+      "type": "Livro digital",
+      "topic": "Dinâmica eletromecânica",
+      "author": "Herbert H. Woodson e James R. Melcher",
+      "url": "https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/",
+      "answerUrl": "https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/pages/solutions-manual/",
+      "notes": "Livro aberto. A Parte I reúne circuitos e mecânica, acoplamento eletromecânico, máquinas e dinâmica linear e não linear. O site também disponibiliza um manual de soluções pelo menu Solutions Manual. Selecionar os exercícios junto de suas soluções. Conteúdo em inglês.",
+      "status": "Referência"
+    },
+    {
+      "id": "EM-R03",
+      "title": "MIT — Modelagem e simulação de sistemas dinâmicos",
+      "type": "Curso",
+      "topic": "Dinâmica eletromecânica",
+      "author": "MIT OpenCourseWare · Neville Hogan",
+      "url": "https://ocw.mit.edu/courses/2-141-modeling-and-simulation-of-dynamic-systems-fall-2006/",
+      "answerUrl": "",
+      "notes": "Referência para modelos de diferentes domínios físicos, armazenamento e dissipação de energia, representações de estado, Lagrange e Hamilton. Utilizar como aprofundamento orientado pelos projetos. Conteúdo em inglês.",
+      "status": "Referência"
+    },
+    {
+      "id": "EM-R04",
+      "title": "Sistemas port-Hamiltonianos: modelagem e controle por energia",
+      "type": "Artigo",
+      "topic": "Dinâmica eletromecânica",
+      "author": "Arjan van der Schaft",
+      "url": "https://arxiv.org/abs/2412.19673",
+      "answerUrl": "",
+      "notes": "Port-Hamiltonian nonlinear systems. Referência de aprofundamento para interconexão, armazenamento de energia, dissipação e passividade. Ler depois de construir os modelos básicos e verificar seus balanços. Conteúdo em inglês.",
+      "status": "Referência"
+    },
+    {
+      "id": "EM-R05",
+      "title": "MIT — Campos eletromagnéticos: energia, potência e forças",
+      "type": "Curso",
+      "topic": "Eletromagnetismo",
+      "author": "Hermann A. Haus e James R. Melcher",
+      "url": "https://ocw.mit.edu/courses/res-6-001-electromagnetic-fields-and-energy-spring-2008/pages/chapter-11/",
+      "answerUrl": "",
+      "notes": "Capítulo aberto sobre armazenamento e fluxo de energia, dissipação, forças magnéticas e coenergia. Conectar a descrição de campos às variáveis de circuito, indicando as hipóteses de cada aproximação. Conteúdo em inglês.",
+      "status": "Referência"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Massa–mola–amortecedor e RLC",
+      "description": "Uma primeira conexão entre movimento, circuitos, oscilações e amortecimento.",
+      "taskIds": [
+        "EM01",
+        "EM02"
+      ],
+      "deliverable": "Duas derivações, comparação das respostas e casos de verificação.",
+      "level": "Base comum"
+    },
+    {
+      "title": "Motor de corrente contínua",
+      "description": "Corrente, torque, velocidade e força contraeletromotriz dentro do mesmo modelo.",
+      "taskIds": [
+        "EM04",
+        "EM05",
+        "EM07"
+      ],
+      "deliverable": "Modelo de estados, simulação, balanço de energia e uma malha de controle.",
+      "level": "Base comum"
+    },
+    {
+      "title": "Solenoide com núcleo móvel",
+      "description": "A posição altera a indutância, e a corrente altera a força aplicada à peça.",
+      "taskIds": [
+        "EM03",
+        "EM06",
+        "EM09"
+      ],
+      "deliverable": "Modelo por Lagrange, comparação com Hamilton e verificação das perdas.",
+      "level": "Base comum"
+    },
+    {
+      "title": "Pêndulo acionado por motor",
+      "description": "Integração da dinâmica elétrica com um mecanismo não linear.",
+      "taskIds": [
+        "EM08"
+      ],
+      "deliverable": "Modelos completo e linearizado, análise de equilíbrios e limites de atuação.",
+      "level": "Aprofundamento 2028.1"
+    },
+    {
+      "title": "Acionamento elétrico com limites",
+      "description": "Influência da tensão disponível e da saturação na resposta do conjunto.",
+      "taskIds": [
+        "EM11",
+        "EM12"
+      ],
+      "deliverable": "Comparação entre modelos, identificação com dados simulados e relatório de validade.",
+      "level": "Aprofundamento 2028.1"
+    },
+    {
+      "title": "Controle baseado em energia",
+      "description": "Reestudo do atuador usando armazenamento, portas e dissipação de energia.",
+      "taskIds": [
+        "EM09",
+        "EM10"
+      ],
+      "deliverable": "Balanço de potência e experimento de controle com análise de estabilidade.",
+      "level": "Aprofundamento 2028.1"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MIT — Mecânica analítica: Lagrange, oscilações e Hamilton",
+      "url": "https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/pages/lecture-notes/"
+    },
+    {
+      "title": "MIT — Electromechanical Dynamics",
+      "url": "https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/"
+    },
+    {
+      "title": "MIT — Modelagem e simulação de sistemas dinâmicos",
+      "url": "https://ocw.mit.edu/courses/2-141-modeling-and-simulation-of-dynamic-systems-fall-2006/"
+    },
+    {
+      "title": "Sistemas port-Hamiltonianos: modelagem e controle por energia",
+      "url": "https://arxiv.org/abs/2412.19673"
+    },
+    {
+      "title": "MIT — Campos eletromagnéticos: energia, potência e forças",
+      "url": "https://ocw.mit.edu/courses/res-6-001-electromagnetic-fields-and-energy-spring-2008/pages/chapter-11/"
+    }
+  ],
+  "existingBookIds": [
+    "newbook0",
+    "newbook2",
+    "B012",
+    "B054",
+    "B056",
+    "B057",
+    "B009"
+  ]
+}
