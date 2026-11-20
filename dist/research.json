@@ -1,0 +1,2854 @@
+{
+  "id": "research-foundations-20261120",
+  "title": "Pesquisa e leituras",
+  "intro": "Negatividade de Wigner sob perdas com controle de erro numérico: uma sequência de estudo que liga os fundamentos à defesa da proposta. Leia seletivamente, refaça as derivações e registre evidências de compreensão.",
+  "scopeNote": "Curadoria da proposta atual, do acervo e das referências recuperadas em chats e projetos pertinentes. Não é um inventário integral de todos os chats. Horas e semanas são estimativas de planejamento, ajustáveis; não são duração oficial dos cursos nem datas de seleção. Materiais autorais de estudo, sem caráter de prova oficial.",
+  "scenarioGuidance": {
+    "2027.2": "Primeira passagem concentrada em 25 semanas a partir da data-base. Priorize os fundamentos, artigos essenciais, comparadores de Kerr e ensaio da defesa. Leituras complementares ficam como consulta; planeje estas atividades dentro da carga configurada, sem somar outro curso paralelo.",
+    "2028.1": "Percurso em 51 semanas: o mesmo núcleo, com leituras complementares, segunda quantização seletiva, reproduções e revisões. Os pré-requisitos valem mesmo quando o plano prioriza assuntos com menor acerto."
+  },
+  "verifiedAt": "2026-11-20",
+  "courseAccessNote": "Três conjuntos oficiais de 10 problemas, mais série e videoaulas de apoio. Horas são estimativas ajustáveis do Órbita, não durações declaradas pelo fornecedor. Acesso aos conjuntos e soluções depende da conta na plataforma.",
+  "tasks": [
+    {
+      "id": "task-pm-postulates",
+      "title": "Professor M · The postulates of quantum mechanics",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 4,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-postulates",
+      "notes": "Reescrever os postulados e calcular probabilidades e valores esperados em uma base de dois estados.\nPré-requisitos: Álgebra linear: vetores complexos, produto interno e autovalores.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "F11",
+      "prerequisiteIds": [
+        "M01",
+        "F11"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-pm-oscillator-1",
+      "title": "Professor M · Quantum Harmonic Oscillator I",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 12,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-oscillator-1",
+      "notes": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar os problemas sobre autofunções e transformação de Fourier; confrontar as soluções após tentativa própria.\nPré-requisitos: Postulados, equação de Schrödinger e transformada de Fourier.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "task-pm-postulates",
+      "prerequisiteIds": [
+        "task-pm-postulates"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-pm-oscillator-2",
+      "title": "Professor M · Quantum Harmonic Oscillator II",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 12,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-oscillator-2",
+      "notes": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Derivar a incerteza de um estado de Fock e comparar a evolução de um observável nos quadros de Schrödinger e Heisenberg.\nPré-requisitos: Quantum Harmonic Oscillator I e álgebra de comutadores.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "task-pm-oscillator-1",
+      "prerequisiteIds": [
+        "task-pm-oscillator-1"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-lesson-base",
+      "title": "Estudar o caderno · Da base de Fock ao operador densidade",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-base",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "task-pm-oscillator-2",
+      "prerequisiteIds": [
+        "task-pm-oscillator-2"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-book-newbook0",
+      "title": "Leitura seletiva · Um Curso de Álgebra Linear",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "newbook0",
+      "notes": "Espaços vetoriais, produto interno, operadores, autovalores, diagonalização e formas quadráticas; localizar no sumário da edição.\nEntrega: Diagonalizar uma matriz densidade 2×2 e distinguir positividade de normalização.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-lesson-base",
+      "prerequisiteIds": [
+        "task-lesson-base"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-book-B043",
+      "title": "Leitura seletiva · Introdução à Computação e Informação Quântica: Incluindo Álgebra Linear com Kets e Bras",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "B043",
+      "notes": "Kets e bras, operadores, medida, estados puros/mistos e matriz densidade, conforme sumário.\nEntrega: Construir uma superposição e a mistura correspondente; comparar suas matrizes densidade.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-book-newbook0",
+      "prerequisiteIds": [
+        "task-book-newbook0"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-book-project-fast-wave",
+      "title": "Leitura seletiva · Fast Wave: Um pacote Python para um cálculo eficiente e preciso de funções de onda de estados de Fock",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "project-fast-wave",
+      "notes": "Formulação do oscilador, representação de Fock, estratégia híbrida e protocolo experimental. Confrontar com limitações numéricas registradas na proposta atual.\nEntrega: Preparar uma página 'o que o mestrado já demonstra / o que o doutorado ainda deve demonstrar'.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-book-B043",
+      "prerequisiteIds": [
+        "task-book-B043"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-research-perez-jorda-2018",
+      "title": "Ler e fichar · On the recursive solution of the quantum harmonic oscillator",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-perez-jorda-2018",
+      "notes": "Ler primeiro: Recorrência das funções normalizadas e condições iniciais; conferir convenções com o NIST DLMF.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Derivar ψ₀, ψ₁ e a recorrência; comparar cálculo direto e recorrente em baixa ordem e diagnosticar underflow da semente.\nA recorrência matemática não garante estabilidade em qualquer ordem ou posição; verificar precisão e sementes numericamente.",
+      "afterTaskId": "task-book-project-fast-wave",
+      "prerequisiteIds": [
+        "task-book-project-fast-wave"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-research-celeghini-2021",
+      "title": "Ler e fichar · Hermite Functions and Fourier Series",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 2,
+      "done": false,
+      "scenario": "2028.1",
+      "materialId": "research-celeghini-2021",
+      "notes": "Ler primeiro: Seção 2, The Hermite Functions and the Fourier Transform; avançar às seções 4–5 apenas após consolidar a base.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Explicar por que Hermite é base natural do oscilador e conferir a ação de Fourier em funções de baixa ordem.\nEspaços de Hilbert equipados e operadores avançados são aprofundamento, não pré-requisito do núcleo da proposta.",
+      "afterTaskId": "task-research-perez-jorda-2018",
+      "prerequisiteIds": [
+        "task-research-perez-jorda-2018"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-quiz-base",
+      "title": "Responder e revisar · Diagnóstico: estados e operadores",
+      "topic": "Base quântica, Fock e Hermite",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-base",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-research-celeghini-2021",
+      "prerequisiteIds": [
+        "task-research-perez-jorda-2018"
+      ],
+      "startWeeks": {
+        "2027.2": 1,
+        "2028.1": 1
+      }
+    },
+    {
+      "id": "task-pm-pure-mixed",
+      "title": "Professor M · Pure vs. mixed quantum states",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-pure-mixed",
+      "notes": "Construir uma matriz densidade pura e uma mistura; calcular traço, pureza e médias.\nPré-requisitos: Postulados e operadores.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "F12",
+      "prerequisiteIds": [
+        "task-quiz-base"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-pm-coherent",
+      "title": "Professor M · Coherent state wave function || Maths",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-coherent",
+      "notes": "Reproduzir a derivação e explicar a diferença entre um estado coerente e uma superposição de dois estados coerentes.\nPré-requisitos: Oscilador, operadores de escada, operador deslocamento e funções de onda.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "task-pm-pure-mixed",
+      "prerequisiteIds": [
+        "task-pm-pure-mixed"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-pm-second-quantization",
+      "title": "Professor M · Second Quantization",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 12,
+      "done": false,
+      "scenario": "both",
+      "materialId": "pm-second-quantization",
+      "notes": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar tópicos de operador número e operadores em bases distintas; distinguir comutação bosônica de anticomutação fermiônica.\nPré-requisitos: Operadores de criação/aniquilação, Fock e matriz densidade.\nHoras são orçamento inicial ajustável; não duração oficial.",
+      "afterTaskId": "task-pm-coherent",
+      "prerequisiteIds": [
+        "task-pm-coherent"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-lesson-wigner",
+      "title": "Estudar o caderno · O que a negatividade de Wigner mede",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-wigner",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "task-pm-second-quantization",
+      "prerequisiteIds": [
+        "task-pm-second-quantization"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-book-book-navarrete",
+      "title": "Leitura seletiva · Introduction to Quantum Optics",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "book-navarrete",
+      "notes": "Revisão de mecânica quântica, oscilador/campo e, em seguida, sistemas abertos; leitura seletiva para monomodo.\nEntrega: Fichar a passagem de estados/operadores à descrição dissipativa e formular o caso de perda pura.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-lesson-wigner",
+      "prerequisiteIds": [
+        "task-lesson-wigner"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-research-royer-1977",
+      "title": "Ler e fichar · Wigner function as the expectation value of a parity operator",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-royer-1977",
+      "notes": "Ler primeiro: Artigo curto: interpretação de paridade deslocada e convenções de normalização.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Derivar W(0,0) do vácuo e de |1⟩ nas convenções da proposta.\n",
+      "afterTaskId": "task-book-book-navarrete",
+      "prerequisiteIds": [
+        "task-book-book-navarrete"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-research-kenfack-2004",
+      "title": "Ler e fichar · Negativity of the Wigner function as an indicator of non-classicality",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-kenfack-2004",
+      "notes": "Ler primeiro: Seção II; depois IV (Fock), III (gatos) e conclusões.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Reproduzir o caso |1⟩ e converter o indicador do artigo para δ=∫max(0,−W).\nO indicador do artigo é 2δ. Wigner positiva não implica classicidade em todos os sentidos.",
+      "afterTaskId": "task-research-royer-1977",
+      "prerequisiteIds": [
+        "task-research-royer-1977"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-research-wigner-1932",
+      "title": "Ler e fichar · On the Quantum Correction For Thermodynamic Equilibrium",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "2028.1",
+      "materialId": "research-wigner-1932",
+      "notes": "Ler primeiro: Motivação inicial e definição da representação; reservar expansão térmica para uma segunda leitura.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Escrever um parágrafo ligando a formulação histórica às convenções modernas.\n",
+      "afterTaskId": "task-research-kenfack-2004",
+      "prerequisiteIds": [
+        "task-research-kenfack-2004"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-research-albarelli-2018",
+      "title": "Ler e fichar · Resource theory of quantum non-Gaussianity and Wigner negativity",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-albarelli-2018",
+      "notes": "Ler primeiro: Estados e operações livres; definição da negatividade logarítmica; exemplos de gatos.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Montar tabela: recurso, operações permitidas e afirmação sustentada pelo indicador.\nA relevância de um recurso depende da tarefa e das operações; maior negatividade não garante vantagem universal.",
+      "afterTaskId": "task-research-wigner-1932",
+      "prerequisiteIds": [
+        "task-research-kenfack-2004"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-quiz-wigner",
+      "title": "Responder e revisar · Diagnóstico: convenções e negatividade",
+      "topic": "Wigner, negatividade e recursos",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-wigner",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-research-albarelli-2018",
+      "prerequisiteIds": [
+        "task-research-albarelli-2018"
+      ],
+      "startWeeks": {
+        "2027.2": 8,
+        "2028.1": 11
+      }
+    },
+    {
+      "id": "task-lesson-perdas",
+      "title": "Estudar o caderno · Perda pura, Lindblad e controles físicos",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-perdas",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "D06",
+      "prerequisiteIds": [
+        "task-quiz-wigner"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-research-li-2010",
+      "title": "Ler e fichar · A comparison of two nonclassical measures, entanglement potential and the negativity of the Wigner function",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-li-2010",
+      "notes": "Ler primeiro: Definições dos dois indicadores e resultados para Fock/gatos.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Descrever o que já foi comparado e quais controles de energia e erro a proposta precisa acrescentar.\n",
+      "afterTaskId": "task-lesson-perdas",
+      "prerequisiteIds": [
+        "task-lesson-perdas"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-research-nugmanov-2022",
+      "title": "Ler e fichar · Robustness of negativity of the Wigner function to dissipation",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-nugmanov-2022",
+      "notes": "Ler primeiro: Quasi-probability distributions; Sufficient condition; Rate of the negativity degradation.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Explicar η=1/2 e construir um exemplo que impeça estender a suficiência a misturas arbitrárias.\nA suficiência de η>1/2 refere-se a entradas puras não gaussianas. O artigo usa também o mínimo de W, que não é o volume negativo.",
+      "afterTaskId": "task-research-li-2010",
+      "prerequisiteIds": [
+        "task-research-li-2010"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-research-lindblad-1976",
+      "title": "Ler e fichar · On the generators of quantum dynamical semigroups",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 2,
+      "done": false,
+      "scenario": "2028.1",
+      "materialId": "research-lindblad-1976",
+      "notes": "Ler primeiro: Resumo e forma do gerador; estudar primeiro uma apresentação didática de sistemas abertos.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Identificar H e o operador de salto √κ a no modelo da proposta; verificar preservação do traço.\nO resultado do artigo tem hipóteses funcionais específicas; não transferir automaticamente teoremas de geradores limitados ao oscilador infinito.",
+      "afterTaskId": "task-research-nugmanov-2022",
+      "prerequisiteIds": [
+        "task-research-nugmanov-2022"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-lab-controles",
+      "title": "Reproduzir · Laboratório 1 — Fock e perda com referência analítica",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 3,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lab-controles",
+      "notes": "Registrar código, versões, parâmetros, resultados e quais verificações são empíricas ou rigorosas. Espera-se aproximação das referências analíticas conforme os parâmetros são refinados. O resultado a entregar é a evidência medida, inclusive falhas ou convergência não monotônica; nenhum número de desempenho é pressuposto.",
+      "afterTaskId": "task-research-lindblad-1976",
+      "prerequisiteIds": [
+        "task-research-nugmanov-2022"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-quiz-perdas",
+      "title": "Responder e revisar · Diagnóstico: perda pura e dissipação",
+      "topic": "Perdas, canais e Lindblad",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-perdas",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-lab-controles",
+      "prerequisiteIds": [
+        "task-lab-controles"
+      ],
+      "startWeeks": {
+        "2027.2": 11,
+        "2028.1": 19
+      }
+    },
+    {
+      "id": "task-lesson-numerica",
+      "title": "Estudar o caderno · Do refinamento a uma decisão com erro controlado",
+      "topic": "Controle de erro e referências numéricas",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-numerica",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "D05",
+      "prerequisiteIds": [
+        "task-quiz-perdas"
+      ],
+      "startWeeks": {
+        "2027.2": 14,
+        "2028.1": 26
+      }
+    },
+    {
+      "id": "task-book-B001",
+      "title": "Leitura seletiva · Métodos Numéricos",
+      "topic": "Controle de erro e referências numéricas",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "B001",
+      "notes": "Arredondamento, cancelamento, quadratura, EDO e convergência; capítulos conforme edição.\nEntrega: Separar erros de corte, domínio, quadratura, aritmética e propagação em uma tabela de auditoria.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-lesson-numerica",
+      "prerequisiteIds": [
+        "task-lesson-numerica"
+      ],
+      "startWeeks": {
+        "2027.2": 14,
+        "2028.1": 26
+      }
+    },
+    {
+      "id": "task-research-fuchs-1998",
+      "title": "Ler e fichar · Cryptographic Distinguishability Measures for Quantum Mechanical States",
+      "topic": "Controle de erro e referências numéricas",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-fuchs-1998",
+      "notes": "Ler primeiro: Definições das distâncias quânticas e desigualdades entre fidelidade e distância de traço.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Derivar a cota de truncamento com convenção de fidelidade explícita e explicar por que um limite pontual não pode ser integrado numa área infinita.\nRegistrar se fidelidade significa amplitude ou seu quadrado; distinguir distância de traço de norma de traço.",
+      "afterTaskId": "task-book-B001",
+      "prerequisiteIds": [
+        "task-book-B001"
+      ],
+      "startWeeks": {
+        "2027.2": 14,
+        "2028.1": 26
+      }
+    },
+    {
+      "id": "task-research-qutip5-2026",
+      "title": "Ler e fichar · QuTiP 5: The Quantum Toolbox in Python",
+      "topic": "Controle de erro e referências numéricas",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-qutip5-2026",
+      "notes": "Ler primeiro: Qobj, solvers de equação mestra e exemplos; em paralelo, documentação oficial de wigner.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Registrar versão, convenções e método Wigner; reproduzir vácuo e |1⟩ com referência independente.\nUma biblioteca de referência não é um certificado universal; comparar erro final e convenções, além de tempo.",
+      "afterTaskId": "task-research-fuchs-1998",
+      "prerequisiteIds": [
+        "task-research-fuchs-1998"
+      ],
+      "startWeeks": {
+        "2027.2": 14,
+        "2028.1": 26
+      }
+    },
+    {
+      "id": "task-quiz-numerica",
+      "title": "Responder e revisar · Diagnóstico: intervalos e evidência numérica",
+      "topic": "Controle de erro e referências numéricas",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-numerica",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-research-qutip5-2026",
+      "prerequisiteIds": [
+        "task-research-qutip5-2026"
+      ],
+      "startWeeks": {
+        "2027.2": 14,
+        "2028.1": 26
+      }
+    },
+    {
+      "id": "task-lesson-kerr",
+      "title": "Estudar o caderno · Kerr dissipativo: reproduzir antes de reivindicar",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-kerr",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "D06",
+      "prerequisiteIds": [
+        "task-quiz-numerica"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-research-milburn-1986",
+      "title": "Ler e fichar · Dissipative Quantum and Classical Liouville Mechanics of the Anharmonic Oscillator",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 2.5,
+      "done": false,
+      "scenario": "2028.1",
+      "materialId": "research-milburn-1986",
+      "notes": "Ler primeiro: Modelo dissipativo, solução e interpretação das recorrências.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Identificar os limites sem perda e sem não linearidade antes de reproduzir uma trajetória.\n",
+      "afterTaskId": "task-lesson-kerr",
+      "prerequisiteIds": [
+        "task-lesson-kerr"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-research-stobinska-2008",
+      "title": "Ler e fichar · Wigner function evolution of quantum states in the presence of self-Kerr interaction",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 2.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-stobinska-2008",
+      "notes": "Ler primeiro: Modelo e equação de evolução; resultados com estado coerente; discussão de dissipação.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Reproduzir qualitativamente uma evolução pequena e separar geração unitária de interferência e sua dissipação.\n",
+      "afterTaskId": "task-research-milburn-1986",
+      "prerequisiteIds": [
+        "task-lesson-kerr"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-research-rosiek-2024",
+      "title": "Ler e fichar · Quadrature Squeezing Enhances Wigner Negativity in a Mechanical Duffing Oscillator",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 2.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-rosiek-2024",
+      "notes": "Ler primeiro: Seções II–III; Apêndice E e Fig. 8 sobre corte, domínio, malha e máximo temporal.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Criar matriz comparando os controles do Apêndice E com cada parcela de erro proposta.\nUsa [X,Y]=i/2. Converter quadraturas para [q,p]=i; convergência por refinamento não equivale a cota rigorosa de erro total.",
+      "afterTaskId": "task-research-stobinska-2008",
+      "prerequisiteIds": [
+        "task-research-stobinska-2008"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-research-raza-2026",
+      "title": "Ler e fichar · Robust negativity in the quantum-to-classical transition of Kerr dynamics",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 2.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-raza-2026",
+      "notes": "Ler primeiro: Seções II–V; Apêndice C; Apêndice D.1–D.2.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Tabela: resultado conhecido, método usado, limitação observada e diferença verificável que o projeto pretende testar.\nO indicador N=∫|W|−1 é 2δ da proposta. Robustez em Kerr com perda e aceleração isolada não são novidades por si.",
+      "afterTaskId": "task-research-rosiek-2024",
+      "prerequisiteIds": [
+        "task-research-rosiek-2024"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-lab-kerr",
+      "title": "Reproduzir · Laboratório 2 — Separar os erros na dinâmica de Kerr",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 3,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lab-kerr",
+      "notes": "Registrar código, versões, parâmetros, resultados e quais verificações são empíricas ou rigorosas. Um relatório curto separando referências exatas, estimativas do solver e concordância empírica. A entrega inclui uma tabela de sensibilidade por fonte de erro e uma lista explícita do que ainda falta para um intervalo rigoroso.",
+      "afterTaskId": "task-research-raza-2026",
+      "prerequisiteIds": [
+        "task-research-raza-2026"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-quiz-kerr",
+      "title": "Responder e revisar · Diagnóstico: dinâmica de Kerr e reprodução",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-kerr",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-lab-kerr",
+      "prerequisiteIds": [
+        "task-lab-kerr"
+      ],
+      "startWeeks": {
+        "2027.2": 17,
+        "2028.1": 33
+      }
+    },
+    {
+      "id": "task-lesson-decisao",
+      "title": "Estudar o caderno · Selecionar simulações, medir custo e defender o recorte",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 1.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lesson-decisao",
+      "notes": "Refazer o exemplo sem consultar a solução; resolver os dois exercícios e registrar as dificuldades.",
+      "afterTaskId": "D07",
+      "prerequisiteIds": [
+        "task-quiz-kerr"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-book-newbook1",
+      "title": "Leitura seletiva · Noções de Probabilidade e Estatística — 8ª edição",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "newbook1",
+      "notes": "Probabilidade condicional, vetores aleatórios, distribuição normal, covariância e inferência; preparar GP.\nEntrega: Explicar a diferença entre incerteza estatística de um preditor e limite determinístico do erro numérico.\nUse um texto principal por tema; alternativas não são carga adicional obrigatória.",
+      "afterTaskId": "task-lesson-decisao",
+      "prerequisiteIds": [
+        "task-lesson-decisao"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-research-gpml-2006",
+      "title": "Ler e fichar · Gaussian Processes for Machine Learning",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-gpml-2006",
+      "notes": "Ler primeiro: Cap. 2 (regressão); 4 (covariâncias); 5 (hiperparâmetros). Consultar apêndice A conforme necessário.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Implementar regressão em função conhecida e interpretar média, variância e efeito dos hiperparâmetros.\nIncerteza preditiva estatística não é cota do erro numérico nem certificado físico.",
+      "afterTaskId": "task-book-newbook1",
+      "prerequisiteIds": [
+        "task-book-newbook1"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-research-gotovos-2013",
+      "title": "Ler e fichar · Active Learning for Level Set Estimation",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 2,
+      "done": false,
+      "scenario": "both",
+      "materialId": "research-gotovos-2013",
+      "notes": "Ler primeiro: Definição do problema; algoritmo LSE e hipóteses; experimento que compara LSE e straddle.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Comparar grade, aleatório e aquisição ativa com auditoria fixa; manter classificação física pelos limites L e U.\nLSE não é sinônimo de straddle. O artigo atribui straddle a Bryan et al. (2005); a heurística modificada da proposta não herda automaticamente garantias de LSE.",
+      "afterTaskId": "task-research-gpml-2006",
+      "prerequisiteIds": [
+        "task-research-gpml-2006"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-research-zhang-2024",
+      "title": "Ler e fichar · Artificial-Intelligence-Based Surrogate Solution of Dissipative Quantum Dynamics: Physics-Informed Reconstruction of the Universal Propagator",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 2,
+      "done": false,
+      "scenario": "2028.1",
+      "materialId": "research-zhang-2024",
+      "notes": "Ler primeiro: Motivação, objeto aprendido e protocolo de avaliação; detalhes de arquitetura são segunda passagem.\nFichamento: problema; hipóteses; convenções; resultado demonstrado; limitação; relação com a proposta.\nEntrega: Explicar em uma página por que o projeto usa GP como seletor, preservando o solver físico.\nNão ampliar o escopo para redes neurais ou operadores neurais: usar como contraste bibliográfico.",
+      "afterTaskId": "task-research-gotovos-2013",
+      "prerequisiteIds": [
+        "task-research-gotovos-2013"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-lab-aquisicao",
+      "title": "Reproduzir · Laboratório 3 — Aquisição por GP com um alvo verificável",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 3,
+      "done": false,
+      "scenario": "both",
+      "materialId": "lab-aquisicao",
+      "notes": "Registrar código, versões, parâmetros, resultados e quais verificações são empíricas ou rigorosas. Um comparativo reproduzível das estratégias para um alvo conhecido. Nenhuma superioridade do GP ou da GPU é pressuposta; resultados sem vantagem são conclusões válidas do experimento.",
+      "afterTaskId": "task-research-zhang-2024",
+      "prerequisiteIds": [
+        "task-research-gotovos-2013"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "task-quiz-decisao",
+      "title": "Responder e revisar · Diagnóstico: GP, custo e defesa",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 0.5,
+      "done": false,
+      "scenario": "both",
+      "materialId": "quiz-decisao",
+      "notes": "Responder sem consultar o caderno; corrigir; salvar o resultado explicitamente; revisar os erros. Marcar este checklist apenas após a revisão.",
+      "afterTaskId": "task-lab-aquisicao",
+      "prerequisiteIds": [
+        "task-lab-aquisicao"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    },
+    {
+      "id": "research-defense",
+      "title": "Ensaiar a defesa e justificar a contribuição candidata",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "hours": 3,
+      "done": false,
+      "scenario": "both",
+      "materialId": "SLIDES",
+      "notes": "Preparar apresentação de até 20 minutos; simular arguição; comparar a proposta com Rosiek e Raza; separar hipóteses, resultados anteriores, estimativas e garantias. Usar o simulado autoral já cadastrado. Confirmar formato no edital futuro.",
+      "afterTaskId": "task-quiz-decisao",
+      "prerequisiteIds": [
+        "task-quiz-decisao"
+      ],
+      "startWeeks": {
+        "2027.2": 21,
+        "2028.1": 43
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "research-perez-jorda-2018",
+      "title": "On the recursive solution of the quantum harmonic oscillator (2018)",
+      "type": "Artigo",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "José M. Pérez-Jordá",
+      "url": "https://doi.org/10.1088/1361-6404/aa9584",
+      "answerUrl": "",
+      "notes": "Referência recuperada dos chats e do projeto FAST WAVE. Referência confirmada na documentação oficial do QuTiP e manuscrito aceito indexado; página IOP indisponível nesta verificação. Edição 39(1),015402 de 2018; publicação online/aceite em 2017.\nReconecta a preparação ao fundamento recorrente do FAST WAVE e à avaliação direta das funções do oscilador.\nLer primeiro: Recorrência das funções normalizadas e condições iniciais; conferir convenções com o NIST DLMF.\nEntrega: Derivar ψ₀, ψ₁ e a recorrência; comparar cálculo direto e recorrente em baixa ordem e diagnosticar underflow da semente.\nA recorrência matemática não garante estabilidade em qualquer ordem ou posição; verificar precisão e sementes numericamente.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-celeghini-2021",
+      "title": "Hermite Functions and Fourier Series (2021)",
+      "type": "Artigo",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Enrico Celeghini; Manuel Gadella; Mariano A. del Olmo",
+      "url": "https://www.mdpi.com/2073-8994/13/5/853",
+      "answerUrl": "",
+      "notes": "Referência recuperada dos chats e da dissertação FAST WAVE. Metadados e texto integral confirmados na editora; Symmetry 13(5),853 (2021), arXiv:2007.10406.\nAprofunda a ponte entre funções de Hermite, representações e Fourier presente no projeto e nos estudos anteriores.\nLer primeiro: Seção 2, The Hermite Functions and the Fourier Transform; avançar às seções 4–5 apenas após consolidar a base.\nEntrega: Explicar por que Hermite é base natural do oscilador e conferir a ação de Fourier em funções de baixa ordem.\nEspaços de Hilbert equipados e operadores avançados são aprofundamento, não pré-requisito do núcleo da proposta.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-royer-1977",
+      "title": "Wigner function as the expectation value of a parity operator (1977)",
+      "type": "Artigo",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Antoine Royer",
+      "url": "https://doi.org/10.1103/PhysRevA.15.449",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.\nRelaciona Wigner a um observável de paridade; é a ponte para limites de erro via norma do estado.\nLer primeiro: Artigo curto: interpretação de paridade deslocada e convenções de normalização.\nEntrega: Derivar W(0,0) do vácuo e de |1⟩ nas convenções da proposta.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-kenfack-2004",
+      "title": "Negativity of the Wigner function as an indicator of non-classicality (2004)",
+      "type": "Artigo",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Anatole Kenfack; Karol Życzkowski",
+      "url": "https://arxiv.org/abs/quant-ph/0406015",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e texto aberto conferidos no arXiv.\nDefine o indicador de negatividade e fornece controles de Fock e gatos para a preparação.\nLer primeiro: Seção II; depois IV (Fock), III (gatos) e conclusões.\nEntrega: Reproduzir o caso |1⟩ e converter o indicador do artigo para δ=∫max(0,−W).\nO indicador do artigo é 2δ. Wigner positiva não implica classicidade em todos os sentidos.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-wigner-1932",
+      "title": "On the Quantum Correction For Thermodynamic Equilibrium (1932)",
+      "type": "Artigo",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Eugene Wigner",
+      "url": "https://doi.org/10.1103/PhysRev.40.749",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.\nContextualiza a origem da representação no espaço de fases.\nLer primeiro: Motivação inicial e definição da representação; reservar expansão térmica para uma segunda leitura.\nEntrega: Escrever um parágrafo ligando a formulação histórica às convenções modernas.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-albarelli-2018",
+      "title": "Resource theory of quantum non-Gaussianity and Wigner negativity (2018)",
+      "type": "Artigo",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Francesco Albarelli; Marco G. Genoni; Matteo G. A. Paris; Alessandro Ferraro",
+      "url": "https://arxiv.org/abs/1804.05763",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e acesso aberto conferidos no arXiv e na APS.\nAjuda a justificar o indicador sem confundir negatividade, não gaussianidade e vantagem operacional.\nLer primeiro: Estados e operações livres; definição da negatividade logarítmica; exemplos de gatos.\nEntrega: Montar tabela: recurso, operações permitidas e afirmação sustentada pelo indicador.\nA relevância de um recurso depende da tarefa e das operações; maior negatividade não garante vantagem universal.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-li-2010",
+      "title": "A comparison of two nonclassical measures, entanglement potential and the negativity of the Wigner function (2010)",
+      "type": "Artigo",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "Jie Li; Gang Li; Jun-Min Wang; Shi-Yao Zhu; Tian-Cai Zhang",
+      "url": "https://doi.org/10.1088/0953-4075/43/8/085504",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e resumo confirmados no repositório institucional HKBU; PDF institucional localizado, mas download não confirmado.\nÉ antecedente direto da comparação de Fock e gatos durante decoerência.\nLer primeiro: Definições dos dois indicadores e resultados para Fock/gatos.\nEntrega: Descrever o que já foi comparado e quais controles de energia e erro a proposta precisa acrescentar.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-nugmanov-2022",
+      "title": "Robustness of negativity of the Wigner function to dissipation (2022)",
+      "type": "Artigo",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "B. Nugmanov; N. Zunikov; F. Ya. Khalili",
+      "url": "https://arxiv.org/abs/2201.03257",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Preprint arXiv confirmado; prova e hipóteses conferidas no texto.\nSepara persistência matemática da negatividade de sua magnitude após a perda.\nLer primeiro: Quasi-probability distributions; Sufficient condition; Rate of the negativity degradation.\nEntrega: Explicar η=1/2 e construir um exemplo que impeça estender a suficiência a misturas arbitrárias.\nA suficiência de η>1/2 refere-se a entradas puras não gaussianas. O artigo usa também o mínimo de W, que não é o volume negativo.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-lindblad-1976",
+      "title": "On the generators of quantum dynamical semigroups (1976)",
+      "type": "Artigo",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "Göran Lindblad",
+      "url": "https://doi.org/10.1007/BF01608499",
+      "answerUrl": "",
+      "notes": "Complemento sugerido nesta curadoria. Metadados e resumo confirmados na Springer; texto integral pode exigir acesso institucional.\nFornece a origem matemática da equação mestra markoviana usada na dinâmica dissipativa.\nLer primeiro: Resumo e forma do gerador; estudar primeiro uma apresentação didática de sistemas abertos.\nEntrega: Identificar H e o operador de salto √κ a no modelo da proposta; verificar preservação do traço.\nO resultado do artigo tem hipóteses funcionais específicas; não transferir automaticamente teoremas de geradores limitados ao oscilador infinito.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-fuchs-1998",
+      "title": "Cryptographic Distinguishability Measures for Quantum Mechanical States (1998)",
+      "type": "Artigo",
+      "topic": "Controle de erro e referências numéricas",
+      "author": "Christopher A. Fuchs; Jeroen van de Graaf",
+      "url": "https://arxiv.org/abs/quant-ph/9712042v2",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Versão arXiv v2 de 1998 confirmada; versão publicada de 1999 existe.\nFundamenta a passagem entre fidelidade e distância de traço utilizada para controlar truncamento.\nLer primeiro: Definições das distâncias quânticas e desigualdades entre fidelidade e distância de traço.\nEntrega: Derivar a cota de truncamento com convenção de fidelidade explícita e explicar por que um limite pontual não pode ser integrado numa área infinita.\nRegistrar se fidelidade significa amplitude ou seu quadrado; distinguir distância de traço de norma de traço.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-qutip5-2026",
+      "title": "QuTiP 5: The Quantum Toolbox in Python (2026)",
+      "type": "Artigo",
+      "topic": "Controle de erro e referências numéricas",
+      "author": "Neill Lambert e colaboradores",
+      "url": "https://arxiv.org/abs/2412.04705",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Artigo de 2026 confirmado pelo arXiv e página oficial de citações do QuTiP.\nEstabelece uma referência computacional adequada para estados, evolução e comparações reproduzíveis.\nLer primeiro: Qobj, solvers de equação mestra e exemplos; em paralelo, documentação oficial de wigner.\nEntrega: Registrar versão, convenções e método Wigner; reproduzir vácuo e |1⟩ com referência independente.\nUma biblioteca de referência não é um certificado universal; comparar erro final e convenções, além de tempo.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-milburn-1986",
+      "title": "Dissipative Quantum and Classical Liouville Mechanics of the Anharmonic Oscillator (1986)",
+      "type": "Artigo",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "G. J. Milburn; C. A. Holmes",
+      "url": "https://doi.org/10.1103/PhysRevLett.56.2237",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.\nAntecedente da dinâmica do oscilador anarmônico acoplado a banho a temperatura zero.\nLer primeiro: Modelo dissipativo, solução e interpretação das recorrências.\nEntrega: Identificar os limites sem perda e sem não linearidade antes de reproduzir uma trajetória.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-stobinska-2008",
+      "title": "Wigner function evolution of quantum states in the presence of self-Kerr interaction (2008)",
+      "type": "Artigo",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Magdalena Stobińska; G. J. Milburn; Krzysztof Wódkiewicz",
+      "url": "https://arxiv.org/abs/quant-ph/0605166",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. PRA 2008 e preprint v4 de 2008 confirmados no arXiv.\nConecta dinâmica Kerr, interferência no espaço de fases e efeitos dissipativos.\nLer primeiro: Modelo e equação de evolução; resultados com estado coerente; discussão de dissipação.\nEntrega: Reproduzir qualitativamente uma evolução pequena e separar geração unitária de interferência e sua dissipação.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-rosiek-2024",
+      "title": "Quadrature Squeezing Enhances Wigner Negativity in a Mechanical Duffing Oscillator (2024)",
+      "type": "Artigo",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Christian A. Rosiek; Massimiliano Rossi; Albert Schliesser; Anders S. Sørensen",
+      "url": "https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.5.030312",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Publicação PRX Quantum 2024, texto aberto e Apêndice E conferidos.\nMostra geração de negatividade e um protocolo de convergência numérica que deve ser confrontado com a contribuição pretendida.\nLer primeiro: Seções II–III; Apêndice E e Fig. 8 sobre corte, domínio, malha e máximo temporal.\nEntrega: Criar matriz comparando os controles do Apêndice E com cada parcela de erro proposta.\nUsa [X,Y]=i/2. Converter quadraturas para [q,p]=i; convergência por refinamento não equivale a cota rigorosa de erro total.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-raza-2026",
+      "title": "Robust negativity in the quantum-to-classical transition of Kerr dynamics (2026)",
+      "type": "Artigo",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Mohsin Raza; John B. DeBrota; Ariel Shlosberg; Noah Lordi; Ivan H. Deutsch",
+      "url": "https://arxiv.org/abs/2602.05223",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. PRA 114, 013708 (2026) e arXiv v2 de 10/07/2026 confirmados.\nDelimita resultados já conhecidos sobre escalas de tempo, negatividade robusta sob perda e custo numérico.\nLer primeiro: Seções II–V; Apêndice C; Apêndice D.1–D.2.\nEntrega: Tabela: resultado conhecido, método usado, limitação observada e diferença verificável que o projeto pretende testar.\nO indicador N=∫|W|−1 é 2δ da proposta. Robustez em Kerr com perda e aceleração isolada não são novidades por si.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-gpml-2006",
+      "title": "Gaussian Processes for Machine Learning (2006)",
+      "type": "Livro",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Carl Edward Rasmussen; Christopher K. I. Williams",
+      "url": "https://gaussianprocess.org/gpml/chapters/RW.pdf",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Livro de 2006 e acesso autorizado integral confirmados no site dos autores.\nPrepara regressão probabilística e seleção de simulações sem substituir o validador físico.\nLer primeiro: Cap. 2 (regressão); 4 (covariâncias); 5 (hiperparâmetros). Consultar apêndice A conforme necessário.\nEntrega: Implementar regressão em função conhecida e interpretar média, variância e efeito dos hiperparâmetros.\nIncerteza preditiva estatística não é cota do erro numérico nem certificado físico.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-gotovos-2013",
+      "title": "Active Learning for Level Set Estimation (2013)",
+      "type": "Artigo",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Alkis Gotovos; Nathalie Casati; Gregory Hitz; Andreas Krause",
+      "url": "https://las.inf.ethz.ch/files/gotovos13active.pdf",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Proceedings IJCAI oficial e texto dos autores conferidos; páginas oficiais 1344–1349.\nFundamenta a estimação de regiões acima de um limiar e permite formular comparações justas de aquisição.\nLer primeiro: Definição do problema; algoritmo LSE e hipóteses; experimento que compara LSE e straddle.\nEntrega: Comparar grade, aleatório e aquisição ativa com auditoria fixa; manter classificação física pelos limites L e U.\nLSE não é sinônimo de straddle. O artigo atribui straddle a Bryan et al. (2005); a heurística modificada da proposta não herda automaticamente garantias de LSE.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-zhang-2024",
+      "title": "Artificial-Intelligence-Based Surrogate Solution of Dissipative Quantum Dynamics: Physics-Informed Reconstruction of the Universal Propagator (2024)",
+      "type": "Artigo",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Jiaji Zhang; Carlos L. Benavides-Riveros; Lipeng Chen",
+      "url": "https://arxiv.org/abs/2402.02788",
+      "answerUrl": "",
+      "notes": "Bibliografia da proposta. Metadados publicados e preprint confirmados no arXiv/ACS.\nAjuda a distinguir aprender a dinâmica de selecionar simulações físicas confiáveis.\nLer primeiro: Motivação, objeto aprendido e protocolo de avaliação; detalhes de arquitetura são segunda passagem.\nEntrega: Explicar em uma página por que o projeto usa GP como seletor, preservando o solver físico.\nNão ampliar o escopo para redes neurais ou operadores neurais: usar como contraste bibliográfico.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "book-shankar",
+      "title": "Principles of Quantum Mechanics",
+      "type": "Livro / notas",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "R. Shankar",
+      "url": "https://link.springer.com/book/10.1007/978-1-4757-0576-8",
+      "answerUrl": "",
+      "notes": "Recomendação; posse não confirmada. Recomendação anterior de 03/10/2026, registrada em conversas anteriores; metadados e sumário verificados na Springer.\nLeitura seletiva: Mathematical Introduction; The Postulates; The Harmonic Oscillator. Consulta seletiva depois de diagnóstico.\n",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "book-gerry-knight",
+      "title": "Introductory Quantum Optics",
+      "type": "Livro / notas",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Christopher C. Gerry; Peter L. Knight",
+      "url": "https://www.cambridge.org/highereducation/books/introductory-quantum-optics/FE693BC6459D0E6B48EFC5307665D054",
+      "answerUrl": "",
+      "notes": "Recomendação; posse não confirmada. Recomendação anterior de 03/10/2026, registrada em conversas anteriores; edição atual verificada na Cambridge.\nLeitura seletiva: Quantização do campo, estados de número, estados coerentes e comprimidos, conforme edição.\nLink aponta para 2ª edição; não presumir que o usuário possui essa edição. Navarrete-Benlloch é alternativa aberta.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "book-navarrete",
+      "title": "Introduction to Quantum Optics",
+      "type": "Livro / notas",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Carlos Navarrete-Benlloch",
+      "url": "https://arxiv.org/pdf/2203.13206",
+      "answerUrl": "",
+      "notes": "Material aberto; posse física não afirmada. Recomendação anterior de 03/10/2026 registrada em conversas anteriores; notas e exercícios dos próprios autores verificados no arXiv.\nLeitura seletiva: Revisão de mecânica quântica, oscilador/campo e, em seguida, sistemas abertos; leitura seletiva para monomodo.\nSão notas de curso em desenvolvimento, não artigo de pesquisa sobre novidade da proposta.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "project-fast-wave",
+      "title": "Fast Wave: Um pacote Python para um cálculo eficiente e preciso de funções de onda de estados de Fock",
+      "type": "Dissertação",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Matheus Gomes Cordeiro",
+      "url": "https://repositorio.ufc.br/handle/riufc/80727",
+      "answerUrl": "",
+      "notes": "Produção acadêmica própria. Dissertação do usuário; referência 1 da proposta atual; repositório institucional verificado.\nLeitura seletiva: Formulação do oscilador, representação de Fock, estratégia híbrida e protocolo experimental. Confrontar com limitações numéricas registradas na proposta atual.\nNão transformar benchmarks da dissertação em garantia para todas as excitações nem em resultado de Wigner.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "book-cohen-iii",
+      "title": "Quantum Mechanics, Volume 3: Fermions, Bosons, Photons, Correlations, and Entanglement",
+      "type": "Livro / notas",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Claude Cohen-Tannoudji; Bernard Diu; Franck Laloë",
+      "url": "https://www.wiley.com/en-us/shop/general-physics/quantum-mechanics-volume-3-fermions-bosons-photons-correlations-and-entanglement-p-9783527345557",
+      "answerUrl": "",
+      "notes": "Recomendação; posse não confirmada. Recomendação anterior de 03/10/2026 registrada em conversas anteriores; catálogo oficial Wiley confirma escopo do volume.\nLeitura seletiva: Bosons, operadores de criação/aniquilação e campo eletromagnético; os demais tópicos são consulta.\nNão tornar a leitura integral requisito de Wigner monomodo.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-postulates",
+      "title": "The postulates of quantum mechanics",
+      "type": "Série de videoaulas (acesso pelo canal oficial)",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Professor M does Science",
+      "url": "https://www.youtube.com/@ProfessorMdoesScience",
+      "answerUrl": "",
+      "notes": "\nRevisar estados, observáveis, medidas e evolução antes dos artigos sobre representações no espaço de fase.\nReescrever os postulados e calcular probabilidades e valores esperados em uma base de dois estados.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-oscillator-1",
+      "title": "Quantum Harmonic Oscillator I",
+      "type": "Problem set oficial com soluções",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Professor M does Science",
+      "url": "https://professorm.learnworlds.com/course/quantum-harmonic-oscillator-i",
+      "answerUrl": "",
+      "notes": "\nConsolidar autofunções do oscilador, séries de potências e representação de momento para justificar a base de Fock.\nConcluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar os problemas sobre autofunções e transformação de Fourier; confrontar as soluções após tentativa própria.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-oscillator-2",
+      "title": "Quantum Harmonic Oscillator II",
+      "type": "Problem set oficial com soluções",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Professor M does Science",
+      "url": "https://professorm.learnworlds.com/course/quantum-harmonic-oscillator-ii",
+      "answerUrl": "",
+      "notes": "\nRelacionar incerteza, operadores de escada, evolução temporal e quadro de Heisenberg ao oscilador usado na proposta.\nConcluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Derivar a incerteza de um estado de Fock e comparar a evolução de um observável nos quadros de Schrödinger e Heisenberg.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-pure-mixed",
+      "title": "Pure vs. mixed quantum states",
+      "type": "Videoaula oficial",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Professor M does Science",
+      "url": "https://www.youtube.com/watch?v=LR5kfhrs4Cc",
+      "answerUrl": "",
+      "notes": "\nPreparar a distinção entre superposição e mistura antes da negatividade de Wigner e da dissipação.\nConstruir uma matriz densidade pura e uma mistura; calcular traço, pureza e médias.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-coherent",
+      "title": "Coherent state wave function || Maths",
+      "type": "Videoaula oficial",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Professor M does Science",
+      "url": "https://www.youtube.com/watch?v=0p9pH85SLIU",
+      "answerUrl": "",
+      "notes": "\nDerivar a função de onda coerente que servirá de referência gaussiana e componente dos estados gato.\nReproduzir a derivação e explicar a diferença entre um estado coerente e uma superposição de dois estados coerentes.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "pm-second-quantization",
+      "title": "Second Quantization",
+      "type": "Problem set oficial com soluções",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Professor M does Science",
+      "url": "https://professorm.learnworlds.com/course/second-quantization",
+      "answerUrl": "",
+      "notes": "\nReforçar operador número, mudança de base e matrizes densidade; priorizar a álgebra relevante ao modo bosônico da proposta.\nConcluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar tópicos de operador número e operadores em bases distintas; distinguir comutação bosônica de anticomutação fermiônica.\nEstimativa de primeira passagem; conferir a extensão do curso na plataforma.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-tech-1",
+      "title": "NIST DLMF — Hermite e relações de recorrência",
+      "type": "Documentação",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Documentação oficial",
+      "url": "https://dlmf.nist.gov/18.9",
+      "answerUrl": "",
+      "notes": "Consultar identidades, normalizações e diferença entre Hermite de físicos e probabilistas.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-tech-2",
+      "title": "Benchmarking JAX code",
+      "type": "Documentação",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Documentação oficial",
+      "url": "https://docs.jax.dev/en/latest/benchmarking.html",
+      "answerUrl": "",
+      "notes": "Medir execução completa, compilação, transferência e sincronização, com mesma meta de erro.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "research-tech-3",
+      "title": "QuTiP wigner — documentação oficial",
+      "type": "Documentação",
+      "topic": "Controle de erro e referências numéricas",
+      "author": "Documentação oficial",
+      "url": "https://qutip.readthedocs.io/en/stable/apidoc/visualization.html#wigner",
+      "answerUrl": "",
+      "notes": "Escolher métodos e escala das quadraturas, fixando a versão usada.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-base",
+      "title": "Da base de Fock ao operador densidade",
+      "type": "Caderno autoral",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-wigner",
+      "title": "O que a negatividade de Wigner mede",
+      "type": "Caderno autoral",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-perdas",
+      "title": "Perda pura, Lindblad e controles físicos",
+      "type": "Caderno autoral",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-numerica",
+      "title": "Do refinamento a uma decisão com erro controlado",
+      "type": "Caderno autoral",
+      "topic": "Controle de erro e referências numéricas",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-kerr",
+      "title": "Kerr dissipativo: reproduzir antes de reivindicar",
+      "type": "Caderno autoral",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lesson-decisao",
+      "title": "Selecionar simulações, medir custo e defender o recorte",
+      "type": "Caderno autoral",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Órbita · material autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Explicações originais, exemplo resolvido e dois exercícios com solução. Base nas fontes indicadas no bloco.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-base",
+      "title": "Diagnóstico: estados e operadores",
+      "type": "Lista",
+      "topic": "Base quântica, Fock e Hermite",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-wigner",
+      "title": "Diagnóstico: convenções e negatividade",
+      "type": "Lista",
+      "topic": "Wigner, negatividade e recursos",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-perdas",
+      "title": "Diagnóstico: perda pura e dissipação",
+      "type": "Lista",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-numerica",
+      "title": "Diagnóstico: intervalos e evidência numérica",
+      "type": "Lista",
+      "topic": "Controle de erro e referências numéricas",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-kerr",
+      "title": "Diagnóstico: dinâmica de Kerr e reprodução",
+      "type": "Lista",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "quiz-decisao",
+      "title": "Diagnóstico: GP, custo e defesa",
+      "type": "Lista",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Órbita · questionário autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "notes": "Questionário interativo com quatro questões, gabarito comentado e salvamento explícito do resultado. Registrar horas separadamente com questões em zero para não duplicar a contagem.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lab-controles",
+      "title": "Laboratório 1 — Fock e perda com referência analítica",
+      "type": "Laboratório autoral",
+      "topic": "Perdas, canais e Lindblad",
+      "author": "Órbita · roteiro autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "",
+      "notes": "Construir em CPU um teste pequeno de Wigner e negatividade com resultado analítico independente, antes de comparar bibliotecas ou velocidade.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lab-kerr",
+      "title": "Laboratório 2 — Separar os erros na dinâmica de Kerr",
+      "type": "Laboratório autoral",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "author": "Órbita · roteiro autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "",
+      "notes": "Validar em CPU um caso pequeno de Kerr com perda simultânea, usando limites físicos antes de calcular mapas extensos.",
+      "status": "Não iniciado"
+    },
+    {
+      "id": "lab-aquisicao",
+      "title": "Laboratório 3 — Aquisição por GP com um alvo verificável",
+      "type": "Laboratório autoral",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "author": "Órbita · roteiro autoral",
+      "url": "https://fobos123deimos.github.io/orbita-fisica/#pesquisa",
+      "answerUrl": "",
+      "notes": "Testar o protocolo de seleção em CPU usando a negatividade analítica do estado |1⟩ sob perda, antes de aplicá-lo ao solver de Kerr.",
+      "status": "Não iniciado"
+    }
+  ],
+  "readings": [
+    {
+      "id": "perez-jorda-2018",
+      "title": "On the recursive solution of the quantum harmonic oscillator",
+      "authors": "José M. Pérez-Jordá",
+      "year": 2018,
+      "url": "https://doi.org/10.1088/1361-6404/aa9584",
+      "openUrl": "",
+      "stage": "base",
+      "stageId": "base",
+      "priority": "Essencial",
+      "why": "Reconecta a preparação ao fundamento recorrente do FAST WAVE e à avaliação direta das funções do oscilador.",
+      "readFirst": "Recorrência das funções normalizadas e condições iniciais; conferir convenções com o NIST DLMF.",
+      "prerequisites": "Oscilador harmônico, normalização, recorrências e operadores de criação/aniquilação.",
+      "deliverable": "Derivar ψ₀, ψ₁ e a recorrência; comparar cálculo direto e recorrente em baixa ordem e diagnosticar underflow da semente.",
+      "sourceStatus": "Referência confirmada na documentação oficial do QuTiP e manuscrito aceito indexado; página IOP indisponível nesta verificação. Edição 39(1),015402 de 2018; publicação online/aceite em 2017.",
+      "provenance": "Referência recuperada dos chats e do projeto FAST WAVE",
+      "proposalReference": null,
+      "type": "Artigo",
+      "caution": "A recorrência matemática não garante estabilidade em qualquer ordem ou posição; verificar precisão e sementes numericamente.",
+      "supportUrl": "https://dlmf.nist.gov/18.9",
+      "materialId": "research-perez-jorda-2018",
+      "order": 1
+    },
+    {
+      "id": "celeghini-2021",
+      "title": "Hermite Functions and Fourier Series",
+      "authors": "Enrico Celeghini; Manuel Gadella; Mariano A. del Olmo",
+      "year": 2021,
+      "url": "https://doi.org/10.3390/sym13050853",
+      "openUrl": "https://www.mdpi.com/2073-8994/13/5/853",
+      "stage": "base",
+      "stageId": "base",
+      "priority": "Complementar 2028.1",
+      "why": "Aprofunda a ponte entre funções de Hermite, representações e Fourier presente no projeto e nos estudos anteriores.",
+      "readFirst": "Seção 2, The Hermite Functions and the Fourier Transform; avançar às seções 4–5 apenas após consolidar a base.",
+      "prerequisites": "Álgebra linear, séries e transformada de Fourier, funções de Hermite.",
+      "deliverable": "Explicar por que Hermite é base natural do oscilador e conferir a ação de Fourier em funções de baixa ordem.",
+      "sourceStatus": "Metadados e texto integral confirmados na editora; Symmetry 13(5),853 (2021), arXiv:2007.10406.",
+      "provenance": "Referência recuperada dos chats e da dissertação FAST WAVE",
+      "proposalReference": null,
+      "type": "Artigo",
+      "caution": "Espaços de Hilbert equipados e operadores avançados são aprofundamento, não pré-requisito do núcleo da proposta.",
+      "preprintUrl": "https://arxiv.org/abs/2007.10406",
+      "materialId": "research-celeghini-2021",
+      "order": 2
+    },
+    {
+      "id": "royer-1977",
+      "title": "Wigner function as the expectation value of a parity operator",
+      "authors": "Antoine Royer",
+      "year": 1977,
+      "url": "https://doi.org/10.1103/PhysRevA.15.449",
+      "openUrl": "",
+      "stage": "wigner",
+      "priority": "Essencial",
+      "why": "Relaciona Wigner a um observável de paridade; é a ponte para limites de erro via norma do estado.",
+      "readFirst": "Artigo curto: interpretação de paridade deslocada e convenções de normalização.",
+      "prerequisites": "Operadores, traço, paridade e estados de Fock.",
+      "deliverable": "Derivar W(0,0) do vácuo e de |1⟩ nas convenções da proposta.",
+      "sourceStatus": "Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 3,
+      "stageId": "wigner",
+      "type": "Artigo",
+      "materialId": "research-royer-1977",
+      "order": 3
+    },
+    {
+      "id": "kenfack-2004",
+      "title": "Negativity of the Wigner function as an indicator of non-classicality",
+      "authors": "Anatole Kenfack; Karol Życzkowski",
+      "year": 2004,
+      "url": "https://doi.org/10.1088/1464-4266/6/10/003",
+      "openUrl": "https://arxiv.org/abs/quant-ph/0406015",
+      "stage": "wigner",
+      "priority": "Essencial",
+      "why": "Define o indicador de negatividade e fornece controles de Fock e gatos para a preparação.",
+      "readFirst": "Seção II; depois IV (Fock), III (gatos) e conclusões.",
+      "prerequisites": "Royer; integrais em duas dimensões; estados coerentes.",
+      "deliverable": "Reproduzir o caso |1⟩ e converter o indicador do artigo para δ=∫max(0,−W).",
+      "sourceStatus": "Metadados e texto aberto conferidos no arXiv.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 4,
+      "caution": "O indicador do artigo é 2δ. Wigner positiva não implica classicidade em todos os sentidos.",
+      "stageId": "wigner",
+      "type": "Artigo",
+      "materialId": "research-kenfack-2004",
+      "order": 4
+    },
+    {
+      "id": "wigner-1932",
+      "title": "On the Quantum Correction For Thermodynamic Equilibrium",
+      "authors": "Eugene Wigner",
+      "year": 1932,
+      "url": "https://doi.org/10.1103/PhysRev.40.749",
+      "openUrl": "",
+      "stage": "wigner",
+      "priority": "Complementar histórico",
+      "why": "Contextualiza a origem da representação no espaço de fases.",
+      "readFirst": "Motivação inicial e definição da representação; reservar expansão térmica para uma segunda leitura.",
+      "prerequisites": "Já compreender Wigner com Royer e Kenfack.",
+      "deliverable": "Escrever um parágrafo ligando a formulação histórica às convenções modernas.",
+      "sourceStatus": "Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 2,
+      "stageId": "wigner",
+      "type": "Artigo",
+      "materialId": "research-wigner-1932",
+      "order": 5
+    },
+    {
+      "id": "albarelli-2018",
+      "title": "Resource theory of quantum non-Gaussianity and Wigner negativity",
+      "authors": "Francesco Albarelli; Marco G. Genoni; Matteo G. A. Paris; Alessandro Ferraro",
+      "year": 2018,
+      "url": "https://doi.org/10.1103/PhysRevA.98.052350",
+      "openUrl": "https://arxiv.org/abs/1804.05763",
+      "stage": "wigner",
+      "priority": "Essencial seletivo",
+      "why": "Ajuda a justificar o indicador sem confundir negatividade, não gaussianidade e vantagem operacional.",
+      "readFirst": "Estados e operações livres; definição da negatividade logarítmica; exemplos de gatos.",
+      "prerequisites": "Matriz densidade, canais e volume negativo.",
+      "deliverable": "Montar tabela: recurso, operações permitidas e afirmação sustentada pelo indicador.",
+      "sourceStatus": "Metadados e acesso aberto conferidos no arXiv e na APS.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 5,
+      "caution": "A relevância de um recurso depende da tarefa e das operações; maior negatividade não garante vantagem universal.",
+      "stageId": "wigner",
+      "type": "Artigo",
+      "materialId": "research-albarelli-2018",
+      "order": 6
+    },
+    {
+      "id": "li-2010",
+      "title": "A comparison of two nonclassical measures, entanglement potential and the negativity of the Wigner function",
+      "authors": "Jie Li; Gang Li; Jun-Min Wang; Shi-Yao Zhu; Tian-Cai Zhang",
+      "year": 2010,
+      "url": "https://doi.org/10.1088/0953-4075/43/8/085504",
+      "openUrl": "",
+      "stage": "perdas",
+      "priority": "Essencial seletivo",
+      "why": "É antecedente direto da comparação de Fock e gatos durante decoerência.",
+      "readFirst": "Definições dos dois indicadores e resultados para Fock/gatos.",
+      "prerequisites": "Kenfack; canal de perda; normalização de gatos.",
+      "deliverable": "Descrever o que já foi comparado e quais controles de energia e erro a proposta precisa acrescentar.",
+      "sourceStatus": "Metadados e resumo confirmados no repositório institucional HKBU; PDF institucional localizado, mas download não confirmado.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 7,
+      "verificationUrl": "https://scholars.hkbu.edu.hk/en/publications/a-comparison-of-two-nonclassical-measures-entanglement-potential-/",
+      "stageId": "perdas",
+      "type": "Artigo",
+      "materialId": "research-li-2010",
+      "order": 7
+    },
+    {
+      "id": "nugmanov-2022",
+      "title": "Robustness of negativity of the Wigner function to dissipation",
+      "authors": "B. Nugmanov; N. Zunikov; F. Ya. Khalili",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2201.03257",
+      "openUrl": "https://arxiv.org/abs/2201.03257",
+      "stage": "perdas",
+      "priority": "Essencial",
+      "why": "Separa persistência matemática da negatividade de sua magnitude após a perda.",
+      "readFirst": "Quasi-probability distributions; Sufficient condition; Rate of the negativity degradation.",
+      "prerequisites": "Canal de perda pura, estados puros/mistos e funções W/Q/P.",
+      "deliverable": "Explicar η=1/2 e construir um exemplo que impeça estender a suficiência a misturas arbitrárias.",
+      "sourceStatus": "Preprint arXiv confirmado; prova e hipóteses conferidas no texto.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 8,
+      "caution": "A suficiência de η>1/2 refere-se a entradas puras não gaussianas. O artigo usa também o mínimo de W, que não é o volume negativo.",
+      "stageId": "perdas",
+      "type": "Artigo",
+      "materialId": "research-nugmanov-2022",
+      "order": 8
+    },
+    {
+      "id": "lindblad-1976",
+      "title": "On the generators of quantum dynamical semigroups",
+      "authors": "Göran Lindblad",
+      "year": 1976,
+      "url": "https://doi.org/10.1007/BF01608499",
+      "openUrl": "",
+      "stage": "perdas",
+      "priority": "Complementar fundamental",
+      "why": "Fornece a origem matemática da equação mestra markoviana usada na dinâmica dissipativa.",
+      "readFirst": "Resumo e forma do gerador; estudar primeiro uma apresentação didática de sistemas abertos.",
+      "prerequisites": "Operadores densidade, positividade completa e evolução temporal.",
+      "deliverable": "Identificar H e o operador de salto √κ a no modelo da proposta; verificar preservação do traço.",
+      "sourceStatus": "Metadados e resumo confirmados na Springer; texto integral pode exigir acesso institucional.",
+      "provenance": "Complemento sugerido nesta curadoria",
+      "proposalReference": null,
+      "caution": "O resultado do artigo tem hipóteses funcionais específicas; não transferir automaticamente teoremas de geradores limitados ao oscilador infinito.",
+      "stageId": "perdas",
+      "type": "Artigo",
+      "materialId": "research-lindblad-1976",
+      "order": 9
+    },
+    {
+      "id": "fuchs-1998",
+      "title": "Cryptographic Distinguishability Measures for Quantum Mechanical States",
+      "authors": "Christopher A. Fuchs; Jeroen van de Graaf",
+      "year": 1998,
+      "url": "https://arxiv.org/abs/quant-ph/9712042v2",
+      "openUrl": "https://arxiv.org/abs/quant-ph/9712042v2",
+      "stage": "numerica",
+      "priority": "Essencial seletivo",
+      "why": "Fundamenta a passagem entre fidelidade e distância de traço utilizada para controlar truncamento.",
+      "readFirst": "Definições das distâncias quânticas e desigualdades entre fidelidade e distância de traço.",
+      "prerequisites": "Matriz densidade, normas, projeção e probabilidade descartada.",
+      "deliverable": "Derivar a cota de truncamento com convenção de fidelidade explícita e explicar por que um limite pontual não pode ser integrado numa área infinita.",
+      "sourceStatus": "Versão arXiv v2 de 1998 confirmada; versão publicada de 1999 existe.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 14,
+      "caution": "Registrar se fidelidade significa amplitude ou seu quadrado; distinguir distância de traço de norma de traço.",
+      "stageId": "numerica",
+      "type": "Artigo",
+      "materialId": "research-fuchs-1998",
+      "order": 10
+    },
+    {
+      "id": "qutip5-2026",
+      "title": "QuTiP 5: The Quantum Toolbox in Python",
+      "authors": "Neill Lambert e colaboradores",
+      "year": 2026,
+      "url": "https://doi.org/10.1016/j.physrep.2025.10.001",
+      "openUrl": "https://arxiv.org/abs/2412.04705",
+      "stage": "numerica",
+      "priority": "Essencial seletivo",
+      "why": "Estabelece uma referência computacional adequada para estados, evolução e comparações reproduzíveis.",
+      "readFirst": "Qobj, solvers de equação mestra e exemplos; em paralelo, documentação oficial de wigner.",
+      "prerequisites": "Fock, Lindblad e testes analíticos.",
+      "deliverable": "Registrar versão, convenções e método Wigner; reproduzir vácuo e |1⟩ com referência independente.",
+      "sourceStatus": "Artigo de 2026 confirmado pelo arXiv e página oficial de citações do QuTiP.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 10,
+      "supportUrl": "https://qutip.readthedocs.io/en/stable/apidoc/visualization.html#wigner",
+      "caution": "Uma biblioteca de referência não é um certificado universal; comparar erro final e convenções, além de tempo.",
+      "stageId": "numerica",
+      "type": "Artigo",
+      "materialId": "research-qutip5-2026",
+      "order": 11
+    },
+    {
+      "id": "milburn-1986",
+      "title": "Dissipative Quantum and Classical Liouville Mechanics of the Anharmonic Oscillator",
+      "authors": "G. J. Milburn; C. A. Holmes",
+      "year": 1986,
+      "url": "https://doi.org/10.1103/PhysRevLett.56.2237",
+      "openUrl": "",
+      "stage": "kerr",
+      "priority": "Complementar histórico",
+      "why": "Antecedente da dinâmica do oscilador anarmônico acoplado a banho a temperatura zero.",
+      "readFirst": "Modelo dissipativo, solução e interpretação das recorrências.",
+      "prerequisites": "Equação mestra e oscilador anarmônico.",
+      "deliverable": "Identificar os limites sem perda e sem não linearidade antes de reproduzir uma trajetória.",
+      "sourceStatus": "Metadados e resumo confirmados na APS; texto integral pode exigir acesso institucional.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 9,
+      "stageId": "kerr",
+      "type": "Artigo",
+      "materialId": "research-milburn-1986",
+      "order": 12
+    },
+    {
+      "id": "stobinska-2008",
+      "title": "Wigner function evolution of quantum states in the presence of self-Kerr interaction",
+      "authors": "Magdalena Stobińska; G. J. Milburn; Krzysztof Wódkiewicz",
+      "year": 2008,
+      "url": "https://doi.org/10.1103/PhysRevA.78.013810",
+      "openUrl": "https://arxiv.org/abs/quant-ph/0605166",
+      "stage": "kerr",
+      "priority": "Essencial",
+      "why": "Conecta dinâmica Kerr, interferência no espaço de fases e efeitos dissipativos.",
+      "readFirst": "Modelo e equação de evolução; resultados com estado coerente; discussão de dissipação.",
+      "prerequisites": "Wigner, coerentes e Lindblad.",
+      "deliverable": "Reproduzir qualitativamente uma evolução pequena e separar geração unitária de interferência e sua dissipação.",
+      "sourceStatus": "PRA 2008 e preprint v4 de 2008 confirmados no arXiv.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 15,
+      "stageId": "kerr",
+      "type": "Artigo",
+      "materialId": "research-stobinska-2008",
+      "order": 13
+    },
+    {
+      "id": "rosiek-2024",
+      "title": "Quadrature Squeezing Enhances Wigner Negativity in a Mechanical Duffing Oscillator",
+      "authors": "Christian A. Rosiek; Massimiliano Rossi; Albert Schliesser; Anders S. Sørensen",
+      "year": 2024,
+      "url": "https://doi.org/10.1103/PRXQuantum.5.030312",
+      "openUrl": "https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.5.030312",
+      "stage": "kerr",
+      "priority": "Comparador obrigatório",
+      "why": "Mostra geração de negatividade e um protocolo de convergência numérica que deve ser confrontado com a contribuição pretendida.",
+      "readFirst": "Seções II–III; Apêndice E e Fig. 8 sobre corte, domínio, malha e máximo temporal.",
+      "prerequisites": "Stobińska; quadraturas; truncamento e quadratura numérica.",
+      "deliverable": "Criar matriz comparando os controles do Apêndice E com cada parcela de erro proposta.",
+      "sourceStatus": "Publicação PRX Quantum 2024, texto aberto e Apêndice E conferidos.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 12,
+      "caution": "Usa [X,Y]=i/2. Converter quadraturas para [q,p]=i; convergência por refinamento não equivale a cota rigorosa de erro total.",
+      "preprintUrl": "https://arxiv.org/abs/2312.12986",
+      "stageId": "kerr",
+      "type": "Artigo",
+      "materialId": "research-rosiek-2024",
+      "order": 14
+    },
+    {
+      "id": "raza-2026",
+      "title": "Robust negativity in the quantum-to-classical transition of Kerr dynamics",
+      "authors": "Mohsin Raza; John B. DeBrota; Ariel Shlosberg; Noah Lordi; Ivan H. Deutsch",
+      "year": 2026,
+      "url": "https://doi.org/10.1103/r9j9-6ndl",
+      "openUrl": "https://arxiv.org/abs/2602.05223",
+      "stage": "kerr",
+      "priority": "Comparador obrigatório",
+      "why": "Delimita resultados já conhecidos sobre escalas de tempo, negatividade robusta sob perda e custo numérico.",
+      "readFirst": "Seções II–V; Apêndice C; Apêndice D.1–D.2.",
+      "prerequisites": "Kerr/Lindblad; negatividade; leitura de Rosiek.",
+      "deliverable": "Tabela: resultado conhecido, método usado, limitação observada e diferença verificável que o projeto pretende testar.",
+      "sourceStatus": "PRA 114, 013708 (2026) e arXiv v2 de 10/07/2026 confirmados.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 13,
+      "caution": "O indicador N=∫|W|−1 é 2δ da proposta. Robustez em Kerr com perda e aceleração isolada não são novidades por si.",
+      "stageId": "kerr",
+      "type": "Artigo",
+      "materialId": "research-raza-2026",
+      "order": 15
+    },
+    {
+      "id": "gpml-2006",
+      "title": "Gaussian Processes for Machine Learning",
+      "authors": "Carl Edward Rasmussen; Christopher K. I. Williams",
+      "year": 2006,
+      "url": "https://gaussianprocess.org/gpml/",
+      "openUrl": "https://gaussianprocess.org/gpml/chapters/RW.pdf",
+      "stage": "decisao",
+      "priority": "Essencial seletivo",
+      "why": "Prepara regressão probabilística e seleção de simulações sem substituir o validador físico.",
+      "readFirst": "Cap. 2 (regressão); 4 (covariâncias); 5 (hiperparâmetros). Consultar apêndice A conforme necessário.",
+      "prerequisites": "Álgebra linear, probabilidade, condicionais gaussianas e conjunto de dados numéricos confiáveis.",
+      "deliverable": "Implementar regressão em função conhecida e interpretar média, variância e efeito dos hiperparâmetros.",
+      "sourceStatus": "Livro de 2006 e acesso autorizado integral confirmados no site dos autores.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 21,
+      "type": "Livro",
+      "caution": "Incerteza preditiva estatística não é cota do erro numérico nem certificado físico.",
+      "stageId": "decisao",
+      "materialId": "research-gpml-2006",
+      "order": 16
+    },
+    {
+      "id": "gotovos-2013",
+      "title": "Active Learning for Level Set Estimation",
+      "authors": "Alkis Gotovos; Nathalie Casati; Gregory Hitz; Andreas Krause",
+      "year": 2013,
+      "url": "https://ijcai.org/proceedings/2013/202",
+      "openUrl": "https://las.inf.ethz.ch/files/gotovos13active.pdf",
+      "stage": "decisao",
+      "priority": "Essencial",
+      "why": "Fundamenta a estimação de regiões acima de um limiar e permite formular comparações justas de aquisição.",
+      "readFirst": "Definição do problema; algoritmo LSE e hipóteses; experimento que compara LSE e straddle.",
+      "prerequisites": "GPML; objetivo de classificação por limiar; orçamento computacional.",
+      "deliverable": "Comparar grade, aleatório e aquisição ativa com auditoria fixa; manter classificação física pelos limites L e U.",
+      "sourceStatus": "Proceedings IJCAI oficial e texto dos autores conferidos; páginas oficiais 1344–1349.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 20,
+      "caution": "LSE não é sinônimo de straddle. O artigo atribui straddle a Bryan et al. (2005); a heurística modificada da proposta não herda automaticamente garantias de LSE.",
+      "stageId": "decisao",
+      "type": "Artigo",
+      "materialId": "research-gotovos-2013",
+      "order": 17
+    },
+    {
+      "id": "zhang-2024",
+      "title": "Artificial-Intelligence-Based Surrogate Solution of Dissipative Quantum Dynamics: Physics-Informed Reconstruction of the Universal Propagator",
+      "authors": "Jiaji Zhang; Carlos L. Benavides-Riveros; Lipeng Chen",
+      "year": 2024,
+      "url": "https://doi.org/10.1021/acs.jpclett.4c00598",
+      "openUrl": "https://arxiv.org/abs/2402.02788",
+      "stage": "decisao",
+      "priority": "Complementar de estado da arte",
+      "why": "Ajuda a distinguir aprender a dinâmica de selecionar simulações físicas confiáveis.",
+      "readFirst": "Motivação, objeto aprendido e protocolo de avaliação; detalhes de arquitetura são segunda passagem.",
+      "prerequisites": "Dinâmica dissipativa e validação de modelos aprendidos.",
+      "deliverable": "Explicar em uma página por que o projeto usa GP como seletor, preservando o solver físico.",
+      "sourceStatus": "Metadados publicados e preprint confirmados no arXiv/ACS.",
+      "provenance": "Bibliografia da proposta",
+      "proposalReference": 19,
+      "caution": "Não ampliar o escopo para redes neurais ou operadores neurais: usar como contraste bibliográfico.",
+      "stageId": "decisao",
+      "type": "Artigo",
+      "materialId": "research-zhang-2024",
+      "order": 18
+    }
+  ],
+  "courses": [
+    {
+      "id": "pm-postulates",
+      "title": "The postulates of quantum mechanics",
+      "url": "https://www.youtube.com/@ProfessorMdoesScience",
+      "type": "Série de videoaulas (acesso pelo canal oficial)",
+      "stageId": "base",
+      "why": "Revisar estados, observáveis, medidas e evolução antes dos artigos sobre representações no espaço de fase.",
+      "deliverable": "Reescrever os postulados e calcular probabilidades e valores esperados em uma base de dois estados.",
+      "prerequisites": "Álgebra linear: vetores complexos, produto interno e autovalores.",
+      "estimatedStudyHours": 4,
+      "materialId": "pm-postulates",
+      "order": 1,
+      "provenance": "Série de videoaulas (acesso pelo canal oficial) · Professor M does Science · consulta em 20/11/2026"
+    },
+    {
+      "id": "pm-oscillator-1",
+      "title": "Quantum Harmonic Oscillator I",
+      "url": "https://professorm.learnworlds.com/course/quantum-harmonic-oscillator-i",
+      "type": "Problem set oficial com soluções",
+      "stageId": "base",
+      "why": "Consolidar autofunções do oscilador, séries de potências e representação de momento para justificar a base de Fock.",
+      "deliverable": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar os problemas sobre autofunções e transformação de Fourier; confrontar as soluções após tentativa própria.",
+      "prerequisites": "Postulados, equação de Schrödinger e transformada de Fourier.",
+      "estimatedStudyHours": 12,
+      "materialId": "pm-oscillator-1",
+      "order": 2,
+      "provenance": "Problem set oficial com soluções · Professor M does Science · consulta em 20/11/2026"
+    },
+    {
+      "id": "pm-oscillator-2",
+      "title": "Quantum Harmonic Oscillator II",
+      "url": "https://professorm.learnworlds.com/course/quantum-harmonic-oscillator-ii",
+      "type": "Problem set oficial com soluções",
+      "stageId": "base",
+      "why": "Relacionar incerteza, operadores de escada, evolução temporal e quadro de Heisenberg ao oscilador usado na proposta.",
+      "deliverable": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Derivar a incerteza de um estado de Fock e comparar a evolução de um observável nos quadros de Schrödinger e Heisenberg.",
+      "prerequisites": "Quantum Harmonic Oscillator I e álgebra de comutadores.",
+      "estimatedStudyHours": 12,
+      "materialId": "pm-oscillator-2",
+      "order": 3,
+      "provenance": "Problem set oficial com soluções · Professor M does Science · consulta em 20/11/2026"
+    },
+    {
+      "id": "pm-pure-mixed",
+      "title": "Pure vs. mixed quantum states",
+      "url": "https://www.youtube.com/watch?v=LR5kfhrs4Cc",
+      "type": "Videoaula oficial",
+      "stageId": "wigner",
+      "why": "Preparar a distinção entre superposição e mistura antes da negatividade de Wigner e da dissipação.",
+      "deliverable": "Construir uma matriz densidade pura e uma mistura; calcular traço, pureza e médias.",
+      "prerequisites": "Postulados e operadores.",
+      "estimatedStudyHours": 2,
+      "materialId": "pm-pure-mixed",
+      "order": 4,
+      "provenance": "Videoaula oficial · Professor M does Science · consulta em 20/11/2026"
+    },
+    {
+      "id": "pm-coherent",
+      "title": "Coherent state wave function || Maths",
+      "url": "https://www.youtube.com/watch?v=0p9pH85SLIU",
+      "type": "Videoaula oficial",
+      "stageId": "wigner",
+      "why": "Derivar a função de onda coerente que servirá de referência gaussiana e componente dos estados gato.",
+      "deliverable": "Reproduzir a derivação e explicar a diferença entre um estado coerente e uma superposição de dois estados coerentes.",
+      "prerequisites": "Oscilador, operadores de escada, operador deslocamento e funções de onda.",
+      "estimatedStudyHours": 2,
+      "materialId": "pm-coherent",
+      "order": 5,
+      "provenance": "Videoaula oficial · Professor M does Science · consulta em 20/11/2026"
+    },
+    {
+      "id": "pm-second-quantization",
+      "title": "Second Quantization",
+      "url": "https://professorm.learnworlds.com/course/second-quantization",
+      "type": "Problem set oficial com soluções",
+      "stageId": "wigner",
+      "why": "Reforçar operador número, mudança de base e matrizes densidade; priorizar a álgebra relevante ao modo bosônico da proposta.",
+      "deliverable": "Concluir os 10 problemas do conjunto, conferir as soluções após tentativa própria e registrar erros para refazer. Revisar tópicos de operador número e operadores em bases distintas; distinguir comutação bosônica de anticomutação fermiônica.",
+      "prerequisites": "Operadores de criação/aniquilação, Fock e matriz densidade.",
+      "estimatedStudyHours": 12,
+      "materialId": "pm-second-quantization",
+      "order": 6,
+      "provenance": "Problem set oficial com soluções · Professor M does Science · consulta em 20/11/2026"
+    }
+  ],
+  "books": [
+    {
+      "materialId": "newbook0",
+      "stageId": "base",
+      "why": "Diagonalizar uma matriz densidade 2×2 e distinguir positividade de normalização.",
+      "selection": "Espaços vetoriais, produto interno, operadores, autovalores, diagonalização e formas quadráticas; localizar no sumário da edição.",
+      "provenance": "Livro físico confirmado · Livro físico confirmado nas conversas de 17/11/2026 e já cadastrado no site.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "B043",
+      "stageId": "base",
+      "why": "Construir uma superposição e a mistura correspondente; comparar suas matrizes densidade.",
+      "selection": "Kets e bras, operadores, medida, estados puros/mistos e matriz densidade, conforme sumário.",
+      "provenance": "Livro físico confirmado · Acervo cadastrado e caderno Livros, aulas e fontes, p.14.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "B056",
+      "stageId": "base",
+      "why": "Relacionar a equação do oscilador às funções de Hermite e verificar normalização/ortogonalidade.",
+      "selection": "EDO, transformadas e funções especiais; localizar Hermite no sumário antes de atribuir capítulo.",
+      "provenance": "Livro físico confirmado · Acervo cadastrado e caderno Livros, aulas e fontes, p.14.",
+      "priority": "consulta"
+    },
+    {
+      "materialId": "B001",
+      "stageId": "numerica",
+      "why": "Separar erros de corte, domínio, quadratura, aritmética e propagação em uma tabela de auditoria.",
+      "selection": "Arredondamento, cancelamento, quadratura, EDO e convergência; capítulos conforme edição.",
+      "provenance": "Livro físico confirmado · Acervo cadastrado e caderno Livros, aulas e fontes, p.13.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "newbook1",
+      "stageId": "decisao",
+      "why": "Explicar a diferença entre incerteza estatística de um preditor e limite determinístico do erro numérico.",
+      "selection": "Probabilidade condicional, vetores aleatórios, distribuição normal, covariância e inferência; preparar GP.",
+      "provenance": "Livro físico confirmado · Aquisição confirmada em 17/11/2026, seed atual.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "B009",
+      "stageId": "numerica",
+      "why": "Comparar duas discretizações de uma dinâmica simples, registrar unidades, tolerâncias e invariantes.",
+      "selection": "Modelagem, integração de equações e análise de resultados, conforme sumário.",
+      "provenance": "Livro físico confirmado · Acervo cadastrado e caderno Livros, aulas e fontes, p.13.",
+      "priority": "consulta"
+    },
+    {
+      "materialId": "book-shankar",
+      "stageId": "base",
+      "why": "Derivar o espectro do oscilador com operadores de escada e justificar os postulados empregados.",
+      "selection": "Mathematical Introduction; The Postulates; The Harmonic Oscillator. Consulta seletiva depois de diagnóstico.",
+      "provenance": "Recomendação; posse não confirmada · Recomendação anterior de 03/10/2026, registrada em conversas anteriores; metadados e sumário verificados na Springer.",
+      "priority": "alternativa"
+    },
+    {
+      "materialId": "book-gerry-knight",
+      "stageId": "wigner",
+      "why": "Comparar Fock, coerente e comprimido quanto a energia, variâncias e tipo de não classicidade.",
+      "selection": "Quantização do campo, estados de número, estados coerentes e comprimidos, conforme edição.",
+      "provenance": "Recomendação; posse não confirmada · Recomendação anterior de 03/10/2026, registrada em conversas anteriores; edição atual verificada na Cambridge.",
+      "priority": "alternativa"
+    },
+    {
+      "materialId": "book-navarrete",
+      "stageId": "wigner",
+      "why": "Fichar a passagem de estados/operadores à descrição dissipativa e formular o caso de perda pura.",
+      "selection": "Revisão de mecânica quântica, oscilador/campo e, em seguida, sistemas abertos; leitura seletiva para monomodo.",
+      "provenance": "Material aberto; posse física não afirmada · Recomendação anterior de 03/10/2026 registrada em conversas anteriores; notas e exercícios dos próprios autores verificados no arXiv.",
+      "priority": "núcleo aberto"
+    },
+    {
+      "materialId": "research-gpml-2006",
+      "stageId": "decisao",
+      "why": "Implementar um GP escalar e comparar a aquisição straddle com aleatório, sem tratar previsão como certificação física.",
+      "selection": "Capítulo 2: regressão; capítulo 4: funções de covariância; capítulo 5: seleção de modelos/hiperparâmetros.",
+      "provenance": "Material aberto · Referência 21 da proposta atual; R16 do caderno Livros, aulas e fontes; sumário verificado no livro oficial dos autores.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "project-fast-wave",
+      "stageId": "base",
+      "why": "Preparar uma página 'o que o mestrado já demonstra / o que o doutorado ainda deve demonstrar'.",
+      "selection": "Formulação do oscilador, representação de Fock, estratégia híbrida e protocolo experimental. Confrontar com limitações numéricas registradas na proposta atual.",
+      "provenance": "Produção acadêmica própria · Dissertação do usuário; referência 1 da proposta atual; repositório institucional verificado.",
+      "priority": "núcleo"
+    },
+    {
+      "materialId": "book-cohen-iii",
+      "stageId": "wigner",
+      "why": "Explicar o significado físico de segunda quantização e distinguir modo de partícula.",
+      "selection": "Bosons, operadores de criação/aniquilação e campo eletromagnético; os demais tópicos são consulta.",
+      "provenance": "Recomendação; posse não confirmada · Recomendação anterior de 03/10/2026 registrada em conversas anteriores; catálogo oficial Wiley confirma escopo do volume.",
+      "priority": "aprofundamento 2028.1"
+    }
+  ],
+  "stages": [
+    {
+      "id": "base",
+      "title": "Base quântica, Fock e Hermite",
+      "description": "Revisar operadores, matrizes densidade, oscilador e representação de Fock. Usar o mestrado como ponto de partida documentado.",
+      "prerequisites": [],
+      "windows": {
+        "2027.2": [
+          1,
+          7
+        ],
+        "2028.1": [
+          1,
+          10
+        ]
+      },
+      "materialIds": [
+        "research-perez-jorda-2018",
+        "research-celeghini-2021",
+        "newbook0",
+        "B043",
+        "B056",
+        "book-shankar",
+        "project-fast-wave",
+        "pm-postulates",
+        "pm-oscillator-1",
+        "pm-oscillator-2",
+        "research-tech-1",
+        "lesson-base",
+        "quiz-base",
+        "own-02",
+        "own-03"
+      ],
+      "taskIds": [
+        "task-pm-postulates",
+        "task-pm-oscillator-1",
+        "task-pm-oscillator-2",
+        "task-lesson-base",
+        "task-book-newbook0",
+        "task-book-B043",
+        "task-book-project-fast-wave",
+        "task-research-perez-jorda-2018",
+        "task-research-celeghini-2021",
+        "task-quiz-base"
+      ]
+    },
+    {
+      "id": "wigner",
+      "title": "Wigner, negatividade e recursos",
+      "description": "Passar de estados quânticos à representação no espaço de fase, fixando normalizações e o significado do indicador.",
+      "prerequisites": [
+        "base"
+      ],
+      "windows": {
+        "2027.2": [
+          8,
+          10
+        ],
+        "2028.1": [
+          11,
+          18
+        ]
+      },
+      "materialIds": [
+        "research-royer-1977",
+        "research-kenfack-2004",
+        "research-wigner-1932",
+        "research-albarelli-2018",
+        "book-gerry-knight",
+        "book-navarrete",
+        "book-cohen-iii",
+        "pm-pure-mixed",
+        "pm-coherent",
+        "pm-second-quantization",
+        "lesson-wigner",
+        "quiz-wigner"
+      ],
+      "taskIds": [
+        "task-pm-pure-mixed",
+        "task-pm-coherent",
+        "task-pm-second-quantization",
+        "task-lesson-wigner",
+        "task-book-book-navarrete",
+        "task-research-royer-1977",
+        "task-research-kenfack-2004",
+        "task-research-wigner-1932",
+        "task-research-albarelli-2018",
+        "task-quiz-wigner"
+      ]
+    },
+    {
+      "id": "perdas",
+      "title": "Perdas, canais e Lindblad",
+      "description": "Separar dissipação física e aproximação numérica; compreender as hipóteses dos resultados de robustez.",
+      "prerequisites": [
+        "wigner"
+      ],
+      "windows": {
+        "2027.2": [
+          11,
+          13
+        ],
+        "2028.1": [
+          19,
+          25
+        ]
+      },
+      "materialIds": [
+        "research-li-2010",
+        "research-nugmanov-2022",
+        "research-lindblad-1976",
+        "lesson-perdas",
+        "quiz-perdas",
+        "lab-controles"
+      ],
+      "taskIds": [
+        "task-lesson-perdas",
+        "task-research-li-2010",
+        "task-research-nugmanov-2022",
+        "task-research-lindblad-1976",
+        "task-lab-controles",
+        "task-quiz-perdas"
+      ]
+    },
+    {
+      "id": "numerica",
+      "title": "Controle de erro e referências numéricas",
+      "description": "Controlar corte de Fock, domínio, quadratura, aritmética e propagação; distinguir estimativa de limite demonstrado.",
+      "prerequisites": [
+        "perdas"
+      ],
+      "windows": {
+        "2027.2": [
+          14,
+          16
+        ],
+        "2028.1": [
+          26,
+          32
+        ]
+      },
+      "materialIds": [
+        "research-fuchs-1998",
+        "research-qutip5-2026",
+        "B001",
+        "B009",
+        "research-tech-3",
+        "lesson-numerica",
+        "quiz-numerica",
+        "own-04",
+        "own-LABS"
+      ],
+      "taskIds": [
+        "task-lesson-numerica",
+        "task-book-B001",
+        "task-research-fuchs-1998",
+        "task-research-qutip5-2026",
+        "task-quiz-numerica"
+      ]
+    },
+    {
+      "id": "kerr",
+      "title": "Kerr dissipativo e comparação crítica",
+      "description": "Reproduzir casos limite e examinar os comparadores diretos antes de delimitar a contribuição candidata.",
+      "prerequisites": [
+        "numerica"
+      ],
+      "windows": {
+        "2027.2": [
+          17,
+          20
+        ],
+        "2028.1": [
+          33,
+          42
+        ]
+      },
+      "materialIds": [
+        "research-milburn-1986",
+        "research-stobinska-2008",
+        "research-rosiek-2024",
+        "research-raza-2026",
+        "lesson-kerr",
+        "quiz-kerr",
+        "lab-kerr"
+      ],
+      "taskIds": [
+        "task-lesson-kerr",
+        "task-research-milburn-1986",
+        "task-research-stobinska-2008",
+        "task-research-rosiek-2024",
+        "task-research-raza-2026",
+        "task-lab-kerr",
+        "task-quiz-kerr"
+      ]
+    },
+    {
+      "id": "decisao",
+      "title": "Aprendizagem ativa, custo e defesa",
+      "description": "Estudar GP como seletor de simulações, comparar custos sob mesma meta de erro e defender limites e hipóteses.",
+      "prerequisites": [
+        "kerr"
+      ],
+      "windows": {
+        "2027.2": [
+          21,
+          25
+        ],
+        "2028.1": [
+          43,
+          51
+        ]
+      },
+      "materialIds": [
+        "research-gpml-2006",
+        "research-gotovos-2013",
+        "research-zhang-2024",
+        "newbook1",
+        "research-tech-2",
+        "lesson-decisao",
+        "quiz-decisao",
+        "lab-aquisicao",
+        "PROJ",
+        "SLIDES",
+        "own-06"
+      ],
+      "taskIds": [
+        "task-lesson-decisao",
+        "task-book-newbook1",
+        "task-research-gpml-2006",
+        "task-research-gotovos-2013",
+        "task-research-zhang-2024",
+        "task-lab-aquisicao",
+        "task-quiz-decisao",
+        "research-defense"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson-base",
+      "stageId": "base",
+      "title": "Da base de Fock ao operador densidade",
+      "sections": [
+        {
+          "heading": "Um estado é mais que sua energia",
+          "text": "A base de Fock organiza o oscilador por número de excitações: n̂|n⟩ = n|n⟩. Para um estado normalizado |ψ⟩ = Σ cₙ|n⟩, a probabilidade de obter n é |cₙ|² e a média é Σ n|cₙ|². Os módulos dos coeficientes determinam essa distribuição, mas suas fases relativas influenciam outras medidas. Estados com a mesma energia média podem apresentar coerências, paridade e negatividade diferentes."
+        },
+        {
+          "heading": "Superposição e mistura",
+          "text": "Um estado puro é representado por ρ = |ψ⟩⟨ψ|. Uma mistura usa ρ = Σ pⱼ|ψⱼ⟩⟨ψⱼ|, com probabilidades não negativas que somam um. A matriz precisa ser hermitiana, positiva e ter traço unitário. Sua pureza Tr(ρ²) vale um para estados puros e é menor que um para misturas genuínas. Apagar termos fora da diagonal geralmente altera o estado; isso não é uma simplificação meramente gráfica."
+        },
+        {
+          "heading": "Operadores que devem ser reconstruídos à mão",
+          "text": "As relações â|n⟩ = √n|n−1⟩ e â†|n⟩ = √(n+1)|n+1⟩ conectam a álgebra do oscilador às matrizes computacionais. O vácuo é aniquilado por â. Em uma base finita, o comutador das matrizes truncadas não é a identidade em todos os níveis: há uma correção na borda superior. Por isso, testar estados longe do corte e estimar sua ocupação descartada fazem parte da implementação."
+        },
+        {
+          "heading": "Ponte com a proposta",
+          "text": "A proposta começa com estados coerentes, Fock e gatos como controles. Antes de representar qualquer um deles em espaço de fase, registre sua normalização, distribuição de fótons, energia média e paridade. Para comparar gatos par e ímpar a energia igual, ajuste suas amplitudes separadamente. Ter a mesma amplitude α não implica ter a mesma energia. A matriz densidade fornece uma linguagem comum para estados puros, misturas e perda de fótons."
+        }
+      ],
+      "workedExample": {
+        "question": "Considere |ψ⟩ = (|0⟩ + √3|2⟩)/2. Calcule sua energia em número de fótons, pureza e a pureza da mistura com as mesmas populações.",
+        "solution": "A norma é 1/4 + 3/4 = 1. A média de n̂ é 0·1/4 + 2·3/4 = 3/2. Na base {|0⟩,|2⟩}, ρ tem diagonal (1/4,3/4) e termos cruzados √3/4; como ρ² = ρ, Tr(ρ²) = 1. A mistura diagonal tem a mesma média de fótons, mas pureza (1/4)² + (3/4)² = 5/8. Logo, energia e populações não determinam as coerências."
+      },
+      "exercises": [
+        {
+          "question": "Escreva a matriz densidade de (|0⟩ + i|1⟩)/√2 e calcule ⟨n̂⟩ e Tr(ρ²).",
+          "solution": "Na base {|0⟩,|1⟩}, ρ = [[1,−i],[i,1]]/2. O conjugado complexo do coeficiente i produz −i no elemento ρ₀₁. A média é 1/2. A multiplicação fornece ρ² = ρ; portanto, a pureza é um e a matriz representa uma superposição pura."
+        },
+        {
+          "question": "Para ρ = p|0⟩⟨0| + (1−p)|1⟩⟨1|, com 0 ≤ p ≤ 1, encontre a pureza mínima e seu ponto de ocorrência.",
+          "solution": "Tr(ρ²) = p² + (1−p)² = 2(p−1/2)² + 1/2. O mínimo é 1/2 quando p = 1/2. Nos extremos p = 0 ou p = 1, a pureza vale um. A mistura balanceada é a mais misturada dentro desse subespaço de dois níveis, não entre todos os estados do oscilador."
+        }
+      ],
+      "sources": [
+        "https://repositorio.ufc.br/handle/riufc/80727",
+        "https://professorm.learnworlds.com/"
+      ]
+    },
+    {
+      "id": "lesson-wigner",
+      "stageId": "wigner",
+      "title": "O que a negatividade de Wigner mede",
+      "sections": [
+        {
+          "heading": "Fixar a convenção antes de comparar",
+          "text": "Neste caderno, as quadraturas obedecem [q̂,p̂] = i e a Wigner do vácuo é W₀(q,p) = exp[−(q²+p²)]/π. Sua integral no plano é um. Ao comparar uma figura, um artigo ou uma biblioteca, confira as escalas dos eixos e a medida de integração. Uma troca entre coordenadas α e quadraturas q,p altera o jacobiano; copiar apenas valores da função pode introduzir um fator incorreto."
+        },
+        {
+          "heading": "Volume negativo e o fator dois",
+          "text": "Definimos δ = ∫ max(0,−W) dq dp. Se W é normalizada e absolutamente integrável, então ∫|W| = 1 + 2δ. Assim, uma referência que usa ∫|W|−1 informa duas vezes o indicador deste projeto. A negatividade é um número integrado, distinto do mínimo pontual de W. Também não equivale a toda forma de não classicidade: estados comprimidos gaussianos fornecem um contraexemplo com Wigner não negativa."
+        },
+        {
+          "heading": "Paridade e controles",
+          "text": "A representação por paridade deslocada relaciona W a um valor esperado de operador. Na origem, nossa convenção fornece W(0,0) = Tr(ρΠ)/π, com Π|n⟩ = (−1)ⁿ|n⟩. Isso cria um controle simples para Fock: Wₙ(0,0) = (−1)ⁿ/π. O teste deve ser acompanhado de normalização, marginais e comparação analítica. Acertar um ponto ou uma integral não garante que as franjas negativas tenham sido resolvidas."
+        },
+        {
+          "heading": "Janela finita e afirmação global",
+          "text": "Uma malha cobre apenas uma janela Ω. A negatividade regional δΩ é a integral da parte negativa nessa janela e nunca supera o volume negativo global do mesmo estado exato. Para obter um limite superior global é preciso controlar o que ficou fora. Pequena integral assinada de W na cauda não basta: termos positivos e negativos podem cancelar. Registre explicitamente se a conclusão vale para Ω ou para todo o plano."
+        }
+      ],
+      "workedExample": {
+        "question": "Calcule exatamente a negatividade de |1⟩, cuja Wigner é W₁(q,p) = (2r²−1)exp(−r²)/π, com r² = q²+p².",
+        "solution": "A região negativa é o disco r² < 1/2. Em coordenadas polares, δ = 2∫₀^(1/√2) (1−2r²)e^(−r²)r dr. Com u = r², resulta δ = ∫₀^(1/2)(1−2u)e^(−u)du. Uma primitiva é (2u+1)e^(−u). Logo, δ = 2e^(−1/2)−1 ≈ 0,2130613194. A convenção com fator dois daria aproximadamente 0,4261226389."
+      },
+      "exercises": [
+        {
+          "question": "Uma Wigner normalizada satisfaz ∫|W| = 1,08. Determine o indicador do projeto e o indicador definido por ∫|W|−1.",
+          "solution": "Da identidade ∫|W| = 1+2δ, obtemos δ = (1,08−1)/2 = 0,04. O segundo indicador vale 0,08. Os resultados descrevem o mesmo estado e diferem apenas na convenção; nenhuma discrepância física pode ser concluída antes dessa conversão."
+        },
+        {
+          "question": "Uma avaliação fornece δΩ ∈ [0,020;0,022] e uma cota para a integral de |W| fora de Ω igual a 0,003. Qual intervalo global é justificado?",
+          "solution": "A contribuição negativa fora de Ω é não negativa e não excede ∫fora |W| ≤ 0,003. Portanto δglobal ≥ 0,020 e δglobal ≤ 0,022+0,003 = 0,025. O intervalo é [0,020;0,025], desde que tanto o intervalo regional quanto a cota de cauda sejam válidos sob as hipóteses declaradas."
+        }
+      ],
+      "sources": [
+        "https://doi.org/10.1103/PhysRevA.15.449",
+        "https://arxiv.org/abs/quant-ph/0406015",
+        "https://doi.org/10.1103/PhysRevA.98.052350"
+      ]
+    },
+    {
+      "id": "lesson-perdas",
+      "stageId": "perdas",
+      "title": "Perda pura, Lindblad e controles físicos",
+      "sections": [
+        {
+          "heading": "O modelo de perda que está em estudo",
+          "text": "Perda pura significa acoplamento a um ambiente no vácuo, sem ganho e sem excitação térmica. A transmissividade η varia entre zero e um e multiplica o número médio de fótons. Um estado coerente permanece coerente, com amplitude √ηα. Isso fornece um controle gaussiano de negatividade zero. Outros estados podem se tornar mistos: a perda deve ser aplicada ao operador densidade, preservando traço e positividade dentro do modelo."
+        },
+        {
+          "heading": "Do canal à equação mestra",
+          "text": "Para amortecimento de amplitude, adotamos dρ/dt = κD[â]ρ, onde D[â]ρ = âρâ† − (â†âρ+ρâ†â)/2. Essa convenção dá η = exp(−κt) e d⟨n̂⟩/dt = −κ⟨n̂⟩. Alguns textos colocam fatores diferentes na taxa; compare a equação e a lei para a energia antes de reutilizar κ. O traço da derivada é zero pela propriedade cíclica do traço."
+        },
+        {
+          "heading": "O significado do limiar η = 1/2",
+          "text": "No canal de perda pura, qualquer entrada produz Wigner não negativa quando η ≤ 1/2. Acima desse limiar, a sobrevivência precisa ser lida com as hipóteses da família estudada; não conclua que todo estado misto tem negatividade. Além disso, persistir matematicamente não significa permanecer grande. A proposta pergunta quando o volume negativo supera uma tolerância computacional declarada, não apenas quando algum ponto da função é negativo."
+        },
+        {
+          "heading": "O que testar em uma simulação",
+          "text": "Comece por η = 1, que preserva a entrada, e η = 0, que leva ao vácuo. Confira traço, hermiticidade, ocupações e energia. Para perda pura adicional, a negatividade global não deve aumentar. Uma janela regional fixa requer cuidado porque peso pode entrar ou sair dela. Mantenha esses testes separados do caso de Kerr com dissipação simultânea: a evolução conjunta não é, em geral, uma aplicação de perda somente no final."
+        }
+      ],
+      "workedExample": {
+        "question": "Aplique perda pura a |1⟩ e determine a condição de negatividade. Calcule δ para η = 3/4.",
+        "solution": "O estado de saída é ρ = (1−η)|0⟩⟨0| + η|1⟩⟨1|. Por linearidade, W = e^(−r²)[1−2η+2ηr²]/π. Há região negativa somente se η > 1/2, no disco r² < a = 1−1/(2η). Integrando com u = r², δ = ∫₀ᵃ(2η−1−2ηu)e^(−u)du = 2ηe^(−a)−1. Para η = 3/4, δ = (3/2)e^(−1/3)−1 ≈ 0,0747969659. Para η ≤ 1/2, δ = 0."
+      },
+      "exercises": [
+        {
+          "question": "Um estado tem ⟨n̂⟩ inicial igual a 4. Sob a convenção dρ/dt = κD[â]ρ, calcule a energia em fótons após t = ln(2)/κ e explique o que se pode afirmar sobre W.",
+          "solution": "Nesse instante, η = exp[−κ·ln(2)/κ] = 1/2 e ⟨n̂⟩ = 4·1/2 = 2. Pelo resultado de perda pura, a Wigner é não negativa, independentemente da entrada. A conclusão exige ambiente no vácuo, ausência de ganho e nenhum processo gerador de não gaussianidade atuando simultaneamente."
+        },
+        {
+          "question": "Dois gatos, par e ímpar, têm a mesma amplitude real α > 0. Eles têm a mesma energia média? Use n̄par = α²tanh(α²) e n̄ímpar = α²coth(α²).",
+          "solution": "Não. Para x = α² > 0, tanh(x) < 1 < coth(x), portanto n̄par < α² < n̄ímpar. Para comparar negatividade a energia igual, é necessário resolver cada equação para uma amplitude própria. No limite α → 0, as médias tendem respectivamente a 0 e 1, reforçando a diferença entre os dois controles."
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/2201.03257",
+        "https://doi.org/10.1007/BF01608499",
+        "https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html"
+      ]
+    },
+    {
+      "id": "lesson-numerica",
+      "stageId": "numerica",
+      "title": "Do refinamento a uma decisão com erro controlado",
+      "sections": [
+        {
+          "heading": "Cinco fontes de erro, cinco perguntas",
+          "text": "O corte de Fock aproxima o estado; a janela finita limita o domínio; a quadratura aproxima a integral; a aritmética arredonda operações; e o integrador temporal aproxima a dinâmica. Refinar apenas a malha espacial não controla as outras parcelas. Um orçamento precisa explicitar qual quantidade cada parcela limita e como ela afeta δ. Some somente cotas compatíveis do erro absoluto final; não some indiscriminadamente tolerâncias internas de rotinas diferentes."
+        },
+        {
+          "heading": "Uma desigualdade útil",
+          "text": "A função f(x) = max(0,−x) é 1-Lipschitz: |f(x)−f(y)| ≤ |x−y|. Integrando, obtemos |δΩ(W)−δΩ(V)| ≤ ∫Ω|W−V|. Se |W−V| ≤ ε em toda a janela de área A, o erro regional é no máximo Aε. Uma cota pontual não pode ser integrada por uma área infinita. Para a negatividade global, acrescenta-se um controle independente da massa absoluta da cauda."
+        },
+        {
+          "heading": "Truncamento com hipóteses explícitas",
+          "text": "Se P seleciona os níveis retidos e εN = 1−Tr(Pρ) é a massa descartada, o estado projetado normalizado é ρN = PρP/(1−εN), desde que εN < 1. Uma cota da norma de traço é ||ρ−ρN||₁ ≤ 2√εN. A paridade deslocada permite transferir esse controle à Wigner, com fator 1/π nesta convenção. A distância de traço convencional é metade dessa norma. A contratibilidade vale para canais exatos; o erro do solver temporal continua sendo outra parcela."
+        },
+        {
+          "heading": "Evidência empírica e cota rigorosa",
+          "text": "Duas malhas que concordam fornecem uma observação de convergência, não uma prova automática do erro restante. Uma tolerância solicitada ao solver também não equivale ao erro global de δ. Identifique cada parcela como cota demonstrada, estimativa de erro ou concordância empírica. Quando um intervalo [L,U] cruza o limiar δ*, declare inconclusivo. A classificação usa L > δ* para acima e U < δ* para abaixo; igualdade também permanece inconclusiva nessa regra."
+        }
+      ],
+      "workedExample": {
+        "question": "Em uma janela de área 100, uma cota uniforme de erro da Wigner é 10⁻⁶. Outras cotas já expressas em erro absoluto de δΩ somam 10⁻⁵. A estimativa regional é 0,00120. Decida em relação a δ* = 0,001.",
+        "solution": "A parcela uniforme contribui no máximo 100·10⁻⁶ = 10⁻⁴. A cota total regional é E = 0,00011. Logo, δΩ ∈ [0,00109;0,00131], e o limite inferior excede δ*: a negatividade regional está acima do limiar. Se houver ainda uma cota de cauda absoluta 0,00004, o intervalo global é [0,00109;0,00135]. O exemplo supõe cotas válidas; substituir essas entradas por diferenças entre malhas mudaria a classe de evidência."
+      },
+      "exercises": [
+        {
+          "question": "Um cálculo gera δestimada = 0,00095 e erro absoluto limitado por 0,00010. Classifique em relação a δ* = 0,001.",
+          "solution": "O intervalo [0,00085;0,00105] contém o limiar. Portanto, o resultado é inconclusivo; a estimativa central abaixo de 0,001 não justifica a classe abaixo. É preciso refinar as parcelas dominantes do erro ou manter explicitamente a inconclusão."
+        },
+        {
+          "question": "A massa descartada em Fock é εN = 10⁻⁸. Obtenha as cotas de ||ρ−ρN||₁ e do erro pontual da Wigner na convenção do caderno.",
+          "solution": "A raiz é √εN = 10⁻⁴. Portanto, ||ρ−ρN||₁ ≤ 2·10⁻⁴. Como a paridade deslocada tem norma um e W = Tr(ρΠdeslocada)/π, temos |Wρ−WρN| ≤ 2·10⁻⁴/π ≈ 6,37·10⁻⁵. O resultado é pontual; integrá-lo exige uma janela finita e sua área. Ele não inclui erro de quadratura nem de propagação."
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/abs/quant-ph/9712042",
+        "https://doi.org/10.1103/PhysRevA.15.449",
+        "https://doi.org/10.1103/PRXQuantum.5.030312"
+      ]
+    },
+    {
+      "id": "lesson-kerr",
+      "stageId": "kerr",
+      "title": "Kerr dissipativo: reproduzir antes de reivindicar",
+      "sections": [
+        {
+          "heading": "Um Hamiltoniano diagonal ainda muda o estado",
+          "text": "Um Hamiltoniano de Kerr é uma função não linear de n̂ e, por isso, é diagonal na base de Fock. Ele preserva as populações durante a evolução unitária, mas impõe fases dependentes de n às coerências. Uma entrada coerente pode desenvolver interferências e não gaussianidade. Para fixar os exemplos deste módulo, usamos H = χn̂(n̂−1)/2; artigos que adotam outro fator em χ exigem conversão de tempo antes da comparação."
+        },
+        {
+          "heading": "Perda durante a evolução",
+          "text": "A equação conjunta é dρ/dt = −i[H,ρ] + κD[â]ρ. Embora H comute com n̂, sua superoperação não comuta em geral com a dissipação. A perda transporta coerências entre níveis com diferenças de energia distintas. Aplicar a evolução unitária inteira e depois um canal de perda descreve outro procedimento. Métodos de separação temporal precisam ter seu erro controlado, em vez de assumir equivalência exata."
+        },
+        {
+          "heading": "Limites e observáveis de controle",
+          "text": "Com κ = 0, uma evolução unitária exata preserva traço, pureza e distribuição de fótons. Com χ = 0, recupera-se perda pura. No modelo conjunto com H função de n̂, a média ainda obedece d⟨n̂⟩/dt = −κ⟨n̂⟩. Esses testes são úteis, mas não suficientes para validar franjas de Wigner. Compare também coerências e observáveis independentes e acompanhe corte, malha, domínio e integração temporal."
+        },
+        {
+          "heading": "Como ler os comparadores diretos",
+          "text": "Na leitura de Milburn–Holmes, Stobińska, Rosiek e Raza, registre modelo, estado inicial, convenções, parâmetros e tipo de verificação. Separe o que o trabalho já demonstrou do que você pretende acrescentar. Uma curva de negatividade ou um refinamento numérico não constitui novidade por si só. O recorte da proposta depende de decisões sustentadas por erro total explícito e de seu custo. Uma diferença de resultado pode ser apenas uma diferença de modelo ou escala."
+        }
+      ],
+      "workedExample": {
+        "question": "Para H = χn̂(n̂−1)/2 e estado inicial (|0⟩+|2⟩)/√2, encontre o estado em t = π/χ quando κ = 0. O número médio de fótons e a pureza mudam?",
+        "solution": "Os níveis têm E₀ = 0 e E₂ = χ. Assim, |ψ(t)⟩ = (|0⟩+e^(−iχt)|2⟩)/√2. Em t = π/χ, o resultado é (|0⟩−|2⟩)/√2. O número médio de fótons continua 0·1/2+2·1/2 = 1 e a pureza continua um. A energia média do Hamiltoniano de Kerr declarado é χ/2. A fase relativa muda, logo as coerências e a representação de Wigner podem mudar apesar das populações constantes."
+      },
+      "exercises": [
+        {
+          "question": "No modelo conjunto, por que a lei ⟨n̂(t)⟩ = ⟨n̂(0)⟩e^(−κt) continua válida mesmo com Kerr?",
+          "solution": "Para o observável n̂, a contribuição Hamiltoniana é −iTr(n̂[H,ρ]) = −iTr([n̂,H]ρ) = 0, pois H é função de n̂. A parte dissipativa dá −κ⟨n̂⟩. A equação escalar d⟨n̂⟩/dt = −κ⟨n̂⟩ tem a solução exponencial. Isso não implica que a matriz densidade conjunta seja igual à obtida por perda aplicada apenas no fim."
+        },
+        {
+          "question": "Uma malha temporal amostra δ(t) em 101 instantes. O maior valor amostrado é o máximo global exato no intervalo?",
+          "solution": "Não. Se os valores fossem exatos, o maior deles seria apenas um limite inferior para o máximo contínuo. Com erro numérico, até esse argumento precisa usar limites inferiores válidos nos pontos. Para controlar o máximo entre amostras é necessário um limite de variação temporal, uma otimização validada ou outra justificativa. Refinar a malha fornece evidência empírica, mas não elimina essa exigência lógica."
+        }
+      ],
+      "sources": [
+        "https://doi.org/10.1103/PhysRevLett.56.2237",
+        "https://doi.org/10.1103/PhysRevA.78.013810",
+        "https://doi.org/10.1103/PRXQuantum.5.030312",
+        "https://doi.org/10.1103/r9j9-6ndl"
+      ]
+    },
+    {
+      "id": "lesson-decisao",
+      "stageId": "decisao",
+      "title": "Selecionar simulações, medir custo e defender o recorte",
+      "sections": [
+        {
+          "heading": "O processo gaussiano escolhe onde investigar",
+          "text": "Um processo gaussiano oferece uma média preditiva μ(x) e uma incerteza estatística σ(x), dependentes de dados, kernel e hipóteses. Na proposta, seu papel é escolher novas simulações perto do limiar δ*. A heurística a(x) = cσ(x) − |μ(x)−δ*| favorece incerteza e proximidade. Uma cota numérica sobre δ não se transforma automaticamente em desvio padrão gaussiano; os tipos de incerteza precisam permanecer identificados."
+        },
+        {
+          "heading": "Selecionar não é certificar",
+          "text": "Um candidato com μ(x) acima do limiar ainda precisa ser avaliado pelo método físico. A conclusão usa seu intervalo [L,U] e a qualidade das hipóteses de erro. Mapas em pontos apenas preditos são exploratórios. A proposta reserva parte das aquisições para exploração, compara com grade, aleatoriedade e adaptação clássica e usa o mesmo preditor para avaliar as diferentes estratégias de coleta. Assim, o experimento isola o efeito da seleção."
+        },
+        {
+          "heading": "Custo completo e comparação justa",
+          "text": "Comece pelo solver em CPU e localize o gargalo. Para comparar com GPU, mantenha a meta de erro, os estados, os parâmetros e a tarefa física equivalentes. Registre precisão, compilação, transferências, sincronização, cálculo e validação. Em operações assíncronas, medir apenas o disparo do cálculo subestima o tempo. Diferencie a primeira execução de lotes repetidos; um ganho em um núcleo isolado pode desaparecer no procedimento completo."
+        },
+        {
+          "heading": "O que uma defesa convincente precisa sustentar",
+          "text": "Explique a pergunta física antes da ferramenta. Apresente o resultado conhecido que pretende reproduzir, o controle de erro adicional que investigará e uma condição que refute a hipótese de vantagem. Separe treino, ajustes e auditoria por regimes ou trajetórias, sem usar a auditoria para escolher hiperparâmetros. Um ganho deve sobreviver a custos completos, diferentes sementes e casos difíceis. Resultados inconclusivos ou sem aceleração também precisam aparecer no relato."
+        }
+      ],
+      "workedExample": {
+        "question": "Use c = 2 e δ* = 0,01. O candidato A tem μ = 0,010 e σ = 0,002; B tem μ = 0,030 e σ = 0,006. Qual maximiza straddle? O intervalo físico de A, [0,009;0,011], permite classificá-lo?",
+        "solution": "a(A) = 2·0,002−|0,010−0,010| = 0,004. a(B) = 2·0,006−|0,030−0,010| = −0,008. A heurística escolhe A. Entretanto, [0,009;0,011] cruza 0,010; portanto, a decisão física permanece inconclusiva. A prioridade de aquisição e a classificação são etapas distintas."
+      },
+      "exercises": [
+        {
+          "question": "Uma rotina demora 2 s em CPU. Na GPU, o núcleo leva 0,1 s, preparação e transferências levam 1,4 s e a validação leva 0,8 s. Há vantagem nessa execução?",
+          "solution": "O custo completo na GPU é 0,1+1,4+0,8 = 2,3 s. A razão CPU/GPU é 2/2,3 ≈ 0,87, portanto não há aceleração nessa execução. Lotes maiores podem amortizar alguns custos, mas isso exige outra medição; não é uma conclusão dos números apresentados. A meta de erro precisa ser a mesma."
+        },
+        {
+          "question": "Uma auditoria contém 40 casos realmente acima e 60 abaixo do limiar, todos com referência resolvida. O classificador erra 8 da primeira classe e 6 da segunda. Calcule o erro balanceado.",
+          "solution": "A taxa de erro da classe acima é 8/40 = 0,20; da classe abaixo é 6/60 = 0,10. O erro balanceado é (0,20+0,10)/2 = 0,15, ou 15%. Referências inconclusivas seriam relatadas separadamente. Se uma das classes faltasse, essa média não poderia ser avaliada pelo mesmo protocolo."
+        }
+      ],
+      "sources": [
+        "https://las.inf.ethz.ch/files/gotovos13active.pdf",
+        "https://gaussianprocess.org/gpml/chapters/RW.pdf",
+        "https://docs.jax.dev/en/latest/benchmarking.html"
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "quiz-base",
+      "stageId": "base",
+      "title": "Diagnóstico: estados e operadores",
+      "topic": "Base quântica, Fock e Hermite",
+      "questions": [
+        {
+          "id": "base-1",
+          "prompt": "Uma superposição pura e uma mistura têm as mesmas populações na base de Fock. Qual conclusão é válida?",
+          "options": [
+            "Representam sempre o mesmo estado.",
+            "Podem diferir nas coerências e na pureza.",
+            "Precisam ter energias médias diferentes.",
+            "Têm obrigatoriamente a mesma Wigner."
+          ],
+          "answer": 1,
+          "explanation": "As populações fixam a distribuição do número de fótons; os termos fora da diagonal distinguem coerências. A energia média pode coincidir sem que os estados sejam iguais."
+        },
+        {
+          "id": "base-2",
+          "prompt": "Qual é o resultado de â|3⟩?",
+          "options": [
+            "3|2⟩",
+            "√3|4⟩",
+            "|2⟩/√3",
+            "√3|2⟩"
+          ],
+          "answer": 3,
+          "explanation": "O operador de aniquilação reduz n em uma unidade com fator √n. Sua norma ao agir sobre |3⟩ é √3."
+        },
+        {
+          "id": "base-3",
+          "prompt": "Para ρ = (|0⟩⟨0|+|1⟩⟨1|)/2, quanto vale Tr(ρ²)?",
+          "options": [
+            "1/2",
+            "1",
+            "0",
+            "2"
+          ],
+          "answer": 0,
+          "explanation": "Os projetores são ortogonais. Ao elevar ao quadrado, cada peso vira 1/4, e o traço soma 1/4+1/4 = 1/2."
+        },
+        {
+          "id": "base-4",
+          "prompt": "Qual conjunto de condições caracteriza um operador densidade físico?",
+          "options": [
+            "Ser diagonal e ter determinante um.",
+            "Ter todos os elementos positivos.",
+            "Ser hermitiano, positivo semidefinido e ter traço um.",
+            "Ter pureza obrigatoriamente igual a um."
+          ],
+          "answer": 2,
+          "explanation": "Positividade semidefinida se refere aos autovalores ou formas quadráticas, não ao sinal de cada elemento. Estados mistos têm pureza menor que um."
+        }
+      ]
+    },
+    {
+      "id": "quiz-wigner",
+      "stageId": "wigner",
+      "title": "Diagnóstico: convenções e negatividade",
+      "topic": "Wigner, negatividade e recursos",
+      "questions": [
+        {
+          "id": "wigner-1",
+          "prompt": "Na convenção W₀(q,p)=e^(−q²−p²)/π, quanto vale W do estado |1⟩ na origem?",
+          "options": [
+            "1/π",
+            "0",
+            "−1/π",
+            "−2/π"
+          ],
+          "answer": 2,
+          "explanation": "Na origem, W = ⟨Π⟩/π. O estado |1⟩ tem paridade ímpar, de autovalor −1."
+        },
+        {
+          "id": "wigner-2",
+          "prompt": "Um artigo usa δK = ∫|W|−1. O projeto usa δ = ∫max(0,−W). Para W normalizada, qual relação vale?",
+          "options": [
+            "δK = 2δ",
+            "δK = δ/2",
+            "δK = δ",
+            "δK = δ²"
+          ],
+          "answer": 0,
+          "explanation": "Separando partes positiva e negativa, a normalização dá P−N=1 e a norma absoluta dá P+N=1+2N. Como N=δ, δK=2δ."
+        },
+        {
+          "id": "wigner-3",
+          "prompt": "Qual afirmação sobre um estado comprimido gaussiano é correta?",
+          "options": [
+            "Sua Wigner precisa ter regiões negativas.",
+            "Sua negatividade é sempre maior que a de Fock.",
+            "Wigner não negativa demonstra ausência de toda não classicidade.",
+            "Ele pode ter Wigner não negativa e ainda ser não clássico em outro sentido."
+          ],
+          "answer": 3,
+          "explanation": "Negatividade de Wigner, gaussianidade e não classicidade não são sinônimos. O squeezing ilustra essa distinção."
+        },
+        {
+          "id": "wigner-4",
+          "prompt": "Qual informação permite acrescentar uma cota superior global a um intervalo regional de negatividade?",
+          "options": [
+            "Somente o valor de W na origem.",
+            "Uma cota da integral de |W| fora da janela.",
+            "Somente a integral assinada de W fora da janela.",
+            "A cor mais escura do gráfico."
+          ],
+          "answer": 1,
+          "explanation": "A contribuição negativa externa é limitada por sua massa absoluta. A integral assinada pode ocultar grandes contribuições por cancelamento."
+        }
+      ]
+    },
+    {
+      "id": "quiz-perdas",
+      "stageId": "perdas",
+      "title": "Diagnóstico: perda pura e dissipação",
+      "topic": "Perdas, canais e Lindblad",
+      "questions": [
+        {
+          "id": "perdas-1",
+          "prompt": "O que a perda pura com transmissividade η faz com |1⟩⟨1|?",
+          "options": [
+            "Produz sempre o vácuo.",
+            "Produz o estado puro √η|1⟩+√(1−η)|0⟩.",
+            "Mantém |1⟩⟨1| para qualquer η.",
+            "Produz η|1⟩⟨1|+(1−η)|0⟩⟨0|."
+          ],
+          "answer": 3,
+          "explanation": "Após descartar o ambiente, as alternativas de sobrevivência e perda formam uma mistura. Não se preserva a coerência entre esses dois caminhos ambientais."
+        },
+        {
+          "id": "perdas-2",
+          "prompt": "Sob perda pura, ambiente no vácuo e η ≤ 1/2, o que vale para a Wigner de qualquer entrada?",
+          "options": [
+            "É negativa em toda a origem.",
+            "É não negativa.",
+            "Tem sempre pureza um.",
+            "É idêntica à Wigner inicial."
+          ],
+          "answer": 1,
+          "explanation": "A atenuação nesse regime elimina a negatividade de Wigner. Isso não implica pureza ou preservação do estado."
+        },
+        {
+          "id": "perdas-3",
+          "prompt": "Para dρ/dt = κD[â]ρ, qual é a transmissividade após tempo t?",
+          "options": [
+            "η = e^(−κt)",
+            "η = e^(κt)",
+            "η = κt para qualquer t",
+            "η = 1−κ para qualquer t"
+          ],
+          "answer": 0,
+          "explanation": "A média de fótons satisfaz d⟨n̂⟩/dt = −κ⟨n̂⟩, dando o fator de atenuação exponencial. A convenção da taxa precisa ser conferida."
+        },
+        {
+          "id": "perdas-4",
+          "prompt": "O limiar η > 1/2 garante negatividade para todo estado misto de entrada?",
+          "options": [
+            "Sim, independentemente do estado.",
+            "Sim, se a energia média for positiva.",
+            "Não; é necessário respeitar as hipóteses da família estudada.",
+            "Sim, basta aumentar a resolução da malha."
+          ],
+          "answer": 2,
+          "explanation": "Uma mistura equilibrada de |α⟩ e |−α⟩, com α ≠ 0, é mista e tem Wigner positiva, pois soma duas gaussianas positivas; a perda preserva essa propriedade. O limiar universal de eliminação não implica negatividade de todas as entradas acima dele."
+        }
+      ]
+    },
+    {
+      "id": "quiz-numerica",
+      "stageId": "numerica",
+      "title": "Diagnóstico: intervalos e evidência numérica",
+      "topic": "Controle de erro e referências numéricas",
+      "questions": [
+        {
+          "id": "numerica-1",
+          "prompt": "Uma estimativa é 0,00095 com erro absoluto limitado por 0,00010. Para δ* = 0,001, qual é a decisão?",
+          "options": [
+            "Acima.",
+            "Inconclusiva.",
+            "Abaixo.",
+            "Negatividade exatamente zero."
+          ],
+          "answer": 1,
+          "explanation": "O intervalo [0,00085;0,00105] cruza o limiar. O ponto médio sozinho não resolve a decisão."
+        },
+        {
+          "id": "numerica-2",
+          "prompt": "Se |W−V| ≤ ε em uma janela de área A, qual cota regional decorre da propriedade 1-Lipschitz da parte negativa?",
+          "options": [
+            "|δΩ(W)−δΩ(V)| ≤ ε/A",
+            "O erro é sempre zero.",
+            "O erro global é limitado por ε, mesmo em área infinita.",
+            "|δΩ(W)−δΩ(V)| ≤ Aε"
+          ],
+          "answer": 3,
+          "explanation": "Integramos |W−V| na janela finita: ∫Ω|W−V| ≤ Aε. A conclusão não se estende diretamente a área infinita."
+        },
+        {
+          "id": "numerica-3",
+          "prompt": "Duas malhas produzem valores muito próximos de negatividade. Isso fornece, por si só:",
+          "options": [
+            "Uma prova de erro total nulo.",
+            "Uma cota rigorosa de todas as parcelas de erro.",
+            "Evidência empírica de convergência.",
+            "Uma garantia de que a cauda externa é desprezível."
+          ],
+          "answer": 2,
+          "explanation": "A concordância pode não revelar erros compartilhados, sub-resolução ou caudas. Uma cota rigorosa requer hipóteses e argumento que controlem o erro restante."
+        },
+        {
+          "id": "numerica-4",
+          "prompt": "Por que normalizar automaticamente uma Wigner em uma janela pequena pode ser problemático?",
+          "options": [
+            "Pode esconder massa perdida e alterar a integral da parte negativa.",
+            "Porque toda Wigner deve ter integral zero.",
+            "Porque normalização impede qualquer cálculo em GPU.",
+            "Porque estados físicos não podem ser normalizados."
+          ],
+          "answer": 0,
+          "explanation": "A renormalização força uma integral desejada sem recuperar a estrutura ausente. Ela pode mascarar erros de domínio ou representação."
+        }
+      ]
+    },
+    {
+      "id": "quiz-kerr",
+      "stageId": "kerr",
+      "title": "Diagnóstico: dinâmica de Kerr e reprodução",
+      "topic": "Kerr dissipativo e comparação crítica",
+      "questions": [
+        {
+          "id": "kerr-1",
+          "prompt": "Na evolução unitária com H função de n̂, o que é preservado?",
+          "options": [
+            "Todas as coerências, sem mudança de fase.",
+            "A Wigner em todos os pontos.",
+            "As populações na base de Fock e a pureza.",
+            "A negatividade em qualquer janela fixa necessariamente."
+          ],
+          "answer": 2,
+          "explanation": "A evolução diagonal muda fases relativas, mas preserva populações. Qualquer evolução unitária exata também preserva a pureza."
+        },
+        {
+          "id": "kerr-2",
+          "prompt": "Perda aplicada apenas depois de toda a evolução de Kerr é, em geral:",
+          "options": [
+            "Um procedimento diferente da dissipação simultânea.",
+            "Exatamente igual à dissipação simultânea.",
+            "Igual sempre que o traço é um.",
+            "Igual sempre que a malha espacial é fina."
+          ],
+          "answer": 0,
+          "explanation": "As superoperações de Kerr e dissipação não comutam em geral. A equivalência não decorre de conservação do traço ou resolução espacial."
+        },
+        {
+          "id": "kerr-3",
+          "prompt": "Qual controle deve ser recuperado ao escolher χ = 0 no modelo conjunto?",
+          "options": [
+            "Kerr unitário.",
+            "Dinâmica sem nenhuma mudança.",
+            "Geração obrigatória de um gato puro.",
+            "Perda pura."
+          ],
+          "answer": 3,
+          "explanation": "Retirar o termo Hamiltoniano de Kerr deixa o dissipador κD[â]. Se κ também for zero, o estado permanece constante."
+        },
+        {
+          "id": "kerr-4",
+          "prompt": "O maior valor obtido em uma malha temporal finita é:",
+          "options": [
+            "Sempre o máximo contínuo exato.",
+            "Uma amostra do máximo que exige controle entre instantes.",
+            "Uma prova de novidade da proposta.",
+            "Independente do erro de propagação."
+          ],
+          "answer": 1,
+          "explanation": "A função pode atingir um valor maior entre os pontos. Valores numéricos também contêm erro; um máximo validado requer controles adicionais."
+        }
+      ]
+    },
+    {
+      "id": "quiz-decisao",
+      "stageId": "decisao",
+      "title": "Diagnóstico: GP, custo e defesa",
+      "topic": "Aprendizagem ativa, custo e defesa",
+      "questions": [
+        {
+          "id": "decisao-1",
+          "prompt": "Qual é o papel principal do GP no recorte da proposta?",
+          "options": [
+            "Substituir toda validação física.",
+            "Provar a positividade da matriz densidade.",
+            "Garantir que a GPU sempre acelere.",
+            "Selecionar simulações promissoras perto do limiar."
+          ],
+          "answer": 3,
+          "explanation": "O processo gaussiano guia a aquisição. Conclusões físicas dependem da avaliação do estado e do intervalo numérico correspondente."
+        },
+        {
+          "id": "decisao-2",
+          "prompt": "Qual prática evita contaminação da auditoria?",
+          "options": [
+            "Usar seus rótulos para escolher o kernel.",
+            "Reservar trajetórias ou regimes e excluir a auditoria do ajuste.",
+            "Mover casos difíceis da auditoria para o treino após ver o resultado.",
+            "Escolher só os pontos onde o modelo tem confiança."
+          ],
+          "answer": 1,
+          "explanation": "A auditoria precisa permanecer independente das aquisições e dos ajustes. Separar trajetórias ou regimes reduz vazamento por pontos quase idênticos."
+        },
+        {
+          "id": "decisao-3",
+          "prompt": "O que deve entrar na comparação CPU/GPU?",
+          "options": [
+            "Custo completo e mesma meta de erro, incluindo sincronização e validação.",
+            "Somente o tempo do núcleo mais favorável.",
+            "Apenas o número de operações teóricas.",
+            "Só a melhor semente de cada método."
+          ],
+          "answer": 0,
+          "explanation": "O objetivo é reduzir custo de uma decisão física equivalente. Compilação, transferências e validação podem eliminar o ganho do núcleo."
+        },
+        {
+          "id": "decisao-4",
+          "prompt": "Se o intervalo físico satisfaz L = δ* e U > δ*, qual classe resulta da regra estrita adotada?",
+          "options": [
+            "Acima.",
+            "Abaixo.",
+            "Inconclusiva.",
+            "Exatamente zero."
+          ],
+          "answer": 2,
+          "explanation": "A classe acima exige L > δ*. A igualdade não satisfaz a condição estrita; a proposta preserva a inconclusão nesse caso."
+        }
+      ]
+    }
+  ],
+  "labs": [
+    {
+      "id": "lab-controles",
+      "title": "Laboratório 1 — Fock e perda com referência analítica",
+      "stageId": "perdas",
+      "objective": "Construir em CPU um teste pequeno de Wigner e negatividade com resultado analítico independente, antes de comparar bibliotecas ou velocidade.",
+      "steps": [
+        "Declare as convenções do caderno e implemente W₀ = exp(−r²)/π e W₁ = (2r²−1)exp(−r²)/π. Trabalhe inicialmente em precisão dupla e registre versões.",
+        "Integre no quadrado [−R,R]² para R = 3, 4 e 5, variando separadamente o passo espacial. Registre integral de W, δ e custo; não renormalize automaticamente a malha.",
+        "Compare a negatividade de |1⟩ com 2exp(−1/2)−1. Toda a região negativa está no disco r² < 1/2, já contido nas três janelas escolhidas. Portanto, neste controle a janela não omite negatividade exata; a integral de normalização ainda tem uma cauda externa. Analise separadamente o erro de quadratura.",
+        "Implemente Wη = exp(−r²)[1−2η+2ηr²]/π para η = 0, 0,25, 0,5, 0,75 e 1. Compare δ com zero para η ≤ 0,5 e com 2ηexp[−1+1/(2η)]−1 para η > 0,5.",
+        "Use a rotina oficial de Wigner de uma biblioteca como segunda implementação, registrando parâmetros e conversões de escala. Compare também W(0,0), não apenas imagens.",
+        "Produza uma tabela de erros absolutos por R e passo, um gráfico de convergência e um parágrafo sobre quais erros foram efetivamente controlados."
+      ],
+      "checks": [
+        "O vácuo integra aproximadamente um e não apresenta negatividade acima do erro numérico.",
+        "W₁(0,0) = −1/π; δ(|1⟩) ≈ 0,21306131942526685.",
+        "Em η = 0,75, δ ≈ 0,07479696586068396; em η ≤ 0,5, a expressão analítica é não negativa.",
+        "Variações de domínio e malha são feitas separadamente, sem tratar concordância empírica como cota rigorosa."
+      ],
+      "expectedResult": "Espera-se aproximação das referências analíticas conforme os parâmetros são refinados. O resultado a entregar é a evidência medida, inclusive falhas ou convergência não monotônica; nenhum número de desempenho é pressuposto.",
+      "sources": [
+        "https://arxiv.org/abs/quant-ph/0406015",
+        "https://arxiv.org/abs/2201.03257",
+        "https://qutip.readthedocs.io/en/stable/apidoc/visualization.html#wigner"
+      ]
+    },
+    {
+      "id": "lab-kerr",
+      "title": "Laboratório 2 — Separar os erros na dinâmica de Kerr",
+      "stageId": "kerr",
+      "objective": "Validar em CPU um caso pequeno de Kerr com perda simultânea, usando limites físicos antes de calcular mapas extensos.",
+      "steps": [
+        "Escreva explicitamente o Hamiltoniano H = χn̂(n̂−1)/2 usado neste exercício e o dissipador κD[â]. Registre como essa escolha converte o tempo de cada artigo comparado.",
+        "Construa uma entrada coerente de baixa energia, por exemplo n̄ = 1, e estime a cauda de Poisson descartada para cada corte N. Guarde o peso anterior à normalização da projeção.",
+        "Com κ = 0, compare a propagação numérica com as fases analíticas exp(−iEₙt). Confira populações, pureza e coerências.",
+        "Com χ = 0, compare a energia com n̄(0)exp(−κt) e a saída coerente com amplitude exp(−κt/2)α.",
+        "No modelo conjunto, varie separadamente N, tolerância temporal, janela e malha de Wigner. Confira a lei exponencial da energia, mas não a use como única prova de precisão.",
+        "Escolha um intervalo temporal curto e reproduza um observável de um comparador publicado após compatibilizar estado, modelo e unidades. Registre também as diferenças que impedirem comparação direta."
+      ],
+      "checks": [
+        "Traço e hermiticidade permanecem dentro da tolerância declarada; autovalores negativos residuais são avaliados quantitativamente.",
+        "Os limites κ = 0 e χ = 0 são verificados antes do caso conjunto.",
+        "Não se assume que perda no fim equivale a perda simultânea.",
+        "O máximo temporal amostrado é identificado como amostrado; refinamento não é chamado de certificado."
+      ],
+      "expectedResult": "Um relatório curto separando referências exatas, estimativas do solver e concordância empírica. A entrega inclui uma tabela de sensibilidade por fonte de erro e uma lista explícita do que ainda falta para um intervalo rigoroso.",
+      "sources": [
+        "https://doi.org/10.1103/PhysRevA.78.013810",
+        "https://doi.org/10.1103/PRXQuantum.5.030312",
+        "https://qutip.readthedocs.io/en/stable/guide/dynamics/dynamics-master.html"
+      ]
+    },
+    {
+      "id": "lab-aquisicao",
+      "title": "Laboratório 3 — Aquisição por GP com um alvo verificável",
+      "stageId": "decisao",
+      "objective": "Testar o protocolo de seleção em CPU usando a negatividade analítica do estado |1⟩ sob perda, antes de aplicá-lo ao solver de Kerr.",
+      "steps": [
+        "Defina o alvo didático δ(η) = 0 para η ≤ 1/2 e δ(η) = 2ηexp[−1+1/(2η)]−1 para η > 1/2, no domínio 0 ≤ η ≤ 1. Escolha δ* = 0,01.",
+        "Separe uma grade de candidatos para aquisições e uma grade de auditoria disjunta. Confira a presença das duas classes na auditoria; não utilize seus rótulos para ajustar o GP.",
+        "Fixe uma amostra inicial, kernel e regra de ajuste no desenvolvimento. Compare seleção uniforme aleatória, grade, refinamento clássico e straddle com c = 2, reservando 20% das aquisições do último para exploração uniforme.",
+        "Use o mesmo GP como avaliador das amostras obtidas por cada estratégia. Rode pelo menos cinco sementes nas estratégias aleatórias e conte a amostra inicial no orçamento.",
+        "Meça erro balanceado, avaliações utilizadas e tempo completo, incluindo ajuste e seleção. Preserve casos inconclusivos se inserir intervalos numéricos artificiais, deixando claro que são um experimento didático.",
+        "Escreva o que pode e o que não pode ser transferido para Kerr: o alvo analítico tem custo e regularidade próprios. Se experimentar GPU posteriormente, meça sincronização, compilação e validação sob precisão equivalente."
+      ],
+      "checks": [
+        "Auditoria, aquisições e ajuste têm papéis distintos.",
+        "O GP não altera a fórmula física de referência nem transforma σ em cota de erro numérico.",
+        "Custos e sementes desfavoráveis permanecem no relatório.",
+        "A demonstração é didática e não é apresentada como resultado da proposta no sistema de Kerr."
+      ],
+      "expectedResult": "Um comparativo reproduzível das estratégias para um alvo conhecido. Nenhuma superioridade do GP ou da GPU é pressuposta; resultados sem vantagem são conclusões válidas do experimento.",
+      "sources": [
+        "https://las.inf.ethz.ch/files/gotovos13active.pdf",
+        "https://gaussianprocess.org/gpml/chapters/RW.pdf",
+        "https://docs.jax.dev/en/latest/benchmarking.html"
+      ]
+    }
+  ]
+}

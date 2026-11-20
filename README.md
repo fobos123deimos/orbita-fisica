@@ -14,7 +14,7 @@ Não há dependências nem etapa de build.
 python -m http.server 8080 --directory dist
 ```
 
-Abra http://localhost:8080. Testes: `node --test tests/model.test.mjs`.
+Abra http://localhost:8080. Testes: `node --test tests/*.test.mjs`.
 
 ## Recursos
 
@@ -64,7 +64,7 @@ O código está no repositório público `fobos123deimos/orbita-fisica`.
 
 Site publicado: [Abrir Órbita](https://fobos123deimos.github.io/orbita-fisica/).
 
-Novos pushes para `main` publicam automaticamente quando alteram arquivos em `dist/**`, `tests/**` ou `.github/workflows/pages.yml`. O fluxo executa os testes (`node --test tests/model.test.mjs`) antes de publicar e só continua se a verificação passar. O conteúdo publicado é somente a pasta `dist/`.
+Novos pushes para `main` publicam automaticamente quando alteram arquivos em `dist/**`, `tests/**` ou `.github/workflows/pages.yml`. O fluxo executa os testes (`node --test tests/*.test.mjs`) antes de publicar e só continua se a verificação passar. O conteúdo publicado é somente a pasta `dist/`.
 
 A publicação manual continua disponível em **Actions → Publicar Órbita no GitHub Pages → Run workflow**. Alterações somente neste README não disparam uma publicação automática.
 
@@ -86,3 +86,25 @@ Para migrar do endereço anterior, exporte o backup no Órbita atual e importe-o
 - `tests/model.test.mjs`: cenários, médias ponderadas, datas, importação e atualização aditiva dos dados.
 
 
+
+## Pesquisa, leituras e preparação da defesa
+
+Acesse **Pesquisa e leituras** no menu, na aba da Trilha de estudos ou diretamente em https://fobos123deimos.github.io/orbita-fisica/#pesquisa.
+
+O percurso foi preparado a partir da proposta atual **Negatividade de Wigner sob perdas com controle de erro numérico**, da biblioteca cadastrada e de referências pertinentes recuperadas das conversas e do projeto Fast Wave. É uma curadoria dirigida, não uma busca exaustiva de todo o histórico.
+
+- 18 leituras bibliográficas em sequência (17 artigos e GPML), com objetivo, pré-requisitos, trecho inicial, entrega e fonte. Leituras complementares entram no cenário 2028.1.
+- 6 cursos/aulas do Professor M: postulados; Quantum Harmonic Oscillator I e II; estados puros/mistos; estado coerente; Second Quantization. Os três problem sets têm tarefas de conclusão dos 10 problemas. As horas estimadas são ajustáveis, não durações oficiais do fornecedor.
+- 12 referências de livros e produção própria, incluindo 6 livros já cadastrados. Posse confirmada e recomendações estão identificadas separadamente; textos alternativos não viram obrigação cumulativa.
+- 6 cadernos autorais, 6 exemplos resolvidos, 12 exercícios com solução, 24 questões em 6 questionários e 3 roteiros de laboratório em CPU. São materiais de preparação, não avaliações oficiais.
+- 46 novas atividades, das quais 41 pertencem ao núcleo comum. Fichamentos e checklists usam os mesmos registros da biblioteca e da trilha geral.
+
+Os questionários corrigem as respostas antes do salvamento. **Salvar resultado no desempenho** acrescenta uma sessão com acertos reais e zero horas; registrar o tempo separadamente com questões em zero evita duplicar o resultado. Cancelar a correção não grava tentativa. Resolver um questionário não ativa o plano nem conclui leituras automaticamente.
+
+A ordem segue Fock/Hermite → Wigner → perdas/Lindblad → erro numérico → Kerr → GP, custo e defesa. As janelas sugeridas partem da data-base configurada; o plano permanece em stand-by e mantém janeiro de 2027 como início padrão. O cenário 2027.2 possui primeira passagem em 25 semanas; o cenário 2028.1 distribui o conteúdo em 51. Os totais de tarefas detalhadas não substituem as metas de 400/612 horas, que incluem aprofundamento e revisão.
+
+A atualização aditiva usa `applyContentPack`, inclusive na importação de backups antigos, preservando registros, anotações, exclusões deliberadas e ajustes. Os campos opcionais `prerequisiteIds` e `startWeeks` sobrevivem aos backups e à edição de tarefas. O planejador respeita pré-requisitos antes de priorizar fraquezas; preserva datas manuais e mostra avisos para conflitos ou dependências removidas/fora do cenário.
+
+As fontes destacam convenções que mudam a comparação: o indicador de Kenfack/Raza equivale a duas vezes o volume negativo da proposta; as quadraturas de Rosiek exigem conversão; incerteza do GP não certifica erro numérico. Rotinas aceleradas são comparadas sob a mesma meta de erro. Não são alegados resultados inéditos do doutorado.
+
+Arquivos: `dist/research.json` (conteúdo e tarefas), `dist/research-view.js` (leitura e quizzes), `dist/research.css` (apresentação), `tests/research.test.mjs` (migração, dependências e correção).

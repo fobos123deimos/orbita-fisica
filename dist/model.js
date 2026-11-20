@@ -90,10 +90,19 @@ export function recommendedOrder(state, scenario = state.settings.scenario) {
     const row = metrics.get(task.topic);
     return row?.questions && row.accuracy < 70 ? row.correct / row.questions : 1;
   };
-  return state.tasks.filter(task => !task.done && relevant(task, scenario))
+  const pending = state.tasks.filter(task => !task.done && relevant(task, scenario))
     .map((task, index) => ({task, index}))
-    .sort((a, b) => score(a.task) - score(b.task) || a.index - b.index)
-    .map(item => item.task);
+    .sort((a, b) => score(a.task) - score(b.task) || a.index - b.index);
+  const ordered = [];
+  const remaining = new Set(pending.map(item => item.task.id));
+  while (pending.length) {
+    const at = pending.findIndex(({task}) => !(task.prerequisiteIds || []).some(id => remaining.has(id)));
+    if (at < 0) throw new Error('Há um ciclo entre os pré-requisitos das atividades.');
+    const [{task}] = pending.splice(at, 1);
+    ordered.push(task);
+    remaining.delete(task.id);
+  }
+  return ordered;
 }
 
 /**
@@ -120,9 +129,26 @@ export function plan(state, scenario = state.settings.scenario, today = todayISO
       week++;
     }
   }
-  let cursor = 0;
+  const ends = new Map();
+  const taskMap = new Map(state.tasks.map(task => [task.id, task]));
   return tasks.map(task => {
-    if (task.due) return {...task, plannedDate: task.due, week: Math.max(1, Math.floor((dateNumber(task.due) - dateNumber(state.settings.startDate)) / DAY / 7) + 1)};
+    const planningWarnings = (task.prerequisiteIds || []).flatMap(id => {
+      const dependency = taskMap.get(id);
+      if (!dependency) return ['Um pré-requisito foi removido; confira a sequência.'];
+      return !dependency.done && !relevant(dependency, scenario) ? ['Há pré-requisito pendente fora deste cenário.'] : [];
+    });
+    const prerequisiteEnd = Math.max(0, ...(task.prerequisiteIds || []).map(id => ends.get(id) || 0));
+    const earliest = task.startWeeks?.[scenario] || 1;
+    const earliestDate = dateNumber(state.settings.startDate) + (earliest - 1) * 7 * DAY;
+    if (task.due) {
+      const manualDate = dateNumber(task.due);
+      if (manualDate < prerequisiteEnd) planningWarnings.push('Prazo manual anterior a um pré-requisito planejado.');
+      if (manualDate < earliestDate) planningWarnings.push('Prazo manual anterior à semana de entrada sugerida.');
+      ends.set(task.id, manualDate + (Math.ceil(task.hours / settings.hours) - 1) * 7 * DAY);
+      return {...task, planningWarnings, plannedDate: task.due, week: Math.max(1, Math.floor((manualDate - dateNumber(state.settings.startDate)) / DAY / 7) + 1)};
+    }
+    const relativeStart = Math.max(0, Math.ceil((Math.max(earliestDate, prerequisiteEnd) - baseNumber) / DAY / 7));
+    let cursor = relativeStart;
     while ((spentByWeek.get(cursor) || 0) >= settings.hours) cursor++;
     const begin = cursor;
     let remaining = task.hours;
@@ -134,7 +160,8 @@ export function plan(state, scenario = state.settings.scenario, today = todayISO
       if (remaining > 0.000001) cursor++;
     }
     const plannedDate = dateString(baseNumber + begin * 7 * DAY);
-    return {...task, plannedDate, week: Math.max(1, Math.floor((dateNumber(plannedDate) - dateNumber(state.settings.startDate)) / DAY / 7) + 1)};
+    ends.set(task.id, baseNumber + cursor * 7 * DAY);
+    return {...task, planningWarnings, plannedDate, week: Math.max(1, Math.floor((dateNumber(plannedDate) - dateNumber(state.settings.startDate)) / DAY / 7) + 1)};
   });
 }
 
@@ -219,8 +246,28 @@ export function validateState(raw) {
     if (due) task.due = due;
     if (doneDate) task.doneDate = doneDate;
     if (value.materialId !== undefined) task.materialId = textField(value, path, 'materialId', 200, true);
+    if (value.prerequisiteIds !== undefined) {
+      if (!Array.isArray(value.prerequisiteIds) || value.prerequisiteIds.length > 100) fail(`${path}.prerequisiteIds`, 'liste até 100 pré-requisitos');
+      task.prerequisiteIds = [...new Set(value.prerequisiteIds.map((item, index) => string(item, `${path}.prerequisiteIds[${index}]`, 200)))];
+      if (task.prerequisiteIds.includes(task.id)) fail(`${path}.prerequisiteIds`, 'uma atividade não pode depender dela mesma');
+    }
+    if (value.startWeeks !== undefined) {
+      object(value.startWeeks, `${path}.startWeeks`);
+      task.startWeeks = Object.fromEntries(SCENARIOS.filter(sc => value.startWeeks[sc] !== undefined).map(sc => [sc, number(value.startWeeks[sc], `${path}.startWeeks.${sc}`, 1, 520, true)]));
+    }
     return task;
   });
+  const byId = new Map(result.tasks.map(task => [task.id, task]));
+  const visited = new Set(), visiting = new Set();
+  function visit(task) {
+    if (visited.has(task.id)) return;
+    if (visiting.has(task.id)) fail('tasks', 'ciclo nos pré-requisitos');
+    visiting.add(task.id);
+    for (const dep of task.prerequisiteIds || []) if (byId.has(dep)) visit(byId.get(dep));
+    visiting.delete(task.id);
+    visited.add(task.id);
+  }
+  result.tasks.forEach(visit);
   result.sessions = array(raw.sessions, 'sessions', (value, path) => {
     const total = number(value.total, `${path}.total`, 0, 1000000, true);
     const correct = number(value.correct, `${path}.correct`, 0, total, true);
