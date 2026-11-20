@@ -87,6 +87,9 @@ export function topicStats(state) {
 export function recommendedOrder(state, scenario = state.settings.scenario) {
   const metrics = new Map(topicStats(state).map(row => [row.topic, row]));
   const score = task => {
+    // The integrated course has an explicit pedagogical sequence. Results guide
+    // review, but never move a later reading ahead of its planned foundation.
+    if (task.curriculumOrder !== undefined) return 1;
     const row = metrics.get(task.topic);
     return row?.questions && row.accuracy < 70 ? row.correct / row.questions : 1;
   };
@@ -246,6 +249,7 @@ export function validateState(raw) {
     if (due) task.due = due;
     if (doneDate) task.doneDate = doneDate;
     if (value.materialId !== undefined) task.materialId = textField(value, path, 'materialId', 200, true);
+    if (value.curriculumOrder !== undefined) task.curriculumOrder = number(value.curriculumOrder, `${path}.curriculumOrder`, 0, 10000, true);
     if (value.prerequisiteIds !== undefined) {
       if (!Array.isArray(value.prerequisiteIds) || value.prerequisiteIds.length > 100) fail(`${path}.prerequisiteIds`, 'liste até 100 pré-requisitos');
       task.prerequisiteIds = [...new Set(value.prerequisiteIds.map((item, index) => string(item, `${path}.prerequisiteIds[${index}]`, 200)))];
@@ -357,4 +361,38 @@ export function applyContentPack(rawState, pack) {
 
   state.contentPacks = [...(state.contentPacks || []), packId];
   return {state: validateState(state), addedTasks, addedMaterials, applied: true};
+}
+
+/** Reorganize the existing records once; never recreate deleted activities. */
+export function applyUnifiedCurriculum(rawState, curriculum) {
+  const state = validateState(rawState);
+  const curriculumId = string(curriculum.id, 'curriculum.id', 200);
+  if (state.contentPacks?.includes(curriculumId)) return {state, applied: false};
+  if (!Array.isArray(curriculum.phases)) fail('curriculum.phases', 'lista esperada');
+  const byId = new Map(state.tasks.map(task => [task.id, task]));
+  const ordered = [], seen = new Set();
+  let lastCore = null;
+  const lastByScenario = {'2027.2': null, '2028.1': null};
+  for (const phase of curriculum.phases) {
+    if (!Array.isArray(phase.steps)) fail('curriculum.steps', 'lista esperada');
+    for (const step of phase.steps) {
+      const taskId = string(step.taskId, 'curriculum.step.taskId', 200);
+      if (seen.has(taskId)) fail('curriculum.steps', 'atividade duplicada');
+      seen.add(taskId);
+      const task = byId.get(taskId);
+      if (!task) continue;
+      const previous = task.scenario === 'both' ? lastCore : lastByScenario[task.scenario];
+      task.prerequisiteIds = previous ? [previous] : [];
+      task.startWeeks = Object.fromEntries(SCENARIOS.map(sc => [sc, number(phase.windows?.[sc]?.[0], 'curriculum.windows', 1, 520, true)]));
+      task.curriculumOrder = ordered.length;
+      ordered.push(task);
+      if (task.scenario === 'both') {
+        lastCore = task.id;
+        for (const sc of SCENARIOS) lastByScenario[sc] = task.id;
+      } else lastByScenario[task.scenario] = task.id;
+    }
+  }
+  state.tasks = [...ordered, ...state.tasks.filter(task => !seen.has(task.id))];
+  state.contentPacks = [...(state.contentPacks || []), curriculumId];
+  return {state: validateState(state), applied: true};
 }

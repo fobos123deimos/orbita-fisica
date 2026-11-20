@@ -1,0 +1,896 @@
+{
+  "id": "unified-curriculum-20261120",
+  "title": "Sua trilha integrada de Física",
+  "intro": "Uma sequência reúne fundamentos, livros, aulas, aplicações, artigos e prática. Cada passo prepara o seguinte: aprenda a ferramenta, aplique-a, leia a referência pertinente e verifique sua compreensão. Os cenários mudam o ritmo e o espaço para aprofundamento, mantendo o mesmo percurso.",
+  "guide": [
+    "Use o próximo passo da sequência e seus materiais associados; não é necessário percorrer catálogos separados por tipo de conteúdo.",
+    "Leituras de apoio são alternativas ou consultas quando assim identificadas. Concluir uma atividade conta uma única vez em todo o site.",
+    "As janelas são sugestões a partir da data-base. Ajuste a carga à docência e confirme os prazos oficiais do EUF e da seleção.",
+    "Fichamentos, questionários, modelos eletromecânicos e reproduções quânticas se alimentam mutuamente. Use a revisão para retornar a uma lacuna concreta."
+  ],
+  "phases": [
+    {
+      "id": "linguagem",
+      "title": "Ferramentas para formular e testar modelos",
+      "description": "Comece pela linguagem matemática e por um ambiente de cálculo reprodutível. Os livros entram junto das competências que preparam, e a pergunta da proposta orienta os estudos seguintes.",
+      "windows": {
+        "2027.2": [
+          1,
+          2
+        ],
+        "2028.1": [
+          1,
+          4
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "F01",
+          "why": "Revisar grandezas, vetores, derivadas e unidades antes de escrever equações físicas.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B054",
+            "R01",
+            "B035"
+          ]
+        },
+        {
+          "taskId": "task-book-newbook0",
+          "why": "Ler espaços vetoriais, produto interno e autovalores antes das aulas de mecânica quântica.",
+          "kind": "Livro e estudo guiado"
+        },
+        {
+          "taskId": "M01",
+          "why": "Aplicar a leitura de álgebra a matrizes, bases e condicionamento.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "newbook0",
+            "R02"
+          ]
+        },
+        {
+          "taskId": "M13",
+          "why": "Preparar código, testes e registro de versões para todas as reproduções da trilha.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "own-LABS",
+            "B009"
+          ]
+        },
+        {
+          "taskId": "M02",
+          "why": "Reconhecer arredondamento e cancelamento desde os primeiros cálculos.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001",
+            "B008"
+          ]
+        },
+        {
+          "taskId": "task-book-B001",
+          "why": "Usar o texto numérico como apoio contínuo: começar por erros e estabilidade e retornar à quadratura nas etapas posteriores.",
+          "kind": "Livro e estudo guiado"
+        },
+        {
+          "taskId": "M04",
+          "why": "Resolver sistemas e entender fatorações antes de simular modelos em espaço de estados.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001",
+            "B008"
+          ]
+        },
+        {
+          "taskId": "D01",
+          "why": "Escrever uma primeira versão da pergunta física, das hipóteses e das limitações; revisá-la com os artigos ao longo do percurso.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "PROJ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dinamica",
+      "title": "Movimento, oscilações e formulação energética",
+      "description": "A mecânica clássica, as EDOs e os circuitos simples são estudados juntos. As aplicações elétricas dão significado à modelagem por energia e preparam Lagrange, Hamilton e o oscilador quântico.",
+      "windows": {
+        "2027.2": [
+          3,
+          4
+        ],
+        "2028.1": [
+          5,
+          8
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "F02",
+          "why": "Construir balanços de força, energia e momento.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R04",
+            "B052"
+          ]
+        },
+        {
+          "taskId": "F04",
+          "why": "Estudar oscilações e ondas como modelos de dinâmica linear.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B054",
+            "B012"
+          ]
+        },
+        {
+          "taskId": "M07",
+          "why": "Integrar a dinâmica do oscilador e verificar convergência temporal.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R03",
+            "B056",
+            "own-04"
+          ]
+        },
+        {
+          "taskId": "EM01",
+          "why": "Aplicar as mesmas EDOs ao circuito RLC e à massa–mola, comparando energia e dissipação.",
+          "kind": "Aplicação eletromecânica",
+          "materialIds": [
+            "newbook2"
+          ]
+        },
+        {
+          "taskId": "M03",
+          "why": "Calcular equilíbrios e raízes das equações do modelo, observando critérios de parada.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001"
+          ]
+        },
+        {
+          "taskId": "F03",
+          "why": "Derivar as equações por Lagrange e Hamilton e reconhecer os modos normais.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "EM-R01",
+            "B057"
+          ]
+        },
+        {
+          "taskId": "EM02",
+          "why": "Consolidar a formulação variacional com um LC e um pêndulo, antes dos modelos acoplados.",
+          "kind": "Aplicação eletromecânica"
+        }
+      ]
+    },
+    {
+      "id": "campos",
+      "title": "Campos, circuitos e conversão eletromecânica",
+      "description": "Estude os campos e transforme a energia armazenada em forças e modelos acoplados. Cada projeto usa o formalismo mecânico já aprendido, sem criar outra trilha.",
+      "windows": {
+        "2027.2": [
+          5,
+          6
+        ],
+        "2028.1": [
+          9,
+          12
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "F06",
+          "why": "Relacionar potencial, campo, fluxo e equações de contorno.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R06",
+            "B054"
+          ]
+        },
+        {
+          "taskId": "F07",
+          "why": "Completar a base eletromagnética com indução e Maxwell.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R06",
+            "B054"
+          ]
+        },
+        {
+          "taskId": "EM03",
+          "why": "Derivar força a partir de energia e coenergia, conectando os campos à mecânica.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "EM04",
+          "why": "Reunir circuito elétrico, torque e velocidade no modelo de motor CC.",
+          "kind": "Aplicação eletromecânica",
+          "materialIds": [
+            "newbook2"
+          ]
+        },
+        {
+          "taskId": "EM06",
+          "why": "Usar Lagrange para um sistema em que a indutância depende da posição.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "EM09",
+          "why": "Passar do modelo lagrangiano ao hamiltoniano e discutir as hipóteses de conservação.",
+          "kind": "Aplicação eletromecânica"
+        }
+      ]
+    },
+    {
+      "id": "controle",
+      "title": "Simulação, estabilidade e identificação",
+      "description": "Teste os modelos já derivados e conecte controle, otimização e ajuste de parâmetros. O cenário mais longo aprofunda as mesmas aplicações.",
+      "windows": {
+        "2027.2": [
+          7,
+          8
+        ],
+        "2028.1": [
+          13,
+          17
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "EM05",
+          "why": "Simular o motor CC e confrontar a solução com o balanço de energia.",
+          "kind": "Aplicação eletromecânica",
+          "materialIds": [
+            "own-LABS"
+          ]
+        },
+        {
+          "taskId": "M10",
+          "why": "Interpretar equilíbrio, estabilidade e Lyapunov nos sistemas simulados.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "EM-R03"
+          ]
+        },
+        {
+          "taskId": "EM07",
+          "why": "Projetar controle de corrente e velocidade sobre o modelo em espaço de estados.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "EM08",
+          "why": "Aprofundar o acoplamento não linear entre motor e pêndulo no cenário 2028.1.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "EM10",
+          "why": "Aprofundar passividade e controle por energia usando os modelos hamiltonianos.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "M05",
+          "why": "Ajustar dados e parâmetros dos modelos; separar erro de aproximação e de medida.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001",
+            "B008"
+          ]
+        },
+        {
+          "taskId": "M09",
+          "why": "Formular funções objetivo e restrições para ajuste e controle.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001",
+            "B009"
+          ]
+        },
+        {
+          "taskId": "EM11",
+          "why": "Reavaliar o controlador quando o acionamento tem limites de tensão.",
+          "kind": "Aplicação eletromecânica"
+        },
+        {
+          "taskId": "EM12",
+          "why": "Fechar o ciclo de identificação e validação em um conjunto de dados separado.",
+          "kind": "Aplicação eletromecânica"
+        }
+      ]
+    },
+    {
+      "id": "ondas-estatistica",
+      "title": "Ondas, transformadas, probabilidade e física moderna",
+      "description": "Integre as ferramentas de Fourier à óptica, e a probabilidade à física estatística. Essa base será reutilizada nos estados quânticos, na Wigner e nos processos gaussianos.",
+      "windows": {
+        "2027.2": [
+          9,
+          10
+        ],
+        "2028.1": [
+          18,
+          21
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "M11",
+          "why": "Preparar Fourier e funções especiais que aparecem em ondas e funções de Hermite.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B056",
+            "B012"
+          ]
+        },
+        {
+          "taskId": "F05",
+          "why": "Aplicar ondas e transformadas à interferência, difração e óptica.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B054"
+          ]
+        },
+        {
+          "taskId": "F08",
+          "why": "Organizar calor, trabalho e leis da termodinâmica.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B054"
+          ]
+        },
+        {
+          "taskId": "task-book-newbook1",
+          "why": "Estudar condicionais, variáveis aleatórias, distribuição normal e covariância antes da física estatística e do GP.",
+          "kind": "Livro e estudo guiado"
+        },
+        {
+          "taskId": "F09",
+          "why": "Relacionar ensembles e distribuições à descrição probabilística dos sistemas físicos.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R13",
+            "R14",
+            "newbook1"
+          ]
+        },
+        {
+          "taskId": "M12",
+          "why": "Comparar amostragem e propagação de incerteza, distinguindo-as de cotas determinísticas.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "newbook1",
+            "B009"
+          ]
+        },
+        {
+          "taskId": "F10",
+          "why": "Situar os limites da descrição clássica e preparar a entrada na mecânica quântica.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B054",
+            "R10"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quantica",
+      "title": "Postulados, oscilador quântico e revisão para o EUF",
+      "description": "Os livros de álgebra e os modelos oscilatórios convergem agora para a mecânica quântica. Faça as aulas e os problemas do Professor M junto das atividades de fundamentos, e use o simulado para revelar lacunas antes dos artigos especializados.",
+      "windows": {
+        "2027.2": [
+          11,
+          13
+        ],
+        "2028.1": [
+          22,
+          27
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "task-book-B043",
+          "why": "Rever kets, bras, operadores e medidas com a álgebra linear já estudada.",
+          "kind": "Livro e estudo guiado",
+          "materialIds": [
+            "book-shankar"
+          ]
+        },
+        {
+          "taskId": "task-pm-postulates",
+          "why": "Conferir os postulados nas aulas e reconstruir exemplos de medida.",
+          "kind": "Curso e prática"
+        },
+        {
+          "taskId": "F11",
+          "why": "Resolver Schrödinger em exemplos simples e obter o oscilador.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R10",
+            "book-shankar"
+          ]
+        },
+        {
+          "taskId": "task-pm-oscillator-1",
+          "why": "Concluir os problemas do primeiro conjunto e ligar as soluções em posição e momento à base de Fourier.",
+          "kind": "Curso e prática"
+        },
+        {
+          "taskId": "task-pm-oscillator-2",
+          "why": "Concluir o segundo conjunto, reforçando operadores, incerteza e evolução temporal.",
+          "kind": "Curso e prática"
+        },
+        {
+          "taskId": "F12",
+          "why": "Completar a revisão de spin, hidrogênio, simetria e perturbação.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "R10",
+            "book-shankar"
+          ]
+        },
+        {
+          "taskId": "F13",
+          "why": "Aplicar as provas e o simulado aos fundamentos estudados; classificar erros e retornar aos passos correspondentes. Conferir a data oficial do EUF para antecipar esta revisão quando necessário.",
+          "kind": "Simulado e revisão",
+          "materialIds": [
+            "own-03",
+            "own-06",
+            "euf2017"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fock-densidade",
+      "title": "Fock, matrizes densidade e a ponte com o Fast Wave",
+      "description": "Combine as aulas sobre estados com a leitura do seu mestrado e do artigo de recorrência. O produto desta etapa é compreender tanto a representação física quanto seus limites computacionais.",
+      "windows": {
+        "2027.2": [
+          14,
+          15
+        ],
+        "2028.1": [
+          28,
+          32
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "task-pm-pure-mixed",
+          "why": "Distinguir superposição e mistura antes de usar operadores densidade.",
+          "kind": "Curso e prática"
+        },
+        {
+          "taskId": "task-lesson-base",
+          "why": "Refazer os exemplos e exercícios do caderno à luz das aulas de oscilador e estados.",
+          "kind": "Caderno e exercícios"
+        },
+        {
+          "taskId": "D03",
+          "why": "Sintetizar o formalismo já estudado: construir uma matriz densidade, verificar traço, positividade e pureza.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "lesson-base",
+            "B043"
+          ]
+        },
+        {
+          "taskId": "task-pm-coherent",
+          "why": "Derivar a função de onda coerente e relacioná-la à base de Fock.",
+          "kind": "Curso e prática"
+        },
+        {
+          "taskId": "task-pm-second-quantization",
+          "why": "Concluir o conjunto, distinguindo a álgebra bosônica usada na proposta dos tópicos fermiônicos.",
+          "kind": "Curso e prática",
+          "materialIds": [
+            "book-cohen-iii"
+          ]
+        },
+        {
+          "taskId": "task-research-perez-jorda-2018",
+          "why": "Ler a recorrência depois de dominar o oscilador e refazer suas condições iniciais.",
+          "kind": "Artigo e fichamento",
+          "materialIds": [
+            "research-tech-1"
+          ]
+        },
+        {
+          "taskId": "task-book-project-fast-wave",
+          "why": "Ler a dissertação com a referência de recorrência em mãos e separar resultados anteriores das hipóteses do doutorado.",
+          "kind": "Livro e estudo guiado"
+        },
+        {
+          "taskId": "M14",
+          "why": "Comparar algoritmos em alta ordem e investigar underflow com referências de maior precisão.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "project-fast-wave",
+            "research-perez-jorda-2018",
+            "research-tech-1"
+          ]
+        },
+        {
+          "taskId": "task-research-celeghini-2021",
+          "why": "No cenário mais longo, aprofundar a ação de Fourier na base de Hermite.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "D02",
+          "why": "Consolidar uma síntese sobre Fock, coerentes e óptica quântica; selecionar as referências que serão usadas na defesa.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "book-gerry-knight",
+            "book-navarrete"
+          ]
+        },
+        {
+          "taskId": "task-quiz-base",
+          "why": "Verificar estados e operadores antes de avançar para representações em espaço de fase.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "wigner",
+      "title": "Representação de Wigner e significado da negatividade",
+      "description": "Intercale a base matemática, a explicação autoral e os artigos fundadores. Fixe as convenções antes de comparar indicadores ou preparar qualquer figura numérica.",
+      "windows": {
+        "2027.2": [
+          16,
+          17
+        ],
+        "2028.1": [
+          33,
+          36
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "M06",
+          "why": "Revisar integração e quadratura antes de estimar volumes em espaço de fase.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B001",
+            "B008"
+          ]
+        },
+        {
+          "taskId": "task-book-book-navarrete",
+          "why": "Usar as notas de óptica como ponte de estados e operadores à representação no espaço de fase.",
+          "kind": "Livro e estudo guiado",
+          "materialIds": [
+            "book-gerry-knight"
+          ]
+        },
+        {
+          "taskId": "task-lesson-wigner",
+          "why": "Derivar a normalização e resolver os exemplos originais de negatividade.",
+          "kind": "Caderno e exercícios"
+        },
+        {
+          "taskId": "task-research-royer-1977",
+          "why": "Relacionar Wigner e paridade deslocada, verificando os controles do vácuo e de Fock.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-kenfack-2004",
+          "why": "Reproduzir um indicador de negatividade e converter explicitamente o fator de normalização.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-wigner-1932",
+          "why": "No cenário mais longo, contextualizar historicamente a representação depois de conhecer sua forma operacional.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-albarelli-2018",
+          "why": "Distinguir recurso, não gaussianidade e não classicidade sem extrapolar o indicador para toda tarefa.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "D04",
+          "why": "Sintetizar os artigos em uma página de convenções e afirmações físicas que a proposta pode sustentar.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "lesson-wigner",
+            "research-kenfack-2004",
+            "research-albarelli-2018"
+          ]
+        },
+        {
+          "taskId": "task-quiz-wigner",
+          "why": "Testar as distinções conceituais e corrigir as dúvidas de normalização.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "erro",
+      "title": "Da representação numérica à decisão confiável",
+      "description": "A análise de erro retoma as ferramentas numéricas iniciais e as aplica à Wigner. Cada aproximação precisa ser identificada antes de concluir que existe ou não negatividade.",
+      "windows": {
+        "2027.2": [
+          18,
+          18
+        ],
+        "2028.1": [
+          37,
+          39
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "M08",
+          "why": "Revisar discretização espacial e condições de contorno para compreender domínio e malha.",
+          "kind": "Fundamento e exercícios",
+          "materialIds": [
+            "B057",
+            "B064",
+            "B009"
+          ]
+        },
+        {
+          "taskId": "task-research-fuchs-1998",
+          "why": "Relacionar diferenças entre estados a normas e observáveis antes de formular limites de truncamento.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-lesson-numerica",
+          "why": "Construir um orçamento de erro e resolver os exemplos de decisão por intervalos.",
+          "kind": "Caderno e exercícios"
+        },
+        {
+          "taskId": "task-research-qutip5-2026",
+          "why": "Escolher referências de implementação adequadas e registrar suas convenções e versões.",
+          "kind": "Artigo e fichamento",
+          "materialIds": [
+            "research-tech-3"
+          ]
+        },
+        {
+          "taskId": "D05",
+          "why": "Consolidar uma tabela própria de truncamento, domínio, quadratura, aritmética e propagação, com hipóteses e limites.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "lesson-numerica",
+            "research-fuchs-1998",
+            "research-tech-3"
+          ]
+        },
+        {
+          "taskId": "task-quiz-numerica",
+          "why": "Conferir quando o resultado é resolvido, inconclusivo ou apenas uma estimativa empírica.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "perdas",
+      "title": "Perda pura e primeiros controles reproduzíveis",
+      "description": "Estude a dissipação com a distinção entre erro e fenômeno físico já estabelecida. Os artigos e o laboratório utilizam os mesmos estados e convenções das etapas anteriores.",
+      "windows": {
+        "2027.2": [
+          19,
+          19
+        ],
+        "2028.1": [
+          40,
+          42
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "task-lesson-perdas",
+          "why": "Derivar a perda pura e resolver os exemplos analíticos do caderno.",
+          "kind": "Caderno e exercícios"
+        },
+        {
+          "taskId": "D06",
+          "why": "Sintetizar o gerador de Lindblad e os canais de perda a partir do caderno, separando hipóteses físicas e numéricas.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "lesson-perdas",
+            "book-navarrete"
+          ]
+        },
+        {
+          "taskId": "task-research-lindblad-1976",
+          "why": "No cenário mais longo, ler a formulação original das hipóteses do gerador.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-li-2010",
+          "why": "Comparar indicadores e estados sob perda, usando a normalização definida no projeto.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-nugmanov-2022",
+          "why": "Verificar as hipóteses do resultado de robustez e distinguir existência de negatividade de magnitude detectável.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-lab-controles",
+          "why": "Reproduzir Fock sob perda com controle analítico e registrar convergência e limitações.",
+          "kind": "Laboratório"
+        },
+        {
+          "taskId": "task-quiz-perdas",
+          "why": "Testar a interpretação dos canais e dos limites antes da dinâmica não linear.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "kerr",
+      "title": "Kerr dissipativo, reprodução e leitura crítica",
+      "description": "Aplique estados, Lindblad e controle de erro ao modelo central da proposta. Os comparadores são lidos junto do experimento que ajudam a avaliar.",
+      "windows": {
+        "2027.2": [
+          20,
+          21
+        ],
+        "2028.1": [
+          43,
+          46
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "task-lesson-kerr",
+          "why": "Fixar o Hamiltoniano e os casos limite, reconstruindo os exemplos antes de simular.",
+          "kind": "Caderno e exercícios"
+        },
+        {
+          "taskId": "task-research-milburn-1986",
+          "why": "No cenário mais longo, recuperar a base histórica do oscilador anarmônico dissipativo.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-stobinska-2008",
+          "why": "Estudar a evolução de Wigner sob Kerr e identificar controles analíticos úteis.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-rosiek-2024",
+          "why": "Examinar refinamento de corte, domínio, malha e busca temporal; converter as quadraturas.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-research-raza-2026",
+          "why": "Comparar o recorte da proposta com escalas temporais, perda e robustez já estudadas.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-lab-kerr",
+          "why": "Reproduzir a dinâmica e variar separadamente as fontes de erro, registrando as limitações de cada conclusão.",
+          "kind": "Laboratório"
+        },
+        {
+          "taskId": "task-quiz-kerr",
+          "why": "Conferir os casos limite e a diferença entre reprodução e contribuição candidata.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "aprendizagem",
+      "title": "Processos gaussianos, seleção e custo",
+      "description": "Retome probabilidade e covariância para selecionar simulações próximas ao limiar. A execução acelerada entra como hipótese de redução de custo com a mesma exigência de confiabilidade.",
+      "windows": {
+        "2027.2": [
+          22,
+          23
+        ],
+        "2028.1": [
+          47,
+          49
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "task-research-gpml-2006",
+          "why": "Ler regressão, covariâncias e hiperparâmetros com o livro de probabilidade como apoio.",
+          "kind": "Livro e fichamento",
+          "materialIds": [
+            "newbook1"
+          ]
+        },
+        {
+          "taskId": "task-research-gotovos-2013",
+          "why": "Formular a estimação de regiões acima de um limiar e conferir as hipóteses do algoritmo.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-lesson-decisao",
+          "why": "Reunir seleção, validação física, custo completo e limites da hipótese de aceleração.",
+          "kind": "Caderno e exercícios",
+          "materialIds": [
+            "research-tech-2"
+          ]
+        },
+        {
+          "taskId": "D07",
+          "why": "Sintetizar o protocolo próprio de aquisição, auditoria e comparação sem tratar incerteza estatística como certificado físico.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "research-gpml-2006",
+            "research-gotovos-2013"
+          ]
+        },
+        {
+          "taskId": "task-research-zhang-2024",
+          "why": "No cenário mais longo, contrastar aprender a dinâmica com selecionar simulações, preservando o escopo do projeto.",
+          "kind": "Artigo e fichamento"
+        },
+        {
+          "taskId": "task-lab-aquisicao",
+          "why": "Comparar a aquisição com controles simples usando um alvo verificável e um orçamento comum.",
+          "kind": "Laboratório"
+        },
+        {
+          "taskId": "D09",
+          "why": "Definir as métricas e o custo total de CPU/GPU e aquisição, incluindo compilação, transferência, sincronização e validação.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "research-tech-2",
+            "own-LABS"
+          ]
+        },
+        {
+          "taskId": "task-quiz-decisao",
+          "why": "Revisar as diferenças entre predição, decisão verificada e evidência de ganho computacional.",
+          "kind": "Questionário"
+        }
+      ]
+    },
+    {
+      "id": "defesa",
+      "title": "Consolidar o projeto e defender o que foi compreendido",
+      "description": "Use os fichamentos, problemas e reproduções da mesma trilha para revisar o projeto e preparar a arguição. Volte aos pontos frágeis identificados nos questionários e nos ensaios.",
+      "windows": {
+        "2027.2": [
+          24,
+          25
+        ],
+        "2028.1": [
+          50,
+          51
+        ]
+      },
+      "steps": [
+        {
+          "taskId": "D08",
+          "why": "Atualizar o protocolo reprodutível e a hipótese de contribuição com as comparações feitas, distinguindo resultados conhecidos e questões em aberto.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "PROJ",
+            "research-rosiek-2024",
+            "research-raza-2026",
+            "own-LABS"
+          ]
+        },
+        {
+          "taskId": "D10",
+          "why": "Organizar respostas técnicas a partir dos cadernos e fichamentos; revisar unidades, casos limite e limitações.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "PROJ",
+            "SLIDES",
+            "own-06"
+          ]
+        },
+        {
+          "taskId": "research-defense",
+          "why": "Realizar o ensaio completo, registrar perguntas inesperadas e repetir as partes frágeis após revisão.",
+          "kind": "Síntese e defesa",
+          "materialIds": [
+            "own-06"
+          ]
+        }
+      ]
+    }
+  ]
+}
